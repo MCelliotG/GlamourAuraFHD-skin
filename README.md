@@ -15,7 +15,7 @@ The source code of this skin is available at https://github.com/MCelliotG/Glamou
 
 This skin has original graphics made by MCelliot_g. You are allowed to modify the code for personal use as long as you keep this License for the skin. 
 
-You are NOT allowed to redistribute the skin with any modifications without the author's conscent.This includes both the skin code and its converters and renderers.
+You are NOT allowed to redistribute the skin with any modifications without the author's conscent. This includes both the skin code and its converters and renderers.
 
 You are allowed and encouraged to commit changes and suggestions to github. Pull requests will be pulled after reviewed by the author.
 
@@ -23,4 +23,4 @@ Pull requests can include modifications for other images as well. For these the 
 
 Until a modification for any image OTHER than OpenPLI and its variants is final, the skin is NOT allowed to be used in other images.
 
-For any modifications and questions contact, please the author at mcelliotg@gmail.com
+For any modifications and questions contact, please contact the author at mcelliotg@gmail.com
