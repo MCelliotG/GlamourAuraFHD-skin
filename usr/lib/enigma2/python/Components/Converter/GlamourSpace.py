@@ -1,5 +1,5 @@
-﻿#  GlamourAudio info converter
-# Based on DiskSpaceInfo converter
+﻿#  GlamourSpace converter
+#  Based on DiskSpaceInfo converter
 #  Modded and recoded by MCelliotG for use in Glamour skins or standalone
 #  If you use this Converter for other skins and rename it, please keep the first and second line adding your credits below
 
