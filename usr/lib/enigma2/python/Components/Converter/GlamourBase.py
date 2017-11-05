@@ -395,7 +395,7 @@ class GlamourBase(Poll, Converter, object):
         elif (orbe >= 37.6) and (orbe <= 37.8):
             sat = "Athena-Fidus"
         elif (orbe >= 35.7) and (orbe <= 36.3):
-            sat = "Eutelsat AMU1,36C"
+            sat = "Eutelsat 36B,36C"
         elif (orbe >= 32.9) and (orbe <= 33.3):
             sat = "Eutelsat 33C,33E"
         elif (orbe >= 32.6) and (orbe <= 32.8):
