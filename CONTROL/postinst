@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -f /tmp/GlamourAuraFHD/skin.xml ]; then
+  rm -rf /usr/share/enigma2/GlamourAuraFHD/
+  mv /tmp/GlamourAuraFHD /usr/share/enigma2/
+fi
+echo "                                                                    "
+echo "Glamour Aura FHD skin is now successfully installed on your receiver"
+echo "                       Enjoy!!!                              "
