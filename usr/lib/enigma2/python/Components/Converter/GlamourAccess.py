@@ -1,4 +1,3 @@
-﻿#
 #  GlamourAccess converter
 #  Modded and recoded by MCelliotG for use in Glamour skins or standalone
 #  Based on CaidInfo2 converter coded by bigroma & 2boom
