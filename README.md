@@ -1,7 +1,7 @@
 # GlamourAuraFHD-skin
 LICENSE: This skin is licensed under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007.
 
-This skin was created for new generation Enigma2 receivers. MINIMAL requirement is an STB running Enigma2 with a dual CPU @ 751 MHz.
+This skin was created for new generation Enigma2 receivers. MINIMAL requirement is an STB running Enigma2 with a dual CPU @ 750 MHz (2000 DMIPS).
 
 This skin is not guaranteed to work in older E2 receivers with slower CPUs. Use at your own risk.
 
