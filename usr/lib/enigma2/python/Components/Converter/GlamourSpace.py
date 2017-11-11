@@ -122,7 +122,7 @@ class GlamourSpace(Poll, Converter):
                     pass
                 if swapfree == "" and swaptotal == "":
                     return ("N/A")
-                return ("Swap: ") + swapfree + swaptotal                
+                return ("Swap: ") + swapfree + swaptotal
                 
         elif (self.type == self.NETSPACE):
             while True:
@@ -139,13 +139,13 @@ class GlamourSpace(Poll, Converter):
                                 netfree = ("(%s Free, ") % netfree
                                 nettotal = str(lisp[1].replace(" ",""))
                                 nettotal = ("%s Total)") % nettotal             
-                                netspace = (("NetHDD: ") + netuse + netfree + nettotal)
+                                netspace = (("LanHDD: ") + netuse + netfree + nettotal)
                                 nets.kill()
                                 break
                 except:
                     pass
                 return netspace  
-                
+
         else:
             entry = {self.MEMTOTAL: ("Mem", "Mem", "Ram"),
              self.MEMFREE: ("Mem", "Mem", "Ram"),
