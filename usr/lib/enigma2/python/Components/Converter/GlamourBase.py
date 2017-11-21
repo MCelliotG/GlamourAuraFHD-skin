@@ -156,7 +156,7 @@ class GlamourBase(Poll, Converter, object):
         return str(tpinfo.get("polarization_abbreviation")) or ""
 
     def fecinfo(self, tpinfo):
-        return str(tpinfo.get("fec_inner"))
+        return str(tpinfo.get("fec_inner")) or ""
 
     def tunernumber(self, tpinfo):
         return str(tpinfo.get("tuner_number")) or ""
@@ -165,7 +165,7 @@ class GlamourBase(Poll, Converter, object):
         return str(tpinfo.get("system")) or ""
 
     def modulation(self, tpinfo):
-        return str(tpinfo.get("modulation"))
+        return str(tpinfo.get("modulation")) or ""
 
     def constellation(self, tpinfo):
         return str(tpinfo.get("constellation"))
@@ -174,7 +174,7 @@ class GlamourBase(Poll, Converter, object):
         return str(tpinfo.get("system")) or ""
 
     def tunertype(self, tp):
-        return str(tp.get("tuner_type"))
+        return str(tp.get("tuner_type")) or ""
 
     def terrafec(self, tpinfo):
         lp = str(tpinfo.get("code_rate_lp"))
@@ -183,17 +183,16 @@ class GlamourBase(Poll, Converter, object):
         return " LP: " + lp + " HP: " + hp + " GI: " + gi
 
     def multistream(self, tpinfo):
-        if "is_id" in tpinfo or "pls_code" in tpinfo or "pls_mode" in tpinfo:
-            isid = str(tpinfo.get("is_id", 0)) 
-            plscode = str(tpinfo.get("pls_code", 0))
-            plsmode = str(tpinfo.get("pls_mode", None))
-            if (plsmode == "None") or (isid == "-1") or (isid == "255") or ((isid == "0") and (plscode == "1")):
-                isid = plscode = plsmode = ""
-            else:
-                isid = (" IS:") + isid
-                plscode = (" ") + plscode.replace("262143","")
-                plsmode = (" ") + plsmode.replace("Unknown","")
-            return isid + plsmode + plscode 
+        isid = str(tpinfo.get("is_id", 0)) 
+        plscode = str(tpinfo.get("pls_code", 0))
+        plsmode = str(tpinfo.get("pls_mode", None))
+        if (plsmode == "None") or (isid == "-1") or (isid == "255") or ((isid == "0") and (plscode == "1")):
+            isid = plscode = plsmode = ""
+        else:
+            isid = (" IS:") + isid
+            plscode = (" ") + plscode.replace("262143","")
+            plsmode = (" ") + plsmode.replace("Unknown","")
+        return isid + plsmode + plscode 
 
     def satname(self, tp):
         orbpos = tp.get("orbital_position")
@@ -767,7 +766,10 @@ class GlamourBase(Poll, Converter, object):
                 return self.streamurl()
             else:
                 if "DVB-S" in self.tunertype(tp):
-                    return self.system(tpinfo) + " " + self.modulation(tpinfo) + " " + self.frequency(tp) + " " + self.polarization(tpinfo) + " " + self.symbolrate(tp) + " " + self.fecinfo(tpinfo) + self.multistream(tpinfo)
+                    if "is_id" in tpinfo or "pls_code" in tpinfo or "pls_mode" in tpinfo:
+                        return self.system(tpinfo) + " " + self.modulation(tpinfo) + " " + self.frequency(tp) + " " + self.polarization(tpinfo) + " " + self.symbolrate(tp) + " " + self.fecinfo(tpinfo) + self.multistream(tpinfo)
+                    else:
+                        return self.system(tpinfo) + " " + self.modulation(tpinfo) + " " + self.frequency(tp) + " " + self.polarization(tpinfo) + " " + self.symbolrate(tp) + " " + self.fecinfo(tpinfo)
                 elif "DVB-C" in self.tunertype(tp):
                     return self.frequency(tp) + " Mhz " + " " + self.modulation(tpinfo) + "  SR:" + self.symbolrate(tp) + "  " + "FEC:" + self.fecinfo(tpinfo)
                 elif "DVB-T" in self.tunertype(tp):
