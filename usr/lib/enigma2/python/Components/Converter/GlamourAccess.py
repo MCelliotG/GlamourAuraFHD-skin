@@ -599,7 +599,8 @@ class GlamourAccess(Poll, Converter, object):
                                     pass
 
                         if self.type == self.SHORTINFO:
-                            if source == "emu": ecminfo = "CA: %s:%s - %s - %s" % (caid, prov, source, self.CaidsDecoded.get(caid[:2]))
+                            if source == "emu":
+                                ecminfo = "CA: %s:%s - %s - %s" % (caid, prov, source, self.CaidsDecoded.get(caid[:2]))
                             elif server == "" and port == "":
                                 ecminfo = "CA: %s:%s - %s - %s" % (caid, prov, source, ecm_time.replace("msec", "ms"))
                             else:
@@ -618,12 +619,13 @@ class GlamourAccess(Poll, Converter, object):
 
 
     def CamName(self):
-        camd = ""
+        cam1 = ""
+        cam2 = ""
         serlist = None
         camdlist = None
         camdname = []
         sername = []
-#PLI
+#OpenPLI/SatDreamGr
         if fileExists("/etc/init.d/softcam") or fileExists("/etc/init.d/cardserver"):
             try:
                 for line in open("/etc/init.d/softcam"):
@@ -647,117 +649,116 @@ class GlamourAccess(Poll, Converter, object):
                 serlist = ""
                 camdlist = ""
             return "%s %s" % (serlist, camdlist)
-# TS-Panel
-        else:
-            if fileExists("/etc/startcam.sh"):
-                try:
-                    for line in open("/etc/startcam.sh"):
-                        if line.find("script") > -1:
-                            return "%s" % line.split("/")[-1].split()[0][:-3]
-                except:
-                    camdlist = None
-#BLACKHOLE
-            elif fileExists("/etc/CurrentDelCamName"):
-                try:
-                    camdlist = open("/etc/CurrentDelCamName", "r")
-                except:
-                    return None
-            elif fileExists("/etc/CurrentBhCamName"):
-                try:
-                    camdlist = open("/etc/CurrentBhCamName", "r")
-                except:
-                    return None
-# DE-OpenBlackHole
-            elif fileExists("/etc/BhFpConf"):
-                try:
-                    camdlist = open("/etc/BhCamConf", "r")
-                except:
-                    return None
-#HDMU
-            elif fileExists("/etc/.emustart") and fileExists("/etc/image-version"):
-                try:
-                    for line in open("/etc/.emustart"):
-                        return line.split()[0].split("/")[-1]
-                except:
-                    return None
 #OE-A
-            else:
-                if fileExists("/etc/image-version") and not fileExists("/etc/.emustart"):
-                    emu = ""
-                    server = ""
-                    for line in open("/etc/image-version"):
-                        if "=AAF" in line or "=openATV" in line or "=opendroid" in line:
-                            if config.softcam.actCam.value:
-                                emu = config.softcam.actCam.value
-                            if config.softcam.actCam2.value:
-                                server = config.softcam.actCam2.value
-                                if config.softcam.actCam2.value == "no CAM 2 active":
-                                    server = ""
-                        elif "=vuplus" in line:
-                            if fileExists("/tmp/.emu.info"):
-                                for line in open("/tmp/.emu.info"):
-                                    emu = line.strip("\n")
-                        elif "version=" in line and fileExists("/etc/CurrentBhCamName"):
-                            emu = open("/etc/CurrentBhCamName").read()
-                    return "%s %s" % (emu, server)
+        elif fileExists("/etc/image-version") and not fileExists("/etc/.emustart"):
+            for line in open("/etc/image-version"):
+                if "=AAF" in line or "=openATV" in line or "=opendroid" in line:
+                    if config.softcam.actCam.value:
+                        cam1 = config.softcam.actCam.value
+                        if "CAM 1" in cam1:
+                            cam1 = "No CAM active"
+                    if config.softcam.actCam2.value:
+                        cam2 = config.softcam.actCam2.value
+                        if "CAM 2" in cam2:
+                            cam2 = ""
+                        else:
+                            cam2 = "+" + cam2
+                elif "=vuplus" in line:
+                    if fileExists("/tmp/.emu.info"):
+                        for line in open("/tmp/.emu.info"):
+                            cam1 = line.strip("\n")
+                elif "version=" in line and fileExists("/etc/CurrentBhCamName"):
+                    cam1 = open("/etc/CurrentBhCamName").read()
+            return "%s%s" % (cam1, cam2)
+#BLACKHOLE
+        elif fileExists("/etc/CurrentDelCamName"):
+            try:
+                camdlist = open("/etc/CurrentDelCamName", "r")
+            except:
+                return None
+        elif fileExists("/etc/CurrentBhCamName"):
+            try:
+                camdlist = open("/etc/CurrentBhCamName", "r")
+            except:
+                return None
+# DE-OpenBlackHole
+        elif fileExists("/etc/BhFpConf"):
+            try:
+                camdlist = open("/etc/BhCamConf", "r")
+            except:
+                return None
+#HDMU
+        elif fileExists("/etc/.emustart") and fileExists("/etc/image-version"):
+            try:
+                for line in open("/etc/.emustart"):
+                    return line.split()[0].split("/")[-1]
+            except:
+                return None
 # Domica
-                if fileExists("/etc/active_emu.list"):
-                    try:
-                        camdlist = open("/etc/active_emu.list", "r")
-                    except:
-                        return None
+        if fileExists("/etc/active_emu.list"):
+            try:
+                camdlist = open("/etc/active_emu.list", "r")
+            except:
+                return None
 # Egami 
-                elif fileExists("/tmp/egami.inf", "r"):
-                    lines = open("/tmp/egami.inf", "r").readlines()
-                    for line in lines:
-                        item = line.split(":", 1)
-                        if item[0] == "Current emulator":
-                            return item[1].strip()
-#  GlassSysUtil
-                else:
-                    if fileExists("/tmp/ucm_cam.info"):
-                        return open("/tmp/ucm_cam.info").read()
+        elif fileExists("/tmp/egami.inf", "r"):
+            lines = open("/tmp/egami.inf", "r").readlines()
+            for line in lines:
+                item = line.split(":", 1)
+                if item[0] == "Current emulator":
+                    return item[1].strip()
 # OoZooN
-                    elif fileExists("/tmp/cam.info"):
-                        try:
-                            camdlist = open("/tmp/cam.info", "r")
-                        except:
-                            return None
+        elif fileExists("/tmp/cam.info"):
+            try:
+                camdlist = open("/tmp/cam.info", "r")
+            except:
+                return None
 # Dream Elite
-                    elif fileExists("/usr/bin/emuactive"):
-                        try:
-                            camdlist = open("/usr/bin/emuactive", "r")
-                        except:
-                            return None
+        elif fileExists("/usr/bin/emuactive"):
+            try:
+                camdlist = open("/usr/bin/emuactive", "r")
+            except:
+                return None
 # Merlin2
-                    elif fileExists("/etc/clist.list"):
-                        try:
-                            camdlist = open("/etc/clist.list", "r")
-                        except:
-                            return None
+        elif fileExists("/etc/clist.list"):
+            try:
+                camdlist = open("/etc/clist.list", "r")
+            except:
+                return None
+# TS-Panel
+        elif fileExists("/etc/startcam.sh"):
+            try:
+                for line in open("/etc/startcam.sh"):
+                    if line.find("script") > -1:
+                        return "%s" % line.split("/")[-1].split()[0][:-3]
+            except:
+                camdlist = None
+#  GlassSysUtil
+        elif fileExists("/tmp/ucm_cam.info"):
+            return open("/tmp/ucm_cam.info").read()
 # Others
-            if serlist is not None:
-                try:
-                    cardserver = ""
-                    for current in serlist.readlines():
-                        cardserver = current
-                    serlist.close()
-                except:
-                    pass
-            else:
-                cardserver = "N/A"
+        if serlist is not None:
+            try:
+                cardserver = ""
+                for current in serlist.readlines():
+                    cardserver = current
+                serlist.close()
+            except:
+                pass
+        else:
+            cardserver = "N/A"
+        if camdlist is not None:
+            try:
+                emu = ""
+                for current in camdlist.readlines():
+                    emu = current
+                camdlist.close()
+            except:
+                pass
+        else:
+            emu = "N/A"
+        return "%s %s" % (cardserver.split("\n")[0], emu.split("\n")[0])
 
-            if camdlist is not None:
-                try:
-                    emu = ""
-                    for current in camdlist.readlines():
-                        emu = current
-                    camdlist.close()
-                except:
-                    pass
-            else:
-                emu = "N/A"
-            return "%s %s" % (cardserver.split("\n")[0], emu.split("\n")[0])
 
 
     def int2hex(self, int):
