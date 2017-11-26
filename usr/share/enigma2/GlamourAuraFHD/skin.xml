@@ -522,6 +522,10 @@
       <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/flashimage.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">flash_image</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   </screen>
   <!-- 02-4. MenuScan -->
   <screen name="MenuScan" flags="wfNoBorder">
@@ -792,6 +796,10 @@
     </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/sleep.png" position="355,315" size="400,400" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">sleep</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/multiboot.png" position="355,315" size="400,400" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">multiboot</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
@@ -2958,7 +2966,7 @@
     <panel name="Title1" />
   </screen>
   <!-- 11. Subtitle Quickmenu -->
-  <!--screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground3" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
     <panel name="Title1" flags="wfNoBorder" />
@@ -2967,7 +2975,7 @@
     <widget name="videofps" position="810,830" size="980,50" font="Regular; 30" zPosition="5" transparent="1" foregroundColor="cyan" backgroundColor="background20" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_exit_big.png" alphatest="blend" position="1275,60" size="120,60" zPosition="3" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_ok_big.png" alphatest="blend" position="1155,60" size="90,60" zPosition="3" transparent="1" />
-  </screen-->
+  </screen>
   <!-- ### SCREENS -->
   <!-- 01. Setup -->
   <screen name="Setup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent" alphatest="on">
@@ -4881,5 +4889,14 @@
     <widget name="inactive" position="1140,610" size="690,50" font="RegularB; 32" valign="center" halign="center" backgroundColor="red" zPosition="2" noWrap="1" />
     <widget name="active" position="1140,610" size="690,50" font="RegularB; 32" valign="center" halign="center" backgroundColor="green" zPosition="4" noWrap="1" />
     <panel name="RGYKeysLabel2" />
+  </screen>
+  <screen name="FlashImage" position="0,0" size="1920,1080" title="Flash Image" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" flags="wfNoBorder" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" flags="wfNoBorder" />
+    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/flashimage.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="header" position="600,315" size="1170,150" font="RegularB; 36" backgroundColor="background20" transparent="1" zPosition="5" halign="center" foregroundColor="sky" valign="center" />
+    <widget name="info" position="600,475" size="1170,180" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="top" />
+    <widget name="progress" position="600,665" size="1170,25" pixmap="GlamourAuraFHD/pointers/slider_blue.png" alphatest="blend" transparent="1" zPosition="7" />
   </screen>
 </skin>
