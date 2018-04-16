@@ -121,7 +121,7 @@ class GlamourExtra(Poll, Converter):
                 except:
                     pass
                 if systemp == "" and cputemp == "":
-                    return ""
+                    return "Temperature: N/A"
                 if systemp == "":
                     return ("CPU Temp: ") + cputemp
                 if cputemp == "":
@@ -141,7 +141,7 @@ class GlamourExtra(Poll, Converter):
                 except:
                     pass
                 if htemp == "" or htemp == "0":
-                    return ("No temp data")
+                    return ("No HDD temp data")
                 else:
                     return hddtemp  
                     

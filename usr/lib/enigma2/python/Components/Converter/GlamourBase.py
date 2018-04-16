@@ -426,7 +426,7 @@ class GlamourBase(Poll, Converter, object):
         elif (orbe >= 15.6) and (orbe <= 16.3):
             sat = "Eutelsat 16A"
         elif (orbe >= 12.7) and (orbe <= 13.5):
-            sat = "HotBird 13A,13B,13C"
+            sat = "HotBird 13B,13C,13E"
         elif (orbe >= 11.5) and (orbe <= 11.9):
             sat = "Sicral 1B"
         elif (orbe >= 9.7) and (orbe <= 10.3):
@@ -470,13 +470,15 @@ class GlamourBase(Poll, Converter, object):
         elif (orbw <= -14.8) and (orbw >= -15.3):
             sat = "Telstar 12 Vantage"  
         elif (orbw <= -17.8) and (orbw >= -18.3):
-            sat = "Intelsat 901"  
+            sat = " Intelsat 37e"  
         elif (orbw <= -19.8) and (orbw >= -20.3):
             sat = "NSS 7"  
         elif (orbw <= -21.8) and (orbw >= -22.4):
             sat = "SES 4" 
-        elif (orbw <= -24.2) and (orbw >= -24.8):
+        elif (orbw <= -24.2) and (orbw >= -24.6):
             sat = "Intelsat 905" 
+        elif (orbw <= -24.7) and (orbw >= -25.2):
+            sat = " AlcomSat 1" 
         elif (orbw <= -27.2) and (orbw >= -27.8):
             sat = "Intelsat 907" 
         elif (orbw <= -29.3) and (orbw >= -29.7):
@@ -512,7 +514,7 @@ class GlamourBase(Poll, Converter, object):
         elif (orbw <= -57.7) and (orbw >= -58.3):
             sat = "Intelsat 16,21"
         elif (orbw <= -59.7) and (orbw >= -61.3):
-            sat = "Amazonas 2,3,4"
+            sat = "Amazonas 2,3,5"
         elif (orbw <= -61.4) and (orbw >= -61.7):
             sat = "EchoStar 12,15,16,18"
         elif (orbw <= -61.8) and (orbw >= -62.1):
