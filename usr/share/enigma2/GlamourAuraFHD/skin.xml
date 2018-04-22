@@ -2654,8 +2654,8 @@
       <convert type="GlamourBase">Orbital</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="380,790" size="555,45" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 26" halign="center" valign="bottom" noWrap="1" foregroundColor="lightciel" text="Frequency">
-      <convert type="GlamourBase">FreqInfo</convert>
-    </widget>
+  <convert type="GlamourBase">FreqInfo</convert>
+</widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rass_off.png" position="1605,798" size="84,37" zPosition="1" alphatest="blend" transparent="1" />
     <widget source="RdsDecoder" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rass_on.png" position="1605,798" size="84,37" zPosition="2" alphatest="blend" transparent="1">
       <convert type="RdsInfo">RasInteractiveAvailable</convert>
