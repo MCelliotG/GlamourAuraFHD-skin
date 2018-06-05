@@ -626,7 +626,7 @@ class GlamourAccess(Poll, Converter, object):
         camdname = []
         sername = []
 #OpenPLI/SatDreamGr
-        if fileExists("/etc/init.d/softcam") or fileExists("/etc/init.d/cardserver"):
+        if fileExists("/etc/init.d/softcam") and not fileExists("/etc/image-version") or fileExists("/etc/init.d/cardserver") and not fileExists("/etc/image-version"):
             try:
                 for line in open("/etc/init.d/softcam"):
                     if line.find("echo") > -1:
@@ -650,16 +650,16 @@ class GlamourAccess(Poll, Converter, object):
                 camdlist = ""
             return "%s %s" % (serlist, camdlist)
 #OE-A
-        elif fileExists("/etc/image-version") and not fileExists("/etc/.emustart"):
+        if fileExists("/etc/image-version") and not fileExists("/etc/.emustart"):
             for line in open("/etc/image-version"):
                 if "=AAF" in line or "=openATV" in line or "=opendroid" in line:
                     if config.softcam.actCam.value:
                         cam1 = config.softcam.actCam.value
-                        if "CAM 1" in cam1:
+                        if " CAM 1" in cam1  or "no cam" in cam1:
                             cam1 = "No CAM active"
                     if config.softcam.actCam2.value:
                         cam2 = config.softcam.actCam2.value
-                        if "CAM 2" in cam2:
+                        if " CAM 2" in cam2 or "no cam" in cam2 or " CAM" in cam2:
                             cam2 = ""
                         else:
                             cam2 = "+" + cam2
@@ -671,24 +671,24 @@ class GlamourAccess(Poll, Converter, object):
                     cam1 = open("/etc/CurrentBhCamName").read()
             return "%s%s" % (cam1, cam2)
 #BLACKHOLE
-        elif fileExists("/etc/CurrentDelCamName"):
+        if fileExists("/etc/CurrentDelCamName"):
             try:
                 camdlist = open("/etc/CurrentDelCamName", "r")
             except:
                 return None
-        elif fileExists("/etc/CurrentBhCamName"):
+        if fileExists("/etc/CurrentBhCamName"):
             try:
                 camdlist = open("/etc/CurrentBhCamName", "r")
             except:
                 return None
 # DE-OpenBlackHole
-        elif fileExists("/etc/BhFpConf"):
+        if fileExists("/etc/BhFpConf"):
             try:
                 camdlist = open("/etc/BhCamConf", "r")
             except:
                 return None
 #HDMU
-        elif fileExists("/etc/.emustart") and fileExists("/etc/image-version"):
+        if fileExists("/etc/.emustart") and fileExists("/etc/image-version"):
             try:
                 for line in open("/etc/.emustart"):
                     return line.split()[0].split("/")[-1]
@@ -701,32 +701,35 @@ class GlamourAccess(Poll, Converter, object):
             except:
                 return None
 # Egami 
-        elif fileExists("/tmp/egami.inf", "r"):
-            lines = open("/tmp/egami.inf", "r").readlines()
-            for line in lines:
-                item = line.split(":", 1)
-                if item[0] == "Current emulator":
-                    return item[1].strip()
+        if fileExists("/tmp/egami.inf", "r"):
+            try:
+                lines = open("/tmp/egami.inf", "r").readlines()
+                for line in lines:
+                    item = line.split(":", 1)
+                    if item[0] == "Current emulator":
+                        return item[1].strip()
+            except:
+                return None
 # OoZooN
-        elif fileExists("/tmp/cam.info"):
+        if fileExists("/tmp/cam.info"):
             try:
                 camdlist = open("/tmp/cam.info", "r")
             except:
                 return None
 # Dream Elite
-        elif fileExists("/usr/bin/emuactive"):
+        if fileExists("/usr/bin/emuactive"):
             try:
                 camdlist = open("/usr/bin/emuactive", "r")
             except:
                 return None
 # Merlin2
-        elif fileExists("/etc/clist.list"):
+        if fileExists("/etc/clist.list"):
             try:
                 camdlist = open("/etc/clist.list", "r")
             except:
                 return None
 # TS-Panel
-        elif fileExists("/etc/startcam.sh"):
+        if fileExists("/etc/startcam.sh"):
             try:
                 for line in open("/etc/startcam.sh"):
                     if line.find("script") > -1:
@@ -734,8 +737,11 @@ class GlamourAccess(Poll, Converter, object):
             except:
                 camdlist = None
 #  GlassSysUtil
-        elif fileExists("/tmp/ucm_cam.info"):
-            return open("/tmp/ucm_cam.info").read()
+        if fileExists("/tmp/ucm_cam.info"):
+            try:
+                return open("/tmp/ucm_cam.info").read()
+            except:
+                return None
 # Others
         if serlist is not None:
             try:
@@ -914,6 +920,8 @@ class GlamourAccess(Poll, Converter, object):
                     caid = "Runcom"
                 if caid.startswith("4AC"):
                     caid = "Latens"
+                if caid.startswith("4AEA"):
+                    caid = "CryptoGuard"
                 if caid.startswith("00"):
                     caid = "Unknown"
                 catxt += caid + ","
@@ -1052,6 +1060,8 @@ class GlamourAccess(Poll, Converter, object):
                     caid = caid + " (Runcom) "
                 if caid.startswith("4AC"):
                     caid = caid + " (Latens) "
+                if caid.startswith("4AEA"):
+                    caid = caid + " (CryptoGuard) "
                 if caid.startswith("00"):
                     caid = " Unknown "
                 caidlist += " " + caid
