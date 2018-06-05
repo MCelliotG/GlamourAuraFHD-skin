@@ -86,7 +86,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="myliste" font="Regular; 52" position="540,60" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
-    <panel name="RGBKeys2" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="TextExit" position="0,0" size="1920,1080" title="Files Info" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -112,7 +112,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/devicemanager.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="menu" font="RegularB; 36" position="540,60" size="1305,750" backgroundColor="background20" foregroundColor="amarillo" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="UpdateBouquet" position="0,0" size="1920,1080" title="Greekstream in Bouquets" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -127,7 +127,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/devicemanager.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="list" font="RegularB; 36" position="540,60" size="1305,750" backgroundColor="background20" foregroundColor="amarillo" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="SystemToolsSwap" position="0,0" size="1920,1080" title="System Tools Swapfile Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -135,7 +135,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="entries" font="Regular; 32" position="540,60" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="SystemToolsInf" position="0,0" size="1920,1080" title="System Tools Info Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -143,7 +143,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="entries" font="Regular; 32" position="540,60" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="SystemToolsSc" position="0,0" size="1920,1080" title="System Tools Main Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -151,7 +151,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="entries" font="Regular; 32" position="540,60" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="SystemToolsConfig" position="0,0" size="1920,1080" title="System Tools Config Screen" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -159,7 +159,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="config" font="Regular; 32" position="540,60" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" zPosition="5" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="SystemToolsTextBox" position="0,0" size="1920,1080" title="System Tools Text Box" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -167,7 +167,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="text" font="Regular; 32" position="540,60" size="1305,750" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="amarillo" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="SystemToolsConsole" position="0,0" size="1920,1080" title="System Tools Console" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -175,7 +175,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/console.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="text" font="Console; 30" position="540,60" size="1305,750" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="amarillo" />
-    <panel name="RGKeys4" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="system_info" position="0,0" size="1920,1080" title="System Tools Text Box" flags="wfNoBorder" backgroundColor="transparent" zPosition="3">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -381,7 +381,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/backup.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="entries" font="Regular; 32" position="540,90" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
-    <panel name="FullKeys2" />
+    <panel name="FullKeys1" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_info_big.png" position="580,790" size="120,60" alphatest="blend" transparent="1" zPosition="5" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_help_big.png" position="720,790" size="120,60" alphatest="blend" transparent="1" zPosition="5" />
   </screen>
@@ -391,7 +391,7 @@
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="AboutScrollLabel" font="RegularB; 34" position="540,60" size="1305,750" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="cyan1" />
-    <panel name="RedKey1" />
+    <panel name="FullKeys1" />
   </screen>
   <screen name="MyMenuSKIN" position="0,0" size="1920,1080" title="Picture Camera" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
