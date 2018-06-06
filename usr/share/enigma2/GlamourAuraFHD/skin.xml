@@ -2608,472 +2608,472 @@
   <!-- ###SELECTION SCREENS -->
   <!-- 01. Channel Selection -->
   <screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
-  <panel name="MainBackgroundCS" />
-  <panel name="ClockLabel3" />
-  <widget source="Title" render="Label" position="785,35" size="855,97" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
-  <widget name="list" position="785,135" size="1095,850" itemHeight="50" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" alphatest="blend" zPosition="3" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/chanselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
-  <widget source="ServiceEvent" render="Picon" position="40,50" size="220,132" transparent="1" alphatest="blend" zPosition="4">
-    <convert type="ServiceName">Reference</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="265,30" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,188" size="715,50" font="RegularB; 36" backgroundColor="grey2" transparent="1" valign="center" halign="center" noWrap="1" foregroundColor="black" zPosition="7">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="265,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">
-    </convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="675,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" valign="center" zPosition="6" halign="center" noWrap="1">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <eLabel position="370,158" size="295,2" backgroundColor="darkgrey" foregroundColor="darkgrey" zPosition="2" />
-  <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="370,155" size="295,8" transparent="1" zPosition="1">
-    <convert type="EventTime">Progress</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,always=0" position="50,250" size="715,530" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,790" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
-    <convert type="GlamNextEvents">Event1,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,830" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="2">
-    <convert type="GlamNextEvents">Event2,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,870" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="3">
-    <convert type="GlamNextEvents">Event3,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,910" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
-    <convert type="GlamNextEvents">Event4,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,950" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
-    <convert type="GlamNextEvents">Event5,noDuration</convert>
-  </widget>
-  <widget position="50,995" size="720,40" source="ServiceEvent" render="GlamTP" font="Regular; 26" noWrap="1" halign="center" valign="center" backgroundColor="grey2" zPosition="3" transparent="1" foregroundColor="black" />
-  <panel name="FullKeysCC" />
-</screen>
+    <panel name="MainBackgroundCS" />
+    <panel name="ClockLabel3" />
+    <widget source="Title" render="Label" position="785,35" size="855,97" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
+    <widget name="list" position="785,135" size="1095,850" itemHeight="50" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" alphatest="blend" zPosition="3" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/chanselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
+    <widget source="ServiceEvent" render="Picon" position="40,50" size="220,132" transparent="1" alphatest="blend" zPosition="4">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="265,30" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,188" size="715,50" font="RegularB; 36" backgroundColor="grey2" transparent="1" valign="center" halign="center" noWrap="1" foregroundColor="black" zPosition="7">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="265,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="675,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" valign="center" zPosition="6" halign="center" noWrap="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel position="370,158" size="295,2" backgroundColor="darkgrey" foregroundColor="darkgrey" zPosition="2" />
+    <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="370,155" size="295,8" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,always=0" position="50,250" size="715,530" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,790" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
+      <convert type="GlamNextEvents">Event1,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,830" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="2">
+      <convert type="GlamNextEvents">Event2,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,870" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="3">
+      <convert type="GlamNextEvents">Event3,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,910" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
+      <convert type="GlamNextEvents">Event4,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,950" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
+      <convert type="GlamNextEvents">Event5,noDuration</convert>
+    </widget>
+    <widget position="50,995" size="720,40" source="ServiceEvent" render="GlamTP" font="Regular; 26" noWrap="1" halign="center" valign="center" backgroundColor="grey2" zPosition="3" transparent="1" foregroundColor="black" />
+    <panel name="FullKeysCC" />
+  </screen>
   <!-- 02. Channel Selection Radio -->
   <screen name="ChannelSelectionRadio" position="0,0" size="1920,1080" title="Radio Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
-  <!-- Background -->
-  <panel name="MainBackgroundCS" />
-  <panel name="ClockLabel3" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/radioselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
-  <panel name="FullKeysCC" />
-  <!-- Title & Channel List -->
-  <widget source="Title" render="Label" position="785,35" size="870,95" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
-  <widget name="list" position="785,135" size="1095,650" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" itemHeight="50" zPosition="3" />
-  <!-- Event Infos -->
-  <widget source="ServiceEvent" render="Label" position="45,30" size="715,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,188" size="715,50" font="RegularB; 36" backgroundColor="grey2" transparent="1" valign="center" halign="center" noWrap="1" foregroundColor="amarillo" zPosition="7">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="45,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">
-    </convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="675,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" valign="center" zPosition="6" halign="center" noWrap="1">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <eLabel position="150,158" size="515,2" backgroundColor="darkgrey" foregroundColor="darkgrey" zPosition="2" />
-  <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="150,155" size="515,8" transparent="1" zPosition="1">
-    <convert type="EventTime">Progress</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="50,250" size="715,530" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
-  <!-- Program Infobar  -->
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="455,792" size="810,45" zPosition="-3" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb500.png" position="1375,930" size="500,45" zPosition="-3" alphatest="blend" transparent="1" />
-  <!-- Program Infos  -->
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stereo_off.png" position="1462,807" size="45,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stereo_on.png" position="1462,807" size="45,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsStereo</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="1515,805" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" position="1515,805" size="84,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">HasHBBTV</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="1515,845" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_on.png" position="1515,845" size="84,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsMultichannel</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_off.png" position="1460,845" size="49,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_on.png" position="1460,845" size="49,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">AudioTracksAvailable</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1605,845" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" position="1605,845" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
-    <convert type="GlamourAudioInfo">AudioIcon</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="1820,920" zPosition="1" size="49,30" alphatest="blend" transparent="1" />
-  <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rec_on.png" position="1820,920" size="49,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <!-- Signal and Orbital Infos  -->
-  <eLabel text="SNR:" position="1705,790" size="85,35" halign="left" font="Regular; 27" backgroundColor="background20" transparent="1" valign="center" zPosition="2" />
-  <eLabel text="BER:" position="1705,820" size="85,35" halign="left" font="Regular; 27" backgroundColor="background20" transparent="1" valign="center" zPosition="2" />
-  <widget source="session.FrontendStatus" render="Label" position="1770,790" size="120,35" font="Regular; 27" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan1" zPosition="3">
-    <convert type="FrontendInfo">SNRdB</convert>
-  </widget>
-  <widget source="session.FrontendStatus" render="Label" position="1770,820" size="120,35" font="Regular; 27" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan" valign="center" zPosition="3">
-    <convert type="FrontendInfo">BER</convert>
-  </widget>
-  <widget source="session.CurrentService" render="GlamRoll" position="1215,880" size="290,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 24" halign="left" valign="center" noWrap="1" foregroundColor="cyan1" text="Provider">
-    <convert type="ServiceName">Provider</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="380,880" size="830,35" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="bottom" noWrap="1" foregroundColor="lightciel" text="Frequency">
-    <convert type="GlamourBase">FreqInfo</convert>
-  </widget>
-  <!-- RDS Info  -->
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt335.png" position="380,835" size="810,45" zPosition="-3" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb335.png" position="1085,850" size="500,30" zPosition="-3" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rass_off.png" position="1605,798" size="84,37" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="RdsDecoder" render="Label" position="380,790" size="1075,45" font="LCD; 42" halign="center" valign="center" foregroundColor="cyan" backgroundColor="background20" noWrap="1" transparent="1" zPosition="4" text="RDS Text Sample">
-    <convert type="RdsInfo">RadioText</convert>
-  </widget>
-  <widget source="RdsDecoder" render="Label" position="380,835" size="1075,45" font="RegularB; 30" halign="center" valign="top" foregroundColor="amarillo" backgroundColor="background20" noWrap="1" transparent="1" zPosition="4" text="RDS Text Sample">
-    <convert type="RdsInfo">RtpText</convert>
-  </widget>
-  <widget source="RdsDecoder" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rass_on.png" position="1605,798" size="84,37" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="RdsInfo">RasInteractiveAvailable</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- Picon and TunerInfos  -->
-  <widget source="ServiceEvent" render="Picon" position="45,790" zPosition="4" size="330,198" transparent="1" alphatest="blend">
-    <convert type="ServiceName">Reference</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_a_un.png" position="1512,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_av.png" position="1512,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_on.png" position="1512,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">0,0</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_b_un.png" position="1545,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_av.png" position="1545,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_on.png" position="1545,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">1,1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_c_un.png" position="1575,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_av.png" position="1575,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">4</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_on.png" position="1575,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">2,2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_d_un.png" position="1605,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_av.png" position="1605,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_on.png" position="1605,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">3,3</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_e_un.png" position="1635,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_av.png" position="1635,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">16</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_on.png" position="1635,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">4,4</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_f_un.png" position="1665,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_av.png" position="1665,885" size="30,30" zPosition="2" alphatest="blend" transparent="0">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">32</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_on.png" position="1665,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">5,5</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_g_un.png" position="1695,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_av.png" position="1695,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">64</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_on.png" position="1695,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">6,6</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_h_un.png" position="1728,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_av.png" position="1728,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">128</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_on.png" position="1728,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">7,7</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_i_un.png" position="1757,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_av.png" position="1757,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">256</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_on.png" position="1757,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">8,8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_j_un.png" position="1783,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_av.png" position="1783,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">512</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_on.png" position="1783,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">9,9</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_k_un.png" position="1815,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_av.png" position="1815,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1024</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_on.png" position="1815,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">10,10</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_l_un.png" position="1845,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_av.png" position="1845,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">2048</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_on.png" position="1845,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">11,11</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- Crypt Info  -->
-  <widget source="session.CurrentService" render="Label" position="380,915" size="420,35" font="Numbers; 30" halign="left" zPosition="2" backgroundColor="background20" transparent="1" text="Cam Name" valign="top" noWrap="1" foregroundColor="sky">
-    <convert type="GlamourAccess">CamName</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/beta_no.png" position="803,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/beta_emm.png" position="803,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">BetaCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/beta_ecm.png" position="803,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">BetaEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/ird_no.png" position="855,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/ird_emm.png" position="855,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">IrdCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/ird_ecm.png" position="855,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">IrdEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/seca_no.png" position="905,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/seca_emm.png" position="905,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">SecaCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/seca_ecm.png" position="905,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">SecaEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/via_no.png" position="958,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/via_emm.png" position="958,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">ViaCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/via_ecm.png" position="958,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">ViaEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/nagra_no.png" position="1013,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nagra_emm.png" position="1013,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">NagraCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nagra_ecm.png" position="1013,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">NagraEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/cw_no.png" position="1070,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cw_emm.png" position="1070,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">CrwCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cw_ecm.png" position="1070,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">CrwEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/nds_no.png" position="1128,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nds_emm.png" position="1128,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">NdsCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nds_ecm.png" position="1128,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">NdsEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/conax_no.png" position="1185,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/conax_emm.png" position="1185,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">ConaxCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/conax_ecm.png" position="1185,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">ConaxEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/biss_no.png" position="1240,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/biss_emm.png" position="1240,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">BissCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/biss_ecm.png" position="1240,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">BissEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/bul_no.png" position="1295,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/bul_emm.png" position="1295,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">BulCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/bul_ecm.png" position="1295,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">BulEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/drc_no.png" position="1352,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/drc_emm.png" position="1352,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">DrcCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/drc_ecm.png" position="1352,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">DrcEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/power_no.png" position="1408,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/power_emm.png" position="1408,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">PwvCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/power_ecm.png" position="1408,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">PwvEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/vmx_no.png" position="1464,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/vmx_emm.png" position="1464,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">VmxCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/vmx_ecm.png" position="1464,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">VmxEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/tbg_no.png" position="1522,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tbg_emm.png" position="1522,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">TbgCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tbg_ecm.png" position="1522,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">TbgEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/tgf_no.png" position="1577,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tgf_emm.png" position="1577,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">TgfCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tgf_ecm.png" position="1577,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">TgfEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/pan_no.png" position="1633,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/pan_emm.png" position="1633,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">PanCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/pan_ecm.png" position="1633,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">PanEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/caids/exs_no.png" position="1688,920" size="50,25" zPosition="3" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/exs_emm.png" position="1688,920" size="50,25" zPosition="4" alphatest="blend">
-    <convert type="GlamourAccess">ExsCaS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/exs_ecm.png" position="1688,920" size="50,25" zPosition="5" alphatest="blend">
-    <convert type="GlamourAccess">ExsEcm</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/emu.png" position="1745,920" size="63,30" zPosition="3" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Emu</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/crd.png" position="1745,920" size="63,30" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Crd</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/net.png" position="1745,920" size="63,30" zPosition="5" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Net</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cache.png" position="1745,920" size="63,25" zPosition="6" alphatest="blend">
-    <convert type="GlamourAccess">Cache</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/fta.png" position="1745,920" size="63,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Fta</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="380,950" size="1500,30" font="Numbers; 28" halign="left" zPosition="7" backgroundColor="background20" transparent="1" text="Ecm Info" valign="top" foregroundColor="amarillo">
-    <convert type="GlamourAccess">EcmInfo</convert>
-  </widget>
-  <!-- Frequency Info  -->
-  <widget position="50,995" size="720,40" source="ServiceEvent" render="GlamTP" font="Regular; 26" noWrap="1" halign="center" valign="center" backgroundColor="grey2" zPosition="8" transparent="1" foregroundColor="amarillo" />
-  <!-- Bitrate Info  -->
-  <eLabel text="Audio:" font="RegularB; 26" position="1700,852" size="85,35" transparent="1" zPosition="5" foregroundColor="cyan1" backgroundColor="background20" halign="center" noWrap="1" valign="center" />
-  <widget source="session.CurrentService" render="Label" position="1780,852" size="110,35" font="RegularB; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="cyan1" noWrap="1" valign="center" text="320 Kb/s">
-    <convert type="GlamBitrate">%A Kb/s</convert>
-  </widget>
-</screen>
+    <!-- Background -->
+    <panel name="MainBackgroundCS" />
+    <panel name="ClockLabel3" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/radioselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
+    <panel name="FullKeysCC" />
+    <!-- Title & Channel List -->
+    <widget source="Title" render="Label" position="785,35" size="870,95" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
+    <widget name="list" position="785,135" size="1095,650" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" itemHeight="50" zPosition="3" />
+    <!-- Event Infos -->
+    <widget source="ServiceEvent" render="Label" position="45,30" size="715,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,188" size="715,50" font="RegularB; 36" backgroundColor="grey2" transparent="1" valign="center" halign="center" noWrap="1" foregroundColor="amarillo" zPosition="7">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="45,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="675,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" valign="center" zPosition="6" halign="center" noWrap="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel position="150,158" size="515,2" backgroundColor="darkgrey" foregroundColor="darkgrey" zPosition="2" />
+    <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="150,155" size="515,8" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="50,250" size="715,530" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <!-- Program Infobar  -->
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="455,792" size="810,45" zPosition="-3" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb500.png" position="1375,930" size="500,45" zPosition="-3" alphatest="blend" transparent="1" />
+    <!-- Program Infos  -->
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stereo_off.png" position="1462,807" size="45,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stereo_on.png" position="1462,807" size="45,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsStereo</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="1515,805" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="1515,805" size="84,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="1515,845" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_on.png" position="1515,845" size="84,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_off.png" position="1460,845" size="49,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_on.png" position="1460,845" size="49,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">AudioTracksAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1605,845" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" position="1605,845" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
+      <convert type="GlamourAudioInfo">AudioIcon</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="1820,920" zPosition="1" size="49,30" alphatest="blend" transparent="1" />
+    <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rec_on.png" position="1820,920" size="49,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <!-- Signal and Orbital Infos  -->
+    <eLabel text="SNR:" position="1705,790" size="85,35" halign="left" font="Regular; 27" backgroundColor="background20" transparent="1" valign="center" zPosition="2" />
+    <eLabel text="BER:" position="1705,820" size="85,35" halign="left" font="Regular; 27" backgroundColor="background20" transparent="1" valign="center" zPosition="2" />
+    <widget source="session.FrontendStatus" render="Label" position="1770,790" size="120,35" font="Regular; 27" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan1" zPosition="3">
+      <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1770,820" size="120,35" font="Regular; 27" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan" valign="center" zPosition="3">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <widget source="session.CurrentService" render="GlamRoll" position="1215,880" size="290,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 24" halign="left" valign="center" noWrap="1" foregroundColor="cyan1" text="Provider">
+      <convert type="ServiceName">Provider</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="380,880" size="830,35" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="bottom" noWrap="1" foregroundColor="lightciel" text="Frequency">
+      <convert type="GlamourBase">FreqInfo</convert>
+    </widget>
+    <!-- RDS Info  -->
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt335.png" position="380,835" size="810,45" zPosition="-3" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb335.png" position="1085,850" size="500,30" zPosition="-3" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rass_off.png" position="1605,798" size="84,37" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="RdsDecoder" render="Label" position="380,790" size="1075,45" font="LCD; 42" halign="center" valign="center" foregroundColor="cyan" backgroundColor="background20" noWrap="1" transparent="1" zPosition="4" text="RDS Text Sample">
+      <convert type="RdsInfo">RadioText</convert>
+    </widget>
+    <widget source="RdsDecoder" render="Label" position="380,835" size="1075,45" font="RegularB; 30" halign="center" valign="top" foregroundColor="amarillo" backgroundColor="background20" noWrap="1" transparent="1" zPosition="4" text="RDS Text Sample">
+      <convert type="RdsInfo">RtpText</convert>
+    </widget>
+    <widget source="RdsDecoder" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rass_on.png" position="1605,798" size="84,37" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="RdsInfo">RasInteractiveAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Picon and TunerInfos  -->
+    <widget source="ServiceEvent" render="Picon" position="45,790" zPosition="4" size="330,198" transparent="1" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_a_un.png" position="1512,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_av.png" position="1512,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_on.png" position="1512,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_b_un.png" position="1545,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_av.png" position="1545,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_on.png" position="1545,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_c_un.png" position="1575,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_av.png" position="1575,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_on.png" position="1575,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_d_un.png" position="1605,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_av.png" position="1605,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_on.png" position="1605,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_e_un.png" position="1635,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_av.png" position="1635,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_on.png" position="1635,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">4,4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_f_un.png" position="1665,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_av.png" position="1665,885" size="30,30" zPosition="2" alphatest="blend" transparent="0">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_on.png" position="1665,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">5,5</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_g_un.png" position="1695,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_av.png" position="1695,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">64</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_on.png" position="1695,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">6,6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_h_un.png" position="1728,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_av.png" position="1728,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">128</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_on.png" position="1728,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">7,7</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_i_un.png" position="1757,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_av.png" position="1757,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">256</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_on.png" position="1757,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">8,8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_j_un.png" position="1783,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_av.png" position="1783,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">512</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_on.png" position="1783,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">9,9</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_k_un.png" position="1815,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_av.png" position="1815,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1024</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_on.png" position="1815,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">10,10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_l_un.png" position="1845,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_av.png" position="1845,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2048</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_on.png" position="1845,885" size="30,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">11,11</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Crypt Info  -->
+    <widget source="session.CurrentService" render="Label" position="380,915" size="420,35" font="Numbers; 30" halign="left" zPosition="2" backgroundColor="background20" transparent="1" text="Cam Name" valign="top" noWrap="1" foregroundColor="sky">
+      <convert type="GlamourAccess">CamName</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/beta_no.png" position="803,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/beta_emm.png" position="803,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">BetaCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/beta_ecm.png" position="803,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">BetaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/ird_no.png" position="855,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/ird_emm.png" position="855,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">IrdCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/ird_ecm.png" position="855,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">IrdEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/seca_no.png" position="905,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/seca_emm.png" position="905,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">SecaCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/seca_ecm.png" position="905,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">SecaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/via_no.png" position="958,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/via_emm.png" position="958,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">ViaCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/via_ecm.png" position="958,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">ViaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/nagra_no.png" position="1013,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nagra_emm.png" position="1013,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">NagraCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nagra_ecm.png" position="1013,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">NagraEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/cw_no.png" position="1070,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cw_emm.png" position="1070,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">CrwCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cw_ecm.png" position="1070,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">CrwEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/nds_no.png" position="1128,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nds_emm.png" position="1128,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">NdsCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/nds_ecm.png" position="1128,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">NdsEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/conax_no.png" position="1185,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/conax_emm.png" position="1185,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">ConaxCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/conax_ecm.png" position="1185,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">ConaxEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/biss_no.png" position="1240,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/biss_emm.png" position="1240,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">BissCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/biss_ecm.png" position="1240,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">BissEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/bul_no.png" position="1295,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/bul_emm.png" position="1295,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">BulCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/bul_ecm.png" position="1295,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">BulEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/drc_no.png" position="1352,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/drc_emm.png" position="1352,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">DrcCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/drc_ecm.png" position="1352,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">DrcEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/power_no.png" position="1408,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/power_emm.png" position="1408,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">PwvCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/power_ecm.png" position="1408,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">PwvEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/vmx_no.png" position="1464,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/vmx_emm.png" position="1464,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">VmxCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/vmx_ecm.png" position="1464,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">VmxEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/tbg_no.png" position="1522,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tbg_emm.png" position="1522,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">TbgCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tbg_ecm.png" position="1522,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">TbgEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/tgf_no.png" position="1577,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tgf_emm.png" position="1577,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">TgfCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/tgf_ecm.png" position="1577,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">TgfEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/pan_no.png" position="1633,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/pan_emm.png" position="1633,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">PanCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/pan_ecm.png" position="1633,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">PanEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/exs_no.png" position="1688,920" size="50,25" zPosition="3" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/exs_emm.png" position="1688,920" size="50,25" zPosition="4" alphatest="blend">
+      <convert type="GlamourAccess">ExsCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/exs_ecm.png" position="1688,920" size="50,25" zPosition="5" alphatest="blend">
+      <convert type="GlamourAccess">ExsEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/emu.png" position="1745,920" size="63,30" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">Emu</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/crd.png" position="1745,920" size="63,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">Crd</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/net.png" position="1745,920" size="63,30" zPosition="5" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">Net</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cache.png" position="1745,920" size="63,25" zPosition="6" alphatest="blend">
+      <convert type="GlamourAccess">Cache</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/fta.png" position="1745,920" size="63,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">Fta</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="380,950" size="1500,30" font="Numbers; 28" halign="left" zPosition="7" backgroundColor="background20" transparent="1" text="Ecm Info" valign="top" foregroundColor="amarillo">
+      <convert type="GlamourAccess">EcmInfo</convert>
+    </widget>
+    <!-- Frequency Info  -->
+    <widget position="50,995" size="720,40" source="ServiceEvent" render="GlamTP" font="Regular; 26" noWrap="1" halign="center" valign="center" backgroundColor="grey2" zPosition="8" transparent="1" foregroundColor="amarillo" />
+    <!-- Bitrate Info  -->
+    <eLabel text="Audio:" font="RegularB; 26" position="1700,852" size="85,35" transparent="1" zPosition="5" foregroundColor="cyan1" backgroundColor="background20" halign="center" noWrap="1" valign="center" />
+    <widget source="session.CurrentService" render="Label" position="1780,852" size="110,35" font="RegularB; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="cyan1" noWrap="1" valign="center" text="320 Kb/s">
+      <convert type="GlamBitrate">%A Kb/s</convert>
+    </widget>
+  </screen>
   <!-- 03. Simple Channel Selection -->
   <screen name="SimpleChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackgroundClock" />
@@ -3986,16 +3986,16 @@ if not self["videofps"].text:
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="545,575" size="400,400" pixmap="GlamourAuraFHD/icons/satfinder.png" alphatest="blend" transparent="1" zPosition="-5" />
     <widget source="Frontend" render="Label" position="90,170" size="180,60" zPosition="5" font="Numbers; 50" backgroundColor="turquoise" halign="center" transparent="1">
-      <convert type="FrontendInfo">SNR</convert>
-    </widget>
+  <convert type="FrontendInfo">SNRdB</convert>
+</widget>
     <eLabel name="snr" text="SNR:" position="110,740" size="120,45" font="Regular; 32" halign="center" backgroundColor="sky" transparent="1" zPosition="5" />
     <ePixmap pixmap="GlamourAuraFHD/pointers/satfinder_back.png" position="135,240" size="75,460" transparent="1" alphatest="blend" zPosition="2" />
     <widget source="Frontend" render="Progress" orientation="orBottomToTop" position="137,240" size="70,460" pixmap="GlamourAuraFHD/pointers/satfinder_snr.png" alphatest="blend" transparent="1" zPosition="3">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="Frontend" render="Label" position="110,785" size="120,45" font="Numbers; 40" backgroundColor="sky" transparent="1" halign="center" zPosition="6" foregroundColor="amarillo">
-      <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
+  <convert type="FrontendInfo">SNR</convert>
+</widget>
     <eLabel name="agc" text="AGC:" position="270,740" size="120,45" font="Regular; 32" halign="center" backgroundColor="sky" transparent="1" zPosition="5" />
     <ePixmap pixmap="GlamourAuraFHD/pointers/satfinder_back.png" position="290,240" size="75,460" transparent="1" alphatest="blend" zPosition="2" />
     <widget source="Frontend" render="Progress" orientation="orBottomToTop" position="292,240" size="70,460" pixmap="GlamourAuraFHD/pointers/satfinder_agc.png" alphatest="blend" transparent="1" zPosition="3">
@@ -5311,36 +5311,36 @@ if not self["videofps"].text:
     <panel name="FullKeys1" />
   </screen>
   <screen name="JobView" position="0,0" size="1920,1080" title="Job View" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground2" flags="wfNoBorder" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" flags="wfNoBorder" />
-  <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/powertimer.png" alphatest="on" transparent="1" zPosition="5" />
-  <widget source="job_name" render="Label" position="540,150" size="1305,170" font="RegularB; 38" halign="center" valign="center" backgroundColor="background20" foregroundColor="cyan" transparent="1" zPosition="3" />
-  <widget source="job_task" render="Label" position="540,320" size="1305,100" font="Regular; 36" backgroundColor="background20" foregroundColor="amarillo" transparent="1" zPosition="5" />
-  <ePixmap pixmap="GlamourAuraFHD/pointers/scanpointer_back.png" position="540,425" size="1155,30" transparent="1" alphatest="blend" zPosition="4" />
-  <widget source="job_progress" render="Progress" position="540,427" size="1155,25" pixmap="GlamourAuraFHD/pointers/slider_blue.png" alphatest="blend" transparent="1" zPosition="7" />
-  <widget source="job_progress" render="Label" position="540,465" size="1155,50" font="Regular; 40" backgroundColor="cyan" zPosition="7" valign="center" halign="center" transparent="1" foregroundColor="cyan1">
-    <convert type="ProgressToText" />
-  </widget>
-  <widget source="job_status" render="Label" position="540,520" size="1305,80" font="Regular; 36" backgroundColor="background20" foregroundColor="orange" transparent="1" zPosition="5" />
-  <widget name="config" position="540,600" size="1305,250" font="Regular; 32" backgroundColor="background20" foregroundColor="white" itemHeight="50" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" zPosition="13" scrollbarMode="showOnDemand" transparent="1" />
-  <widget source="cancelable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="595,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="finished" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="backgroundable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1540,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="cancelable" render="FixedLabel" text="Cancel" position="555,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="finished" render="FixedLabel" text="OK" position="870,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="1500,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
-    <convert type="ConditionalShowHide" />
-  </widget>
-</screen>
+    <panel name="MainBackground2" flags="wfNoBorder" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" flags="wfNoBorder" />
+    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/powertimer.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget source="job_name" render="Label" position="540,150" size="1305,170" font="RegularB; 38" halign="center" valign="center" backgroundColor="background20" foregroundColor="cyan" transparent="1" zPosition="3" />
+    <widget source="job_task" render="Label" position="540,320" size="1305,100" font="Regular; 36" backgroundColor="background20" foregroundColor="amarillo" transparent="1" zPosition="5" />
+    <ePixmap pixmap="GlamourAuraFHD/pointers/scanpointer_back.png" position="540,425" size="1155,30" transparent="1" alphatest="blend" zPosition="4" />
+    <widget source="job_progress" render="Progress" position="540,427" size="1155,25" pixmap="GlamourAuraFHD/pointers/slider_blue.png" alphatest="blend" transparent="1" zPosition="7" />
+    <widget source="job_progress" render="Label" position="540,465" size="1155,50" font="Regular; 40" backgroundColor="cyan" zPosition="7" valign="center" halign="center" transparent="1" foregroundColor="cyan1">
+      <convert type="ProgressToText" />
+    </widget>
+    <widget source="job_status" render="Label" position="540,520" size="1305,80" font="Regular; 36" backgroundColor="background20" foregroundColor="orange" transparent="1" zPosition="5" />
+    <widget name="config" position="540,600" size="1305,250" font="Regular; 32" backgroundColor="background20" foregroundColor="white" itemHeight="50" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" zPosition="13" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="cancelable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="595,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="finished" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="backgroundable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1540,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="cancelable" render="FixedLabel" text="Cancel" position="555,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="finished" render="FixedLabel" text="OK" position="870,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="1500,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
 </skin>
