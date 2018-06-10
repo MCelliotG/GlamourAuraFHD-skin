@@ -1,9 +1,9 @@
 <skin>
-  <!-- Glamour Aura FHD by MCelliot_g for OpenPLI based images -->
+  <!-- Glamour Aura FHD by MCelliot_g for OpenPLI 6.2 based images -->
   <!-- LICENSE: This skin is licensed under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007. -->
   <!-- This skin was created for new generation Enigma2 receivers. MINIMAL requirement is an STB running Enigma2 with a dual CPU @ 751 MHz. -->
   <!-- This skin is not guaranteed to work in older E2 receivers with slower CPUs. Use at your own risk. -->
-  <!-- This skin is FREE software. You can use it for free on your E2 receivers running OpenPLI 4.0+ and newer and other recent PLI-based images. -->
+  <!-- This skin is FREE software. You can use it for free on your E2 receivers running OpenPLI 6.2 and newer and other recent PLI-based images. -->
   <!-- You are NOT allowed to modify the first line of the skin and its graphics. -->
   <!-- The skin is OPEN source. The ipk is distributed with closed converters/renderers but all SOURCE code is available on Github. -->
   <!-- The source code of this skin is available at https://github.com/MCelliotG/GlamourAuraFHD-skin/ -->
@@ -1087,8 +1087,7 @@
     <widget source="session.CurrentService" render="Label" position="370,765" size="1520,80" font="Regular; 60" valign="center" noWrap="1" backgroundColor="cyan1" transparent="1" zPosition="9" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="ChannelNumber" position="50,735" size="300,70" font="Numbers; 65" valign="bottom" halign="center" noWrap="1" backgroundColor="transparent" transparent="1" foregroundColor="white" zPosition="9">
-    </widget>
+    <widget source="session.CurrentService" render="ChannelNumber" position="50,735" size="300,70" font="Numbers; 65" valign="bottom" halign="center" noWrap="1" backgroundColor="transparent" transparent="1" foregroundColor="white" zPosition="9" />
     <!-- Picon -->
     <widget source="session.CurrentService" render="Picon" position="50,803" zPosition="4" size="300,180" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
@@ -1749,26 +1748,26 @@
   </screen>
   <!-- 10.4 DURATION AND PROGRESS -->
   <screen name="MovieD+P" flags="wfNoBorder">
-  <widget source="session.CurrentService" render="Label" position="255,910" size="180,52" font="Numbers; 45" halign="right" valign="center" backgroundColor="background20" shadowColor="black" shadowOffset="-1,-1" transparent="1" noWrap="1" zPosition="1">
-    <convert type="ServicePosition">Position,ShowHours</convert>
-  </widget>
-  <eLabel name="sliderbg" position="465,935" size="1200,4" backgroundColor="grey" foregroundColor="grey" zPosition="3" />
-  <widget source="session.CurrentService" render="PositionGauge" position="465,910" size="1205,55" transparent="1" pointer="GlamourAuraFHD/pointers/aurapointer_bluemovie.png:1200,20" alphatest="blend" zPosition="6">
-    <convert type="ServicePosition">Gauge</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Progress" position="465,935" size="1200,4" pixmap="GlamourAuraFHD/pointers/aurapointer_blueinfobar.png" alphatest="blend" transparent="1" zPosition="4">
-    <convert type="ServicePosition">Position,ShowHours</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="1695,910" size="180,52" font="Numbers; 45" halign="left" valign="center" backgroundColor="background20" transparent="1" noWrap="1">
-    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="930,870" size="180,50" font="Numbers; 45" halign="center" valign="bottom" backgroundColor="background20" transparent="1" foregroundColor="sky" noWrap="1" zPosition="9">
-    <convert type="ServicePosition">Length,ShowHours</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="255,960" size="1620,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
-  <convert type="GlamourBase">FreqInfo</convert>
-</widget>
-</screen>
+    <widget source="session.CurrentService" render="Label" position="255,910" size="180,52" font="Numbers; 45" halign="right" valign="center" backgroundColor="background20" shadowColor="black" shadowOffset="-1,-1" transparent="1" noWrap="1" zPosition="1">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <eLabel name="sliderbg" position="465,935" size="1200,4" backgroundColor="grey" foregroundColor="grey" zPosition="3" />
+    <widget source="session.CurrentService" render="PositionGauge" position="465,910" size="1205,55" transparent="1" pointer="GlamourAuraFHD/pointers/aurapointer_bluemovie.png:1200,20" alphatest="blend" zPosition="6">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Progress" position="465,935" size="1200,4" pixmap="GlamourAuraFHD/pointers/aurapointer_blueinfobar.png" alphatest="blend" transparent="1" zPosition="4">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1695,910" size="180,52" font="Numbers; 45" halign="left" valign="center" backgroundColor="background20" transparent="1" noWrap="1">
+      <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="930,870" size="180,50" font="Numbers; 45" halign="center" valign="bottom" backgroundColor="background20" transparent="1" foregroundColor="sky" noWrap="1" zPosition="9">
+      <convert type="ServicePosition">Length,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="255,960" size="1620,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
+      <convert type="GlamourBase">FreqInfo</convert>
+    </widget>
+  </screen>
   <!-- 10.5 MOVIE AND SERVICE INFOS -->
   <screen name="MovieServiceInfos" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="950,1016" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
@@ -3708,17 +3707,17 @@ if not self["videofps"].text:
   <!-- ### MOVIE SCREENS -->
   <!-- 01. Movie Player -->
   <screen name="MoviePlayer" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" alphatest="on">
-  <!-- CLOCK -->
-  <panel name="ClockLabel1" flags="wfNoBorder" />
-  <!-- BACKGROUND -->
-  <panel name="MovieBG" flags="wfNoBorder" />
-  <!-- NAME -->
-  <panel name="MovieN1" flags="wfNoBorder" />
-  <!-- MOVIE DURATION AND PROGRESS -->
-  <panel name="MovieD+P" flags="wfNoBorder" />
-  <!-- MOVIE AND SERVICE INFOS -->
-  <panel name="MovieServiceInfos" flags="wfNoBorder" />
-</screen>
+    <!-- CLOCK -->
+    <panel name="ClockLabel1" flags="wfNoBorder" />
+    <!-- BACKGROUND -->
+    <panel name="MovieBG" flags="wfNoBorder" />
+    <!-- NAME -->
+    <panel name="MovieN1" flags="wfNoBorder" />
+    <!-- MOVIE DURATION AND PROGRESS -->
+    <panel name="MovieD+P" flags="wfNoBorder" />
+    <!-- MOVIE AND SERVICE INFOS -->
+    <panel name="MovieServiceInfos" flags="wfNoBorder" />
+  </screen>
   <!-- 02. Media player -->
   <screen name="MediaPlayer" position="center,center" size="1920,1080" title="Media player" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel name="mediaplayer" position="0,555" size="1920,375" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
