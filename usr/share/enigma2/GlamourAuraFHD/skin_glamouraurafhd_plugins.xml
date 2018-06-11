@@ -99,7 +99,7 @@
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/msnweather.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="config" font="Regular; 30" position="540,90" size="1305,600" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
     <widget name="HelpWindow" position="540,695" zPosition="8" size="1,1" transparent="1" alphatest="blend" />
-    <panel name="RedKey2" />
+    <panel name="RGBKeys1" />
   </screen>  
   
   <!-- YouTube Plugin -->
