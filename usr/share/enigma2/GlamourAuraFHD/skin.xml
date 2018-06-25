@@ -994,8 +994,8 @@
     <ePixmap pixmap="GlamourAuraFHD/menu/menufaderight.png" position="1845,0" zPosition="-11" size="75,1080" alphatest="off" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom.png" position="645,1005" zPosition="-11" size="1200,75" alphatest="off" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="645,0" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/menu/timesep.png" position="1765,42" zPosition="4" size="4,90" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1665,30" size="90,82" font="Numbers; 75" halign="left" transparent="1" valign="center" backgroundColor="deepgrey" foregroundColor="white" zPosition="6" noWrap="1">
+    <ePixmap pixmap="GlamourAuraFHD/menu/timesep.png" position="1765,25" zPosition="6" size="6,120" alphatest="blend" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1665,25" size="90,80" font="Numbers; 75" halign="left" transparent="1" valign="center" backgroundColor="deepgrey" foregroundColor="white" zPosition="6" noWrap="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1665,90" size="60,60" font="Numbers; 46" halign="right" transparent="1" valign="top" backgroundColor="deepgrey" foregroundColor="sky" zPosition="7" noWrap="1">
@@ -1033,7 +1033,7 @@
   <!-- 06. Title -->
   <screen name="Title1" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/menu/title_aura.png" position="0,945" zPosition="-9" size="1920,135" alphatest="on" transparent="1" />
-    <widget source="Title" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=5,startdelay=3000,nowrap,always=0" position="75,945" size="1830,100" font="Regular; 70" foregroundColor="white" backgroundColor="transparent" transparent="1" valign="center" zPosition="-2" noWrap="1" />
+    <widget source="Title" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=2,startdelay=3000,nowrap,oneshot=1,always=0" position="75,945" size="1830,100" font="Regular; 70" foregroundColor="white" backgroundColor="transparent" transparent="1" valign="center" zPosition="-2" noWrap="1" />
   </screen>
   <screen name="Title2" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/menu/title_aura.png" position="0,945" zPosition="-9" size="1920,135" alphatest="on" transparent="1" />
@@ -1457,7 +1457,7 @@
     <widget source="session.Event_Now" render="Label" position="425,740" size="720,35" transparent="1" zPosition="8" foregroundColor="amarillo" font="RegularB; 24" halign="center" backgroundColor="transpWhite" valign="top">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="session.Event_Now" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=5,startdelay=5000,wrap,always=0" position="425,330" size="720,410" font="Regular; 28" transparent="0" valign="top" zPosition="4" backgroundColor="background40">
+    <widget source="session.Event_Now" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="425,330" size="720,410" font="Regular; 28" transparent="0" valign="top" zPosition="4" backgroundColor="background40">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="1155,295" size="720,35" transparent="1" zPosition="8" foregroundColor="white" font="RegularB; 24" halign="center" backgroundColor="transpWhite" valign="bottom">
@@ -1466,7 +1466,7 @@
     <widget source="session.Event_Next" render="Label" position="1155,740" size="720,35" transparent="1" zPosition="8" foregroundColor="amarillo" font="RegularB; 24" halign="center" backgroundColor="transpWhite" valign="top">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="session.Event_Next" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=5,startdelay=6000,wrap,always=0" position="1155,330" size="720,410" font="Regular; 28" foregroundColor="black" backgroundColor="transWhite" transparent="0" valign="top" zPosition="4">
+    <widget source="session.Event_Next" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=6000,wrap,oneshot=1,always=0" position="1155,330" size="720,410" font="Regular; 28" foregroundColor="black" backgroundColor="transWhite" transparent="0" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -1482,7 +1482,7 @@
       <convert type="GlamourSpace">RAMInfo</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/infobar/swap.png" position="1040,255" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1085,257" size="360,35" font="Regular; 26" zPosition="6" backgroundColor="darkgrey" transparent="1" foregroundColor="amarillo" text="SwapInfo" noWrap="1" halign="left">
+    <widget source="session.CurrentService" render="Label" position="1085,257" size="400,35" font="Regular; 26" zPosition="6" backgroundColor="darkgrey" transparent="1" foregroundColor="amarillo" text="SwapInfo" noWrap="1" halign="left">
       <convert type="GlamourSpace">SwapInfo</convert>
     </widget>
   </screen>
@@ -1557,7 +1557,7 @@
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/infobar/netspace.png" position="1105,860" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="1160,865" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="Netspace" noWrap="1">
-      <convert type="GlamourSpace">NetSpace</convert>
+      <convert type="GlamourSpace">NetSpace,Full</convert>
     </widget>
   </screen>
   <!--  Cam Name -->
@@ -1757,7 +1757,7 @@
   </screen>
   <!--  Ecm info -->
   <screen name="ECMInfo" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=5,startdelay=3000,nowrap,always=0" position="280,1030" size="1600,35" font="Numbers; 30" halign="left" zPosition="7" backgroundColor="grey" transparent="1" text="Ecm Info" valign="center" noWrap="1" foregroundColor="amarillo">
+    <widget source="session.CurrentService" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=2,startdelay=3000,nowrap,oneshot=1,always=0" position="280,1030" size="1600,35" font="Numbers; 30" halign="left" zPosition="7" backgroundColor="grey" transparent="1" text="Ecm Info" valign="center" noWrap="1" foregroundColor="amarillo">
       <convert type="GlamourAccess">EcmInfo</convert>
     </widget>
   </screen>
@@ -1807,7 +1807,7 @@
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="255,960" size="1620,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
-      <convert type="GlamourBase">FreqInfo</convert>
+      <convert type="GlamourBase">StreamUrl</convert>
     </widget>
   </screen>
   <!-- 10.5 MOVIE AND SERVICE INFOS -->
@@ -1948,10 +1948,10 @@
   </screen>
   <!-- 10.7 MOVIESELECTION INFOS -->
   <screen name="MovieSInfo" flags="wfNoBorder">
-    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=5,startdelay=3000,nowrap,always=0" position="665,855" size="1200,45" foregroundColor="cyan1" font="Regular; 30" transparent="1" backgroundColor="background20" zPosition="7">
+    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=2,startdelay=3000,nowrap,oneshot=1,always=0" position="665,855" size="1200,45" foregroundColor="cyan1" font="Regular; 30" transparent="1" backgroundColor="background20" zPosition="7">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=5,startdelay=5000,wrap,always=0" position="50,185" size="580,700" font="Regular; 30" valign="top" transparent="1" backgroundColor="sky" zPosition="8">
+    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,185" size="580,700" font="Regular; 30" valign="top" transparent="1" backgroundColor="sky" zPosition="8">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="50,910" size="100,40" foregroundColor="cyan1" font="RegularB; 30" halign="left" transparent="1" backgroundColor="background20" zPosition="7" noWrap="1">
@@ -2635,7 +2635,7 @@
     <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="370,155" size="295,8" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,always=0" position="50,250" size="715,530" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,250" size="715,530" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="GlamRoll" position="50,790" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
@@ -3430,7 +3430,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="50,150" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,always=0" position="50,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="615,140" size="1290,800" itemHeight="50" font="Regular;28" setEventItemFont="Regular; 28" setColWidths="120,220" setColGap="30" setIconDistance="10" scrollbarMode="showNever" transparent="1" backgroundColor="background20" selectionPixmap="GlamourAuraFHD/selections/epgselblue.png" zPosition="4" />
@@ -3445,7 +3445,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="60,150" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,always=0" position="60,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="665,230" size="1200,700" itemHeight="50" font="Regular;30" setEventItemFont="Regular;30" setEventTimeFont="Regular;30" setColWidths="350,150" setColGap="15" setTimeWidth="150" setIconDistance="10" scrollbarMode="showNever" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/updateselectionfhd.png" zPosition="5" />
@@ -3468,7 +3468,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="61,111" size="570,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,always=0" position="62,265" size="570,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="62,265" size="570,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="60,215" size="85,45" font="Numbers; 36" halign="left" backgroundColor="sky" transparent="1" zPosition="7">
@@ -3886,10 +3886,10 @@ if not self["videofps"].text:
     <widget source="Title" render="Label" position="655,35" size="875,95" font="RegularB; 40" backgroundColor="background20" halign="left" transparent="1" foregroundColor="cyan1" zPosition="3" />
     <widget name="config" position="655,130" font="RegularB;40" size="1200,800" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/epgselmultiblue.png" alphatest="blend" zPosition="5" />
     <widget name="description" position="50,785" size="580,100" font="Regular; 30" valign="top" backgroundColor="transWhite" transparent="0" halign="center" foregroundColor="black" zPosition="5" />
-    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=5,startdelay=3000,nowrap,always=0" position="655,930" size="1200,45" foregroundColor="cyan1" font="Regular; 30" transparent="1" backgroundColor="background20" zPosition="7">
+    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=2,startdelay=3000,nowrap,oneshot=1,always=0" position="655,930" size="1200,45" foregroundColor="cyan1" font="Regular; 30" transparent="1" backgroundColor="background20" zPosition="7">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=5,startdelay=5000,wrap,always=0" position="50,185" size="580,600" font="Regular; 30" valign="top" transparent="1" backgroundColor="sky" zPosition="8">
+    <widget source="Service" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,185" size="580,600" font="Regular; 30" valign="top" transparent="1" backgroundColor="sky" zPosition="8">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="50,910" size="100,40" foregroundColor="cyan1" font="RegularB; 30" halign="left" transparent="1" backgroundColor="background20" zPosition="7" noWrap="1">
@@ -4512,7 +4512,6 @@ if not self["videofps"].text:
   </screen>
   <!-- ### PLUGINS & UPDATE SCREENS -->
   <!-- 01. Plugin Browser -->
-  <!-- 01. Plugin Browser -->
   <screen name="PluginBrowser" position="center,center" size="1920,1080" title="Plugins" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground1" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
@@ -4677,7 +4676,7 @@ if not self["videofps"].text:
     <widget name="filelist" font="Regular; 30" position="540,70" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="RGKeys1" />
   </screen>
-  <!-- 12. Restore Menu  -->
+  <!-- 14. Restore Menu  -->
   <screen name="RestoreMenu" position="0,0" size="1920,1080" title="Restore Backups" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
@@ -4686,7 +4685,7 @@ if not self["videofps"].text:
     <widget name="filelist" font="Regular;30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="RGYKeys1" />
   </screen>
-  <!-- 12. Update Plugin  -->
+  <!-- 15. Update Plugin  -->
   <screen name="UpdatePlugin" position="center,center" size="1920,1080" title="Software update" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
@@ -4697,7 +4696,7 @@ if not self["videofps"].text:
     <widget source="status" render="Label" position="600,495" size="1170,150" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="top" />
     <widget name="slider" position="600,665" size="1170,25" pixmap="GlamourAuraFHD/pointers/slider_blue.png" alphatest="blend" transparent="1" zPosition="7" />
   </screen>
-  <!-- 12. Upgrade status  -->
+  <!-- 16. Upgrade status  -->
   <screen name="UpgradeStatus" position="0,0" size="1920,1080" title="FPGA Upgrade" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
@@ -4708,7 +4707,7 @@ if not self["videofps"].text:
     <widget name="status" position="600,395" size="1170,135" font="Regular; 36" backgroundColor="background20" transparent="1" zPosition="5" halign="left" foregroundColor="white" valign="center" />
     <widget source="info" render="Label" position="600,540" size="1170,150" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="top" />
   </screen>
-  <!-- 12. FPGA Upgrade  -->
+  <!-- 17. FPGA Upgrade  -->
   <screen name="FPGAUpgrade" position="0,0" size="1920,1080" title="FPGA Upgrade" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
@@ -4718,7 +4717,7 @@ if not self["videofps"].text:
     <widget name="file_list" font="Regular; 30" position="540,160" size="1305,650" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" zPosition="6" />
     <panel name="RGBKeys1" />
   </screen>
-  <!-- 12. Restore Plugins  -->
+  <!-- 18. Restore Plugins  -->
   <screen name="RestorePlugins" position="0,0" title="Restore Plugins" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
@@ -4737,7 +4736,7 @@ if not self["videofps"].text:
     </widget>
     <panel name="RGKeys2" />
   </screen>
-  <!-- 13. IPKG Source  -->
+  <!-- 19. IPKG Source  -->
   <screen name="IPKGSource" position="0,0" size="1920,1080" title="IPKG source" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
@@ -4745,6 +4744,18 @@ if not self["videofps"].text:
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/softupdate.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="text" position="530,480" size="1305,120" zPosition="3" font="Regular; 36" foregroundColor="white" backgroundColor="background20" transparent="1" valign="center" halign="left" />
     <panel name="RGKeys1" />
+  </screen>
+  <!-- 20. Software Manager Setup  -->
+  <screen name="SoftwareManagerSetup" position="0,0" size="1920,1080" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" flags="wfNoBorder" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" flags="wfNoBorder" />
+    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/softwaremanager.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="config" font="Regular; 30" position="540,60" size="1305,650" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" zPosition="5" />
+    <widget source="introduction" render="Label" position="540,720" size="1305,130" font="Regular; 33" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="sky" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="540,720" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb810.png" position="1040,805" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+    <panel name="FullKeys1" />
   </screen>
   <!-- ### HARDDISK MENUS -->
   <!-- 01. HDD selection -->
@@ -4915,8 +4926,10 @@ if not self["videofps"].text:
     <panel name="ClockLabel1" />
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/timer.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="config" font="Regular; 30" position="540,75" size="1305,650" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" zPosition="5" />
+    <widget name="config" font="Regular; 30" position="540,75" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" zPosition="5" />
     <panel name="FullKeys1" />
+    <widget name="canceltext" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget name="oktext" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
   </screen>
   <!-- 03. Timer Sanity Check -->
   <screen name="TimerSanityConflict" position="0,0" size="1920,1080" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent">
@@ -4935,7 +4948,7 @@ if not self["videofps"].text:
     <panel name="ClockLabel1" />
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/timer.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="timerlist" position="540,75" size="1305,750" itemHeight="90" font="Regular; 30" rowSplit="50" setEventNameFont="Regular; 30" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250" iconWidth="50" iconHeight="50" iconMargin="10" scrollbarMode="showOnDemand" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/timerselectionblue.png" alphatest="blend" zPosition="5" />
+    <widget name="timerlist" position="540,75" size="1305,720" itemHeight="90" font="Regular; 30" rowSplit="50" setEventNameFont="Regular; 30" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250" iconWidth="50" iconHeight="50" iconMargin="10" scrollbarMode="showOnDemand" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/timerselectionblue.png" alphatest="blend" zPosition="5" />
     <panel name="RGKeys4" />
   </screen>
   <!-- 05. Timer Log -->
