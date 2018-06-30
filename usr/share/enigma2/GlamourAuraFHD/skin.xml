@@ -71,7 +71,8 @@
     <color name="yellow" value="#00f2e000" />
   </colors>
   <fonts>
-    <font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
+    <font filename="/usr/share/fonts/lcd.ttf" name="LCDA" scale="100" />
+    <font filename="/usr/share/fonts/nmsbd.ttf" name="FdLcD" scale="100" />
     <font filename="/usr/share/enigma2/GlamourAuraFHD/fonts/consola.ttf" name="Console" scale="100" />
     <font filename="/usr/share/enigma2/GlamourAuraFHD/fonts/aurar.ttf" name="Regular" scale="100" replacement="1" />
     <font filename="/usr/share/enigma2/GlamourAuraFHD/fonts/aurab.ttf" name="RegularB" scale="100" />
@@ -2095,36 +2096,7 @@
   </screen>
   <!-- 04. Subservices Quickzap -->
   <screen name="SubservicesQuickzap" position="0,0" size="1920,1080" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
-    <!-- Clock -->
-    <panel name="ClockLabel2" />
-    <!--Tuner Infobar -->
-    <panel name="TunerInfobar" />
-    <panel name="TunerInfo" />
-    <!-- Service info and icons -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_blueglass.png" position="440,942" zPosition="-3" size="1480,40" alphatest="off" transparent="1" />
-    <panel name="IconsInfobar" />
-    <!-- MIDDLE INFOBAR MAIN INFO -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_chname.png" position="370,708" zPosition="-1" size="1520,130" alphatest="on" transparent="1" />
-    <panel name="MainInfobar" />
-    <!-- Provider -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_provider.png" position="955,133" zPosition="-2" size="675,50" alphatest="on" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1025,140" size="600,35" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
-      <convert type="ServiceName">Provider</convert>
-    </widget>
-    <!-- Crypt Info -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_crypt.png" position="0,990" zPosition="-1" size="1700,35" alphatest="blend" transparent="1" />
-    <panel name="CryptInfo" />
-    <panel name="CamName" />
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_ecminfo.png" position="200,1030" zPosition="-2" size="1720,35" alphatest="on" transparent="1" />
-    <!-- ECM Info -->
-    <panel name="ECMInfo" />
-    <ePixmap pixmap="GlamourAuraFHD/infobar/haloblue_bottom.png" position="0,980" zPosition="-12" size="1920,88" alphatest="off" transparent="1" />
-    <!-- Bitrate -->
-    <!--panel name="BitrateInfobar" /-->
-    <!--/* WEATHER WIDGET -->
-    <panel name="WeatherToday" />
-    <!-- WEATHER Current Temp on Infobar -->
-    <panel name="WeatherInfobar" />
+    <panel name="InfoBar" />
   </screen>
   <!-- ###MENUS -->
   <!-- 00. Menu General-->
@@ -2324,7 +2296,7 @@
   <!-- 06. RDS info display -->
   <screen name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="RassLogo" pixmap="GlamourAuraFHD/icons/infobar/ico_rass_on.png" position="120,915" size="84,40" alphatest="on" zPosition="3" />
-    <widget name="RadioText" position="210,880" size="1650,50" font="LCD; 45" noWrap="1" backgroundColor="background40" foregroundColor="cyan1" halign="left" valign="bottom" transparent="0" zPosition="7" />
+    <widget name="RadioText" position="210,880" size="1650,50" font="LCDA; 45" noWrap="1" backgroundColor="background40" foregroundColor="cyan1" halign="left" valign="bottom" transparent="0" zPosition="7" />
     <widget name="RtpText" position="210,935" size="1650,50" font="RegularB; 36" noWrap="1" backgroundColor="background40" foregroundColor="amarillo" halign="left" valign="center" transparent="0" zPosition="9" />
   </screen>
   <!-- 07. Virtual Keyboard -->
@@ -2676,7 +2648,7 @@
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt335.png" position="380,835" size="810,45" zPosition="-3" alphatest="blend" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb335.png" position="1085,850" size="500,30" zPosition="-3" alphatest="blend" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rass_off.png" position="1605,798" size="84,37" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="RdsDecoder" render="Label" position="380,790" size="1075,45" font="LCD; 42" halign="center" valign="center" foregroundColor="cyan" backgroundColor="background20" noWrap="1" transparent="1" zPosition="4" text="RDS Text Sample">
+    <widget source="RdsDecoder" render="Label" position="380,790" size="1075,45" font="LCDA; 42" halign="center" valign="center" foregroundColor="cyan" backgroundColor="background20" noWrap="1" transparent="1" zPosition="4" text="RDS Text Sample">
       <convert type="RdsInfo">RadioText</convert>
     </widget>
     <widget source="RdsDecoder" render="Label" position="380,835" size="1075,45" font="RegularB; 30" halign="center" valign="top" foregroundColor="amarillo" backgroundColor="background20" noWrap="1" transparent="1" zPosition="4" text="RDS Text Sample">
@@ -3018,6 +2990,9 @@
     <widget source="Title" render="Label" position="655,40" size="990,95" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
     <widget name="list" position="655,135" size="1205,800" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" itemHeight="50" zPosition="3" />
     <panel name="FullKeys3" />
+  </screen>
+  <screen name="SlimChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="ChannelSelection" />
   </screen>
   <!-- 04. Audio Selection -->
   <screen name="AudioSelection" title="Audio Selection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
