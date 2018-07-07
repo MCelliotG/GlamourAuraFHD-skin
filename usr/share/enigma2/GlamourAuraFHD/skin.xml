@@ -74,7 +74,6 @@
   </colors>
   <fonts>
     <font filename="/usr/share/fonts/lcd.ttf" name="LCDA" scale="100" />
-    <font filename="/usr/share/fonts/nmsbd.ttf" name="FdLcD" scale="100" />
     <font filename="/usr/share/enigma2/GlamourAuraFHD/fonts/consola.ttf" name="Console" scale="100" />
     <font filename="/usr/share/enigma2/GlamourAuraFHD/fonts/aurar.ttf" name="Regular" scale="100" replacement="1" />
     <font filename="/usr/share/enigma2/GlamourAuraFHD/fonts/aurab.ttf" name="RegularB" scale="100" />
