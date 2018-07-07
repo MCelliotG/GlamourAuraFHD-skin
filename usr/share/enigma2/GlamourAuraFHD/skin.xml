@@ -1511,47 +1511,47 @@
   </screen>
   <!-- CPU & Temp Infobar -->
   <screen name="CPUTempInfobar" flags="wfNoBorder">
-  <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_cpu.png" position="0,420" zPosition="-6" size="400,240" alphatest="on" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/infobar/cputemp.png" position="45,440" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="90,445" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="Temperature" noWrap="1">
-    <convert type="GlamourExtra">Temperature</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/infobar/fanspeed.png" position="45,480" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="90,485" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="HDDTemp" noWrap="1">
-    <convert type="GlamourExtra">FanSpeed</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/infobar/cpuload.png" position="45,520" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="90,525" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="CPUload" halign="left" noWrap="1">
-    <convert type="GlamourExtra">CPULoad</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/infobar/cpuinfo.png" position="45,560" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="90,565" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU Info" halign="left" noWrap="1">
-    <convert type="GlamourExtra">CPU:$0 C1:$1 C2:$2</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/infobar/cpuspeed.png" position="45,600" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="90,605" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU speed" halign="left" noWrap="1">
-    <convert type="GlamourExtra">CPUSpeed</convert>
-  </widget>
-</screen>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_cpu.png" position="0,420" zPosition="-6" size="400,240" alphatest="on" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cputemp.png" position="45,440" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,445" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="Temperature" noWrap="1">
+      <convert type="GlamourExtra">Temperature</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/fanspeed.png" position="45,480" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,485" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="HDDTemp" noWrap="1">
+      <convert type="GlamourExtra">FanSpeed</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuload.png" position="45,520" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,525" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="CPUload" halign="left" noWrap="1">
+      <convert type="GlamourExtra">CPULoad</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuinfo.png" position="45,560" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,565" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU Info" halign="left" noWrap="1">
+      <convert type="GlamourExtra">CPU:$0 C1:$1 C2:$2</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuspeed.png" position="45,600" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,605" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU speed" halign="left" noWrap="1">
+      <convert type="GlamourExtra">CPUSpeed</convert>
+    </widget>
+  </screen>
   <!-- HDD/USB Infopanel -->
   <screen name="HDDInfoPanel" flags="wfNoBorder">
-  <ePixmap pixmap="GlamourAuraFHD/infobar/hddtemp.png" position="1105,820" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="1160,825" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="HDDTemp" noWrap="1">
-    <convert type="GlamourExtra">HDDTemp</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/infobar/hddspace.png" position="1105,860" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="1160,865" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="HDDspace" noWrap="1">
-    <convert type="GlamourSpace">HDDSpace,Full</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/infobar/usbspace.png" position="1105,940" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="1160,945" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="USBspace" noWrap="1" foregroundColor="amarillo">
-    <convert type="GlamourSpace">USBSpace,Full</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/infobar/netspace.png" position="1105,900" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="1160,905" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="Netspace" noWrap="1">
-    <convert type="GlamourSpace">NetSpace,Full</convert>
-  </widget>
-</screen>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/hddtemp.png" position="1105,820" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1160,825" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="HDDTemp" noWrap="1">
+      <convert type="GlamourExtra">HDDTemp</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/hddspace.png" position="1105,860" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1160,865" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="HDDspace" noWrap="1">
+      <convert type="GlamourSpace">HDDSpace,Full</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/usbspace.png" position="1105,940" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1160,945" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="USBspace" noWrap="1" foregroundColor="amarillo">
+      <convert type="GlamourSpace">USBSpace,Full</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/netspace.png" position="1105,900" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1160,905" size="580,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="Netspace" noWrap="1">
+      <convert type="GlamourSpace">NetSpace,Full</convert>
+    </widget>
+  </screen>
   <!--  Cam Name -->
   <screen name="CamName" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="50,990" size="500,35" font="Numbers; 30" halign="left" zPosition="2" backgroundColor="deepgrey" transparent="1" text="CCCam2.3.0+Oscam svn11370" valign="center" noWrap="1" foregroundColor="sky">
@@ -2610,8 +2610,8 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="GlamRoll" position="50,190" size="715,50" font="RegularB; 36" backgroundColor="grey2" transparent="1" valign="center" halign="center" noWrap="1" foregroundColor="black" zPosition="7">
-  <convert type="EventName">Name</convert>
-</widget>
+      <convert type="EventName">Name</convert>
+    </widget>
     <widget source="ServiceEvent" render="Label" position="45,135" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
@@ -3381,26 +3381,26 @@ if not self["videofps"].text:
   </screen>
   <!-- 02. Multi EPG selection -->
   <screen name="EPGSelectionMulti" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackgroundClock" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/eventview.png" position="0,60" size="645,960" zPosition="-11" alphatest="on" transparent="1" />
-  <widget source="Event" render="Label" position="60,150" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
- <widget name="list" position="665,220" size="1200,700" itemHeight="50" font="Regular;30" setEventItemFont="Regular; 28" setEventTimeFont="Regular;24" setColWidths="350,180" setColGap="15" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/updateselectionfhd.png" alphatest="blend" transparent="1" zPosition="5" />
-  <eLabel name="new eLabel" position="665,210" size="1200,3" zPosition="5" backgroundColor="cyan" foregroundColor="cyan1" />
-  <widget name="now_button_sel" position="670,130" size="705,70" zPosition="3" pixmap="GlamourAuraFHD/epg/epg_now.png" alphatest="blend" transparent="1" />
-  <widget name="next_button_sel" position="670,130" size="705,70" zPosition="3" pixmap="GlamourAuraFHD/epg/epg_next.png" alphatest="blend" transparent="1" />
-  <widget name="more_button_sel" position="670,130" size="705,70" zPosition="3" pixmap="GlamourAuraFHD/epg/epg_more.png" alphatest="blend" transparent="1" />
-  <widget name="now_text" position="675,140" size="220,60" zPosition="6" text="NOW" font="Caps; 30" halign="center" backgroundColor="background20" foregroundColor="white" transparent="1" noWrap="1" valign="center" />
-  <widget name="next_text" position="915,140" size="220,60" zPosition="6" text="NEXT" font="Caps; 30" halign="center" backgroundColor="background20" foregroundColor="white" transparent="1" noWrap="1" valign="center" />
-  <widget name="more_text" position="1150,140" size="220,60" zPosition="6" text="MORE" font="Caps; 30" halign="center" backgroundColor="background20" foregroundColor="amarillo" transparent="1" noWrap="1" valign="center" />
-  <widget name="date" position="1380,145" size="480,60" font="Regular; 28" valign="center" halign="right" transparent="1" noWrap="1" backgroundColor="background20" zPosition="5" foregroundColor="yellow" />
-  <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="1550,45" size="90,45" alphatest="blend" transparent="1" zPosition="5" />
-  <panel name="FullKeys3" />
-</screen>
+    <panel name="MainBackgroundClock" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/eventview.png" position="0,60" size="645,960" zPosition="-11" alphatest="on" transparent="1" />
+    <widget source="Event" render="Label" position="60,150" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget name="list" position="665,220" size="1200,700" itemHeight="50" font="Regular;30" setEventItemFont="Regular; 28" setEventTimeFont="Regular;24" setColWidths="350,180" setColGap="15" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/updateselectionfhd.png" alphatest="blend" transparent="1" zPosition="5" />
+    <eLabel name="new eLabel" position="665,210" size="1200,3" zPosition="5" backgroundColor="cyan" foregroundColor="cyan1" />
+    <widget name="now_button_sel" position="670,130" size="705,70" zPosition="3" pixmap="GlamourAuraFHD/epg/epg_now.png" alphatest="blend" transparent="1" />
+    <widget name="next_button_sel" position="670,130" size="705,70" zPosition="3" pixmap="GlamourAuraFHD/epg/epg_next.png" alphatest="blend" transparent="1" />
+    <widget name="more_button_sel" position="670,130" size="705,70" zPosition="3" pixmap="GlamourAuraFHD/epg/epg_more.png" alphatest="blend" transparent="1" />
+    <widget name="now_text" position="675,140" size="220,60" zPosition="6" text="NOW" font="Caps; 30" halign="center" backgroundColor="background20" foregroundColor="white" transparent="1" noWrap="1" valign="center" />
+    <widget name="next_text" position="915,140" size="220,60" zPosition="6" text="NEXT" font="Caps; 30" halign="center" backgroundColor="background20" foregroundColor="white" transparent="1" noWrap="1" valign="center" />
+    <widget name="more_text" position="1150,140" size="220,60" zPosition="6" text="MORE" font="Caps; 30" halign="center" backgroundColor="background20" foregroundColor="amarillo" transparent="1" noWrap="1" valign="center" />
+    <widget name="date" position="1380,145" size="480,60" font="Regular; 28" valign="center" halign="right" transparent="1" noWrap="1" backgroundColor="background20" zPosition="5" foregroundColor="yellow" />
+    <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="1550,45" size="90,45" alphatest="blend" transparent="1" zPosition="5" />
+    <panel name="FullKeys3" />
+  </screen>
   <!-- 03. Graphical Multi EPG -->
   <screen name="GraphMultiEPG" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackgroundClock" />
@@ -4472,18 +4472,18 @@ if not self["videofps"].text:
   <!-- ### PLUGINS & UPDATE SCREENS -->
   <!-- 01. Plugin Browser -->
   <screen name="PluginBrowser" position="center,center" size="1920,1080" title="Plugins" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground1" flags="wfNoBorder" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" flags="wfNoBorder" />
-  <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_provider2.png" position="0,725" zPosition="-10" size="675,50" alphatest="on" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/infobar/flashspace.png" position="50,730" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="95,733" size="560,35" font="Numbers; 30" zPosition="6" backgroundColor="darkgrey" transparent="1" text="FlashInfo" noWrap="1" halign="left" foregroundColor="dark">
-    <convert type="GlamourSpace">FlashInfo,Simple</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/plugin.png" position="255,315" size="400,400" transparent="1" alphatest="on" zPosition="5" />
-  <widget name="list" position="770,120" size="990,810" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColor="white" itemHeight="90" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenuselectionblue990.png" alphatest="blend" zPosition="3" />
-  <panel name="RGKeysUP3" />
-</screen>
+    <panel name="MainBackground1" flags="wfNoBorder" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" flags="wfNoBorder" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_provider2.png" position="0,725" zPosition="-10" size="675,50" alphatest="on" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/flashspace.png" position="50,730" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="95,733" size="560,35" font="Numbers; 30" zPosition="6" backgroundColor="darkgrey" transparent="1" text="FlashInfo" noWrap="1" halign="left" foregroundColor="dark">
+      <convert type="GlamourSpace">FlashInfo,Simple</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/plugin.png" position="255,315" size="400,400" transparent="1" alphatest="on" zPosition="5" />
+    <widget name="list" position="770,120" size="990,810" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColor="white" itemHeight="90" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenuselectionblue990.png" alphatest="blend" zPosition="3" />
+    <panel name="RGKeysUP3" />
+  </screen>
   <!-- 02. Plugins Download -->
   <screen name="PluginDownloadBrowser" position="0,0" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground1" flags="wfNoBorder" />
@@ -4724,7 +4724,6 @@ if not self["videofps"].text:
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/hdd.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="hddlist" font="Regular; 30" position="541,93" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" zPosition="5" />
-    <panel name="HDDInfoPanel" />
   </screen>
   <!-- 02. HDD setup -->
   <screen name="HarddiskSetup" position="0,0" size="1920,1080" title="HDD Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -4736,7 +4735,6 @@ if not self["videofps"].text:
     <widget name="capacity" position="540,210" size="1305,75" font="Regular; 34" transparent="1" zPosition="5" />
     <widget name="bus" position="540,330" size="1305,75" font="Regular; 34" transparent="1" zPosition="5" />
     <panel name="FullKeys1" />
-    <panel name="HDDInfoPanel" />
   </screen>
   <screen name="HddSetup" position="0,0" size="1920,1080" title="Hard Drive Setup" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
@@ -4764,7 +4762,6 @@ if not self["videofps"].text:
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/hdd.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="wait" position="540,90" size="1305,700" font="RegularB; 40" transparent="1" zPosition="5" halign="center" />
-    <panel name="HDDInfoPanel" />
   </screen>
   <!-- 04. HDD partitions -->
   <screen name="HddPartitions" position="0,0" size="1920,1080" title="Hard Drive Partitions" flags="wfNoBorder" backgroundColor="transparent">
