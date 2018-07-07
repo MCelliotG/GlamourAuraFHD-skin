@@ -1,11 +1,11 @@
-Package: enigma2-plugin-skins-glamouraurafhd-openpli6.1
-Version: A.14
+Package: enigma2-plugin-skins-glamouraurafhd
+Version: B.11
 Section: skins
 Priority: optional
 Architecture: all
 License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
-OE: OpenPLI 6.1
+OE: OpenPLI and OpenPLI based
 Maintainer: MCelliotG 
-Description: Glamour Aura FHD skin for new generation STBs with OpenPLI 6.1 images
+Description: Glamour Aura FHD skin for new generation STBs with OpenPLI based images
 Source: https://github.com/MCelliotG/GlamourAuraFHD-skin
 Homepage: https://github.com/MCelliotG/GlamourAuraFHD-skin
