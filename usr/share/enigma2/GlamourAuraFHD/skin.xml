@@ -159,14 +159,14 @@
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="sky" />
     <borderset name="bsWindow">
-      <pixmap pos="bpTopLeft" filename="GlamourAuraFHD-ATV/window/bs_tl.png" />
-      <pixmap pos="bpTop" filename="GlamourAuraFHD-ATV/window/bs_t.png" />
-      <pixmap pos="bpTopRight" filename="GlamourAuraFHD-ATV/window/bs_tr.png" />
-      <pixmap pos="bpLeft" filename="GlamourAuraFHD-ATV/window/bs_l.png" />
-      <pixmap pos="bpRight" filename="GlamourAuraFHD-ATV/window/bs_r.png" />
-      <pixmap pos="bpBottomLeft" filename="GlamourAuraFHD-ATV/window/bs_bl.png" />
-      <pixmap pos="bpBottom" filename="GlamourAuraFHD-ATV/window/bs_b.png" />
-      <pixmap pos="bpBottomRight" filename="GlamourAuraFHD-ATV/window/bs_br.png" />
+      <pixmap pos="bpTopLeft" filename="GlamourAuraFHD/window/bs_tl.png" />
+      <pixmap pos="bpTop" filename="GlamourAuraFHD/window/bs_t.png" />
+      <pixmap pos="bpTopRight" filename="GlamourAuraFHD/window/bs_tr.png" />
+      <pixmap pos="bpLeft" filename="GlamourAuraFHD/window/bs_l.png" />
+      <pixmap pos="bpRight" filename="GlamourAuraFHD/window/bs_r.png" />
+      <pixmap pos="bpBottomLeft" filename="GlamourAuraFHD/window/bs_bl.png" />
+      <pixmap pos="bpBottom" filename="GlamourAuraFHD/window/bs_b.png" />
+      <pixmap pos="bpBottomRight" filename="GlamourAuraFHD/window/bs_br.png" />
     </borderset>
   </windowstyle>
   <windowstyle type="skinned" id="1">
