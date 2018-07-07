@@ -151,14 +151,14 @@
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="sky" />
     <borderset name="bsWindow">
-      <pixmap pos="bpTopLeft" filename="GlamourAuraFHD-ATV/window/bs_tl.png" />
-      <pixmap pos="bpTop" filename="GlamourAuraFHD-ATV/window/bs_t.png" />
-      <pixmap pos="bpTopRight" filename="GlamourAuraFHD-ATV/window/bs_tr.png" />
-      <pixmap pos="bpLeft" filename="GlamourAuraFHD-ATV/window/bs_l.png" />
-      <pixmap pos="bpRight" filename="GlamourAuraFHD-ATV/window/bs_r.png" />
-      <pixmap pos="bpBottomLeft" filename="GlamourAuraFHD-ATV/window/bs_bl.png" />
-      <pixmap pos="bpBottom" filename="GlamourAuraFHD-ATV/window/bs_b.png" />
-      <pixmap pos="bpBottomRight" filename="GlamourAuraFHD-ATV/window/bs_br.png" />
+      <pixmap pos="bpTopLeft" filename="GlamourAuraFHD/window/bs_tl.png" />
+      <pixmap pos="bpTop" filename="GlamourAuraFHD/window/bs_t.png" />
+      <pixmap pos="bpTopRight" filename="GlamourAuraFHD/window/bs_tr.png" />
+      <pixmap pos="bpLeft" filename="GlamourAuraFHD/window/bs_l.png" />
+      <pixmap pos="bpRight" filename="GlamourAuraFHD/window/bs_r.png" />
+      <pixmap pos="bpBottomLeft" filename="GlamourAuraFHD/window/bs_bl.png" />
+      <pixmap pos="bpBottom" filename="GlamourAuraFHD/window/bs_b.png" />
+      <pixmap pos="bpBottomRight" filename="GlamourAuraFHD/window/bs_br.png" />
     </borderset>
   </windowstyle>
   <windowstyle type="skinned" id="1">
@@ -4175,8 +4175,8 @@ if not self["videofps"].text:
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
     <panel name="Title1" flags="wfNoBorder" />
-    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD-ATV/icons/satellite.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="list" font="Regular; 30" position="540,60" size="1320,800" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD-ATV/selections/scanselectionblue.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
+    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/satellite.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="list" font="Regular; 30" position="540,60" size="1320,800" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/scanselectionblue.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
   <!-- ### NETWORK SCREENS -->

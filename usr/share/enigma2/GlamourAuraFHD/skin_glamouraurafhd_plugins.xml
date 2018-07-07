@@ -107,8 +107,8 @@
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
     <panel name="Title1" flags="wfNoBorder" />
-    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD-ATV/icons/msnweather.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="entrylist" font="Regular; 30" position="540,90" size="1305,600" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD-ATV/selections/auraselectionbluefhd.png" zPosition="5" />
+    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/msnweather.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="entrylist" font="Regular; 30" position="540,90" size="1305,600" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" zPosition="5" />
     <widget name="HelpWindow" position="540,730" size="1320,130" zPosition="11" transparent="1" />
     <panel name="FullKeys1" />
   </screen>
@@ -141,7 +141,7 @@
     <panel name="MainBackground2" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
     <panel name="Title1" flags="wfNoBorder" />
-    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD-ATV/icons/msnweather.png" alphatest="on" transparent="1" zPosition="5" />
+    <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/msnweather.png" alphatest="on" transparent="1" zPosition="5" />
     <eLabel position="540,455" size="1300,3" backgroundColor="cyan" zPosition="2" transparent="0" />
     <ePixmap pixmap="GlamourAuraFHD/icons/angle.png" position="540,135" size="50,50" alphatest="blend" transparent="1" zPosition="5" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_big.png" alphatest="blend" position="1739,869" size="120,60" zPosition="3" transparent="1" />
