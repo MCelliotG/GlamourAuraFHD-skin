@@ -2617,7 +2617,7 @@
     <widget name="list" position="785,135" size="1095,850" itemHeight="50" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" alphatest="blend" zPosition="3" />
     <ePixmap pixmap="GlamourAuraFHD/menu/chanselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
     <widget source="ServiceEvent" render="Picon" position="40,50" size="220,132" transparent="1" alphatest="blend" zPosition="4">
-      <convert type="ServiceName">Reference</convert>
+      <convert type="GlamRefString">ServicelistRef</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="265,30" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
       <convert type="ServiceName">Name</convert>
@@ -2755,7 +2755,7 @@
     </widget>
     <!-- Picon and TunerInfos  -->
     <widget source="ServiceEvent" render="Picon" position="45,790" zPosition="4" size="330,198" transparent="1" alphatest="blend">
-      <convert type="ServiceName">Reference</convert>
+      <convert type="GlamRefString">ServicelistRef</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/tuner_a_un.png" position="1512,885" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
     <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_av.png" position="1512,885" size="30,30" zPosition="2" alphatest="blend" transparent="1">
