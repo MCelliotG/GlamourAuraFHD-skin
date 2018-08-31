@@ -1406,7 +1406,7 @@
       <convert type="GlamourBase">HasVC1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h263.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h.263.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasH263</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1440,6 +1440,10 @@
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg4vc.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasMPEG4VC</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avs.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasAVS</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- Resolution info -->
@@ -1823,9 +1827,9 @@
     <widget source="session.CurrentService" render="Label" position="930,870" size="180,50" font="Numbers; 45" halign="center" valign="bottom" backgroundColor="background20" transparent="1" foregroundColor="sky" noWrap="1" zPosition="9">
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="255,960" size="1620,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
-      <convert type="GlamourBase">StreamUrl</convert>
-    </widget>
+    <widget source="session.CurrentService" render="GlamRoll" position="285,960" size="1590,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
+  <convert type="GlamourBase">StreamUrl</convert>
+</widget>
   </screen>
   <!-- 10.5 MOVIE AND SERVICE INFOS -->
   <screen name="MovieServiceInfos" flags="wfNoBorder">
@@ -1897,7 +1901,7 @@
       <convert type="GlamourBase">HasVC1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h263.png" position="1297,1015" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h.263.png" position="1297,1015" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasH263</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1931,6 +1935,10 @@
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg4vc.png" position="1297,1015" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasMPEG4VC</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avs.png" position="1297,1015" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasAVS</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/resolution/arrow_off.png" position="1200,1015" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
@@ -2600,55 +2608,55 @@
   <!-- ###SELECTION SCREENS -->
   <!-- 01. Channel Selection -->
   <screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
-  <panel name="MainBackgroundCS" />
-  <panel name="ClockLabel3" />
-  <widget source="Title" render="Label" position="785,35" size="855,100" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
-  <widget name="list" position="785,135" size="1095,850" itemHeight="50" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" alphatest="blend" zPosition="3" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/chanselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
-  <widget source="ServiceEvent" render="Picon" position="40,35" size="220,132" transparent="1" alphatest="blend" zPosition="4">
-    <convert type="GlamRefString">ServicelistRef</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="265,15" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,170" size="715,50" font="RegularB; 34" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="265,115" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">
-    </convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="675,115" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" valign="center" zPosition="6" halign="center" noWrap="1">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <eLabel position="370,140" size="295,2" backgroundColor="darkgrey" foregroundColor="darkgrey" zPosition="2" />
-  <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="370,137" size="295,8" transparent="1" zPosition="1">
-    <convert type="EventTime">Progress</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,225" size="715,525" font="RegularB; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,755" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
-    <convert type="GlamNextEvents">Event1,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,795" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="2">
-    <convert type="GlamNextEvents">Event2,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,835" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="3">
-    <convert type="GlamNextEvents">Event3,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,875" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
-    <convert type="GlamNextEvents">Event4,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="GlamRoll" position="50,915" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
-    <convert type="GlamNextEvents">Event5,noDuration</convert>
-  </widget>
-  <widget position="50,960" size="720,35" source="ServiceEvent" render="GlamTP" font="RegularB; 26" halign="left" valign="center" noWrap="1" backgroundColor="grey2" zPosition="3" transparent="1" foregroundColor="black" />
-  <widget position="50,1000" size="720,35" source="ServiceEvent" render="GlamPids" font="Numbers; 31" halign="left" valign="center" noWrap="1" backgroundColor="darkgrey" zPosition="3" transparent="1" foregroundColor="amarillo" />
-  <panel name="FullKeysCC" />
-</screen>
+    <panel name="MainBackgroundCS" />
+    <panel name="ClockLabel3" />
+    <widget source="Title" render="Label" position="785,35" size="855,100" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
+    <widget name="list" position="785,135" size="1095,850" itemHeight="50" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" alphatest="blend" zPosition="3" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/chanselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
+    <widget source="ServiceEvent" render="Picon" position="40,35" size="220,132" transparent="1" alphatest="blend" zPosition="4">
+      <convert type="GlamRefString">ServicelistRef</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="265,15" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,170" size="715,50" font="RegularB; 34" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="265,115" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="675,115" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" valign="center" zPosition="6" halign="center" noWrap="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel position="370,140" size="295,2" backgroundColor="darkgrey" foregroundColor="darkgrey" zPosition="2" />
+    <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="370,137" size="295,8" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,225" size="715,525" font="RegularB; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,755" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
+      <convert type="GlamNextEvents">Event1,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,795" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="2">
+      <convert type="GlamNextEvents">Event2,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,835" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="3">
+      <convert type="GlamNextEvents">Event3,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,875" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
+      <convert type="GlamNextEvents">Event4,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="50,915" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
+      <convert type="GlamNextEvents">Event5,noDuration</convert>
+    </widget>
+    <widget position="50,960" size="720,35" source="ServiceEvent" render="GlamTP" font="RegularB; 26" halign="left" valign="center" noWrap="1" backgroundColor="grey2" zPosition="3" transparent="1" foregroundColor="black" />
+    <widget position="50,1000" size="720,35" source="ServiceEvent" render="GlamPids" font="Numbers; 31" halign="left" valign="center" noWrap="1" backgroundColor="darkgrey" zPosition="3" transparent="1" foregroundColor="amarillo" />
+    <panel name="FullKeysCC" />
+  </screen>
   <!-- 02. Channel Selection Radio -->
   <screen name="ChannelSelectionRadio" position="0,0" size="1920,1080" title="Radio Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <!-- Background -->
@@ -3785,44 +3793,47 @@ if not self["videofps"].text:
   </screen>
   <!-- 02. Media player -->
   <screen name="MediaPlayer" position="center,center" size="1920,1080" title="Media player" backgroundColor="transparent" flags="wfNoBorder">
-    <eLabel name="mediaplayer" position="0,555" size="1920,375" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
-    <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom.png" position="0,930" zPosition="-11" size="1920,75" alphatest="off" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom.png" position="700,270" zPosition="-11" size="1220,75" alphatest="off" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/menu/menufadetop.png" position="700,90" zPosition="-11" size="1220,75" alphatest="off" transparent="1" name="mediaback" />
-    <eLabel name="mediaback" position="700,165" size="1220,105" zPosition="-11" backgroundColor="background20" foregroundColor="background20" />
-    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="0,555" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_chname.png" position="125,425" zPosition="-2" size="1570,130" alphatest="on" transparent="0" />
-    <panel name="ClockLabel1" />
-    <panel name="Title1" flags="wfNoBorder" />
-    <widget name="coverArt" position="300,60" size="400,400" pixmap="GlamourAuraFHD/icons/media.png" transparent="1" alphatest="on" zPosition="4" />
-    <widget name="title" position="700,80" size="1140,105" font="RegularB; 36" halign="center" valign="bottom" backgroundColor="background20" transparent="1" zPosition="4" foregroundColor="cyan1" />
-    <widget name="artist" position="700,185" size="1140,50" font="Regular; 33" halign="center" valign="center" backgroundColor="background20" transparent="1" zPosition="5" noWrap="1" />
-    <eLabel name="progressbackground" position="760,247" size="1020,3" backgroundColor="grey" foregroundColor="grey" zPosition="5" />
-    <widget source="session.CurrentService" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_blueinfobar.png" alphatest="blend" position="760,245" size="1020,7" zPosition="6" transparent="1">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="760,270" size="178,45" zPosition="2" font="Numbers; 40" halign="left" backgroundColor="background20" noWrap="1" transparent="1" foregroundColor="cyan1">
-      <convert type="ServicePosition">Position,ShowHours</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1600,270" size="180,45" zPosition="2" font="Numbers; 40" halign="right" backgroundColor="background20" noWrap="1" transparent="1" foregroundColor="cyan1">
-      <convert type="ServicePosition">Length,ShowHours</convert>
-    </widget>
-    <widget source="session.CurrentService" position="1220,275" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
-      <convert type="GlamourAudioInfo">AudioIcon</convert>
-    </widget>
-    <widget name="albumtext" position="700,420" size="165,45" font="Regular; 30" valign="center" backgroundColor="turquoise" transparent="1" halign="left" zPosition="4" />
-    <widget name="album" position="865,420" size="975,45" font="RegularB; 30" valign="top" backgroundColor="turquoise" transparent="1" zPosition="5" />
-    <widget name="yeartext" position="700,510" size="165,45" font="Regular; 30" valign="top" backgroundColor="turquoise" transparent="1" halign="left" zPosition="4" />
-    <widget name="year" position="865,510" size="975,45" font="Regular; 30" valign="top" backgroundColor="turquoise" transparent="1" halign="left" zPosition="5" />
-    <widget name="genre" position="865,465" size="975,45" font="Regular; 30" valign="top" backgroundColor="turquoise" transparent="1" zPosition="5" />
-    <widget name="genretext" position="700,465" size="165,45" font="Regular; 30" halign="left" backgroundColor="turquoise" transparent="1" zPosition="4" valign="center" />
-    <eLabel position="75,560" size="870,50" text="Filelist" font="Caps; 45" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="sky" halign="center" />
-    <widget name="filelist" position="75,620" size="870,300" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/fileselectionblue.png" alphatest="blend" zPosition="6" />
-    <eLabel position="975,560" size="870,50" text="Playlist" font="Caps; 45" backgroundColor="background20" transparent="1" foregroundColor="sky" halign="center" zPosition="5" />
-    <widget name="playlist" position="975,620" size="870,300" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/fileselectionblue.png" alphatest="blend" zPosition="6" />
-    <widget name="repeat" pixmaps="GlamourAuraFHD/buttons/repeat_off.png,GlamourAuraFHD/buttons/repeat_on.png" position="1600,945" size="90,60" transparent="1" alphatest="blend" zPosition="5" />
-    <ePixmap position="1725,945" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_menu_big.png" transparent="1" alphatest="blend" />
-  </screen>
+  <eLabel name="mediaplayer" position="0,555" size="1920,375" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
+  <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom.png" position="0,930" zPosition="-11" size="1920,75" alphatest="off" transparent="1" />
+  <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom.png" position="700,270" zPosition="-11" size="1220,75" alphatest="off" transparent="1" />
+  <ePixmap pixmap="GlamourAuraFHD/menu/menufadetop.png" position="700,90" zPosition="-11" size="1220,75" alphatest="off" transparent="1" name="mediaback" />
+  <eLabel name="mediaback" position="700,165" size="1220,105" zPosition="-11" backgroundColor="background20" foregroundColor="background20" />
+  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="0,555" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_chname.png" position="125,425" zPosition="-2" size="1570,130" alphatest="on" transparent="0" />
+  <panel name="ClockLabel1" />
+  <panel name="Title1" flags="wfNoBorder" />
+  <widget name="coverArt" position="300,60" size="400,400" pixmap="GlamourAuraFHD/icons/media.png" transparent="1" alphatest="on" zPosition="4" />
+  <widget name="title" position="700,80" size="1140,105" font="RegularB; 36" halign="center" valign="bottom" backgroundColor="background20" transparent="1" zPosition="4" foregroundColor="cyan1" />
+  <widget name="artist" position="700,185" size="1140,50" font="Regular; 33" halign="center" valign="center" backgroundColor="background20" transparent="1" zPosition="5" noWrap="1" />
+  <eLabel name="progressbackground" position="760,247" size="1020,3" backgroundColor="grey" foregroundColor="grey" zPosition="5" />
+  <widget source="session.CurrentService" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_blueinfobar.png" alphatest="blend" position="760,245" size="1020,7" zPosition="6" transparent="1">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="760,270" size="178,45" zPosition="2" font="Numbers; 40" halign="left" backgroundColor="background20" noWrap="1" transparent="1" foregroundColor="cyan1">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1600,270" size="180,45" zPosition="2" font="Numbers; 40" halign="right" backgroundColor="background20" noWrap="1" transparent="1" foregroundColor="cyan1">
+    <convert type="ServicePosition">Length,ShowHours</convert>
+  </widget>
+  <widget source="session.CurrentService" position="1220,275" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
+    <convert type="GlamourAudioInfo">AudioIcon</convert>
+  </widget>
+<widget source="session.CurrentService" render="GlamRoll" position="705,315" size="1150,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
+  <convert type="GlamourBase">StreamUrl</convert>
+</widget>
+  <widget name="albumtext" position="700,420" size="165,45" font="Regular; 30" valign="center" backgroundColor="turquoise" transparent="1" halign="left" zPosition="4" />
+  <widget name="album" position="865,420" size="975,45" font="RegularB; 30" valign="top" backgroundColor="turquoise" transparent="1" zPosition="5" />
+  <widget name="yeartext" position="700,510" size="165,45" font="Regular; 30" valign="top" backgroundColor="turquoise" transparent="1" halign="left" zPosition="4" />
+  <widget name="year" position="865,510" size="975,45" font="Regular; 30" valign="top" backgroundColor="turquoise" transparent="1" halign="left" zPosition="5" />
+  <widget name="genre" position="865,465" size="975,45" font="Regular; 30" valign="top" backgroundColor="turquoise" transparent="1" zPosition="5" />
+  <widget name="genretext" position="700,465" size="165,45" font="Regular; 30" halign="left" backgroundColor="turquoise" transparent="1" zPosition="4" valign="center" />
+  <eLabel position="75,560" size="870,50" text="Filelist" font="Caps; 45" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="sky" halign="center" />
+  <widget name="filelist" position="75,620" size="870,300" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/fileselectionblue.png" alphatest="blend" zPosition="6" />
+  <eLabel position="975,560" size="870,50" text="Playlist" font="Caps; 45" backgroundColor="background20" transparent="1" foregroundColor="sky" halign="center" zPosition="5" />
+  <widget name="playlist" position="975,620" size="870,300" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/fileselectionblue.png" alphatest="blend" zPosition="6" />
+  <widget name="repeat" pixmaps="GlamourAuraFHD/buttons/repeat_off.png,GlamourAuraFHD/buttons/repeat_on.png" position="1600,945" size="90,60" transparent="1" alphatest="blend" zPosition="5" />
+  <ePixmap position="1725,945" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_menu_big.png" transparent="1" alphatest="blend" />
+</screen>
   <!-- 03. Media player settings -->
   <screen name="MediaPlayerSettings" position="0,0" size="1920,1080" title="Edit Settings" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" flags="wfNoBorder" />
