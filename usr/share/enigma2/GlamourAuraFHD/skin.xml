@@ -1168,8 +1168,8 @@
     <!-- Frequency, Orbital & Streamtypes -->
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_tuner.png" position="395,40" zPosition="-12" size="1260,85" alphatest="off" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="410,50" size="870,35" backgroundColor="background20" transparent="1" zPosition="12" font="Regular;26" halign="center" valign="center" noWrap="1">
-  <convert type="GlamourBase">FreqInfo</convert>
-</widget>
+      <convert type="GlamourBase">FreqInfo</convert>
+    </widget>
     <widget source="session.CurrentService" render="Label" position="410,85" size="870,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 26" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">Orbital</convert>
     </widget>
@@ -2773,7 +2773,7 @@
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" backgroundColor="background20" foregroundColor="cyan2" render="Label" font="RegularB; 30" position="640,720" size="935,45" halign="left" valign="bottom" transparent="1" zPosition="9">
+    <widget source="session.CurrentService" backgroundColor="background20" foregroundColor="cyan2" render="GlamRoll" font="RegularB;30" position="640,720" size="935,45" halign="left" valign="center" transparent="1" zPosition="9">
       <convert type="ServiceInfo">HasHBBTV</convert>
     </widget>
     <widget backgroundColor="background20" foregroundColor="sky" source="session.CurrentService" render="Label" font="Regular; 30" position="540,770" size="1335,175" halign="left" valign="top" transparent="1" zPosition="8">
