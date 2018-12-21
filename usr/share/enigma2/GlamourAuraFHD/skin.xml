@@ -92,7 +92,7 @@
     <alias name="PluginBrowser1" font="Regular" size="22" height="40" />
     <alias name="ChoiceList" font="Regular" size="30" height="50" />
     <alias name="SelectionList" font="Regular" size="30" height="50" />
-    <alias name="ServiceInfo" font="Regular" size="30" height="50" />
+    <alias name="ServiceInfo" font="Regular" size="28" height="45" />
     <alias name="ServiceNumber" font="Numbers" size="31" height="50" />
     <alias name="Body" font="Regular" size="30" height="50" />
     <alias name="HelpMenuListExt0" font="Regular" size="30" height="50" />
@@ -135,8 +135,8 @@
     <parameter name="ConfigListSeperator" value="600" />
     <parameter name="MenuListFont" value="30" />
     <parameter name="ServiceInfo" value="0,0,1050,50" />
-    <parameter name="ServiceInfoLeft" value="0,0,525,50" />
-    <parameter name="ServiceInfoRight" value="530,0,525,50" />
+    <parameter name="ServiceInfoLeft" value="0,0,510,45" />
+    <parameter name="ServiceInfoRight" value="515,0,540,45" />
     <parameter name="VirtualKeyboard" value="90,60" />
     <parameter name="VirtualKeyBoard" value="90,60" />
     <parameter name="VirtualKeyBoardShiftColors" value="grey,white,cyan1,pink" />
@@ -215,80 +215,156 @@
     <widget name="key_blue" position="1530,975" size="225,60" zPosition="4" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1" />
   </screen>
   <screen name="FullKeys1" flags="wfNoBorder">
+    <!-- Button Graphics -->
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="580,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_red,red,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="580,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_green,green,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1230,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_yellow,yellow,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1230,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1555,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_blue,blue,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1555,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <!-- Button Labels -->
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="red,Label,Button" name="red" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
     <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="green,Label,Button" name="green" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
     <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1185,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="yellow,Label,Button" name="yellow" position="1185,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
     <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1185,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="1510,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="blue,Label,Button" name="blue" position="1510,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
     <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1510,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_red,Button,Label" name="key_red" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_green,Button,Label" name="key_green" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="1185,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="1510,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="red,Button,Label" name="red" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="green,Button,Label" name="green" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="yellow,Button,Label" name="yellow" position="1185,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="blue,Button,Label" name="blue" position="1510,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_red,StaticText,Button,Label" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="580,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_green,StaticText,Button,Label" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_yellow,StaticText,Button,Label" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1230,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_blue,StaticText,Button,Label" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1555,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
   </screen>
   <screen name="FullKeys2" flags="wfNoBorder">
-    <widget objectTypes="key_red,Button,Label" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="580,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_green,Button,Label" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_yellow,Button,Label" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1230,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_blue,Button,Label" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1555,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_red,Button,Label" name="key_red" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_green,Button,Label" name="key_green" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="1185,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="1510,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="705,960" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_red,red,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="705,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1005,960" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_green,green,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1005,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1305,960" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_yellow,yellow,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1305,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1605,960" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_blue,blue,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1605,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="665,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="red,Label,Button" name="red" position="665,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="665,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="965,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="green,Label,Button" name="green" position="965,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="965,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1265,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="yellow,Label,Button" name="yellow" position="1265,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1265,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="1565,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="blue,Label,Button" name="blue" position="1565,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1565,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
   </screen>
   <screen name="FullKeys3" flags="wfNoBorder">
-    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="665,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="965,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1265,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1565,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_red,Button,Label" name="key_red" position="665,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_green,Button,Label" name="key_green" position="965,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="1265,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="1565,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="red,Button,Label" name="red" position="665,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="green,Button,Label" name="green" position="965,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="yellow,Button,Label" name="yellow" position="1265,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="blue,Button,Label" name="blue" position="1565,940" size="300,95" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_red,StaticText,Button,Label" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="705,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_green,StaticText,Button,Label" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1005,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_yellow,StaticText,Button,Label" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1305,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_blue,StaticText,Button,Label" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1605,960" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-  </screen>
-  <screen name="FullKeys4" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_red.png" position="690,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_green.png" position="995,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1300,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1605,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_red,Button,Label" name="key_red" position="650,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_green,Button,Label" name="key_green" position="955,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="1260,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="1565,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="690,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_red,red,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="690,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="995,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_green,green,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="995,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1300,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_yellow,yellow,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1300,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1605,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_blue,blue,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1605,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="650,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="red,Label,Button" name="red" position="650,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="650,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="955,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="green,Label,Button" name="green" position="955,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="955,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1260,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="yellow,Label,Button" name="yellow" position="1260,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1260,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="1565,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="blue,Label,Button" name="blue" position="1565,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1565,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
   </screen>
   <screen name="FullKeysV1" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_red.png" position="1620,65" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1620,255" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1620,475" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1620,695" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="red,Button,Label" name="red" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="green,Button,Label" name="green" position="1580,245" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="yellow,Button,Label" name="yellow" position="1580,465" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="blue,Button,Label" name="blue" position="1580,685" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="1620,65" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_red,red,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="1620,65" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1620,255" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_green,green,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1620,255" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1620,475" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_yellow,yellow,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1620,475" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1620,695" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_blue,blue,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1620,695" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="red,Label,Button" name="red" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="1580,245" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="green,Label,Button" name="green" position="1580,245" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="1580,245" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1580,465" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="yellow,Label,Button" name="yellow" position="1580,465" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1580,465" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="1580,685" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="blue,Label,Button" name="blue" position="1580,685" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1580,685" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
   </screen>
   <screen name="FullKeysV2" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_red.png" position="1620,65" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1620,245" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1620,425" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1620,605" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
-    <widget objectTypes="key_red,Button,Label" name="key_red" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_green,Button,Label" name="key_green" position="1580,235" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="1580,415" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
-    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="1580,595" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="1620,65" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_red,red,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="1620,65" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1620,245" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_green,green,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1620,245" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1620,425" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_yellow,yellow,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_yellow.png" position="1620,425" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1620,605" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_blue,blue,Button,Label" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1620,605" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="red,Label,Button" name="red" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="1580,235" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="green,Label,Button" name="green" position="1580,235" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="1580,235" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1580,415" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="yellow,Label,Button" name="yellow" position="1580,415" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1580,415" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="1580,595" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="blue,Label,Button" name="blue" position="1580,595" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1580,595" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
   </screen>
   <screen name="FullKeysH" flags="wfNoBorder">
     <widget name="h_red" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="805,875" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
@@ -849,6 +925,10 @@
       <convert type="MenuEntryCompare">multiboot</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/debug.png" position="355,315" size="400,400" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">restart_enigma_debug</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   </screen>
   <!-- 02-11. Menu GUI -->
   <screen name="MenuGUI" flags="wfNoBorder">
@@ -1057,7 +1137,7 @@
     <widget source="global.CurrentTime" render="Label" position="65,128" zPosition="2" size="80,35" font="Numbers; 29" halign="right" text="Low0" transparent="1" valign="center" foregroundColor="sky" noWrap="1" backgroundColor="black">
       <convert type="GlamMSNWeather">Lowtemp1</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/big" position="150,100" size="60,60" zPosition="4" alphatest="blend">
+    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/big/" position="150,100" size="60,60" zPosition="4" alphatest="blend">
       <convert type="GlamMSNWeather">Picon1</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/menu/timesep.png" position="222,70" zPosition="6" size="6,120" alphatest="blend" transparent="1" />
@@ -1074,7 +1154,7 @@
     <widget source="global.CurrentTime" render="Label" position="240,128" zPosition="2" size="80,35" font="Numbers; 29" halign="right" text="Low1" transparent="1" valign="center" foregroundColor="sky" noWrap="1" backgroundColor="black">
       <convert type="GlamMSNWeather">Lowtemp2</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/big" position="325,100" size="60,60" zPosition="4" alphatest="blend">
+    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/big/" position="325,100" size="60,60" zPosition="4" alphatest="blend">
       <convert type="GlamMSNWeather">Picon2</convert>
     </widget>
     <!--/* BACKGROUND -->
@@ -1110,7 +1190,7 @@
     <widget source="global.CurrentTime" render="Label" position="215,100" zPosition="2" size="70,30" font="Regular; 23" halign="center" text="Hum" transparent="1" valign="top" backgroundColor="black" foregroundColor="amarillo" noWrap="1">
       <convert type="GlamMSNWeather">Humidity</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/big" position="180,30" size="60,60" zPosition="4" alphatest="blend">
+    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/big/" position="180,30" size="60,60" zPosition="4" alphatest="blend">
       <convert type="GlamMSNWeather">Picon</convert>
     </widget>
     <!--/* BACKGROUND -->
@@ -1181,7 +1261,7 @@
     <widget source="session.CurrentService" render="Label" position="410,85" size="870,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 26" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">Orbital</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD-ATV/menu/accentglowb540.png" position="1100,95" size="540,30" zPosition="-10" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb540.png" position="1100,95" size="540,30" zPosition="-10" alphatest="blend" transparent="1" />
     <eLabel position="1280,57" size="2,65" halign="center" font="Regular; 25" backgroundColor="blue" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="blue" />
     <eLabel position="1445,42" size="1,65" halign="center" font="Regular; 25" backgroundColor="cyan" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="cyan" />
     <!-- Signal info -->
@@ -1200,387 +1280,387 @@
   </screen>
   <!-- Tuners Info -->
   <screen name="TunersInfo" flags="wfNoBorder">
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_un.png" position="1450,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_A</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_av.png" position="1450,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_on.png" position="1450,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">0,0</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_un.png" position="1475,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_B</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_av.png" position="1475,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_on.png" position="1475,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">1,1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_un.png" position="1500,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_C</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_av.png" position="1500,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">4</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_on.png" position="1500,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">2,2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_un.png" position="1525,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_D</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_av.png" position="1525,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_on.png" position="1525,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">3,3</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_un.png" position="1550,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_E</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_av.png" position="1550,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">16</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_on.png" position="1550,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">4,4</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_un.png" position="1575,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_F</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_av.png" position="1575,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">32</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_on.png" position="1575,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">5,5</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_un.png" position="1598,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_G</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_av.png" position="1598,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">64</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_on.png" position="1598,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">6,6</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_un.png" position="1625,45" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_H</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_av.png" position="1625,45" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">128</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_on.png" position="1625,45" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">7,7</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_un.png" position="1450,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_I</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_av.png" position="1450,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">256</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_on.png" position="1450,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">8,8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_un.png" position="1472,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_J</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_av.png" position="1472,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">512</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_on.png" position="1472,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">9,9</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_un.png" position="1502,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_K</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_av.png" position="1502,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1024</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_on.png" position="1502,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">10,10</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_un.png" position="1526,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_L</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_av.png" position="1526,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">2048</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_on.png" position="1526,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">11,11</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_m_un.png" position="1550,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_M</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_m_av.png" position="1550,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">4096</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_m_on.png" position="1550,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">12,12</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_n_un.png" position="1575,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_N</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_n_av.png" position="1575,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">8192</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_n_on.png" position="1575,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">13,13</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_o_un.png" position="1600,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_O</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_o_av.png" position="1600,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">8192</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_o_on.png" position="1600,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">14,14</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_p_un.png" position="1625,70" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_P</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_p_av.png" position="1625,70" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">16384</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_p_on.png" position="1625,70" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">15,15</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_q_un.png" position="1450,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_Q</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_q_av.png" position="1450,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">32768</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_q_on.png" position="1450,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">16,16</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_r_un.png" position="1475,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_R</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_r_av.png" position="1475,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">65536</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_r_on.png" position="1475,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">17,17</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_s_un.png" position="1500,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_S</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_s_av.png" position="1500,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">131072</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_s_on.png" position="1500,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">18,18</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_t_un.png" position="1525,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_T</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_t_av.png" position="1525,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">262144</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_t_on.png" position="1525,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">19,19</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_u_un.png" position="1550,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_U</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_u_av.png" position="1550,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">524288</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_u_on.png" position="1550,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">20,20</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_v_un.png" position="1575,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_V</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_v_av.png" position="1575,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1048576</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_v_on.png" position="1575,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">21,21</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_w_un.png" position="1600,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_W</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_w_av.png" position="1600,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">2097152</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_w_on.png" position="1600,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">22,22</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_x_un.png" position="1625,95" size="25,25" zPosition="1" alphatest="blend">
-    <convert type="GlamourTuners">Tuner_X</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_x_av.png" position="1625,95" size="25,25" zPosition="2" alphatest="blend">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">4194304</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_x_on.png" position="1625,95" size="25,25" zPosition="3" alphatest="blend">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">23,23</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-</screen>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_un.png" position="1450,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_A</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_av.png" position="1450,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_on.png" position="1450,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_un.png" position="1475,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_B</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_av.png" position="1475,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_b_on.png" position="1475,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_un.png" position="1500,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_C</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_av.png" position="1500,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_c_on.png" position="1500,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_un.png" position="1525,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_D</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_av.png" position="1525,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_d_on.png" position="1525,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_un.png" position="1550,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_E</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_av.png" position="1550,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_e_on.png" position="1550,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">4,4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_un.png" position="1575,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_F</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_av.png" position="1575,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_f_on.png" position="1575,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">5,5</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_un.png" position="1598,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_G</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_av.png" position="1598,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">64</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_g_on.png" position="1598,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">6,6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_un.png" position="1625,45" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_H</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_av.png" position="1625,45" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">128</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_h_on.png" position="1625,45" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">7,7</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_un.png" position="1450,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_I</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_av.png" position="1450,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">256</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_i_on.png" position="1450,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">8,8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_un.png" position="1472,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_J</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_av.png" position="1472,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">512</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_j_on.png" position="1472,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">9,9</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_un.png" position="1502,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_av.png" position="1502,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1024</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_k_on.png" position="1502,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">10,10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_un.png" position="1526,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_L</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_av.png" position="1526,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2048</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_l_on.png" position="1526,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">11,11</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_m_un.png" position="1550,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_M</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_m_av.png" position="1550,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4096</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_m_on.png" position="1550,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">12,12</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_n_un.png" position="1575,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_N</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_n_av.png" position="1575,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8192</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_n_on.png" position="1575,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">13,13</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_o_un.png" position="1600,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_O</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_o_av.png" position="1600,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8192</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_o_on.png" position="1600,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">14,14</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_p_un.png" position="1625,70" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_P</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_p_av.png" position="1625,70" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16384</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_p_on.png" position="1625,70" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">15,15</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_q_un.png" position="1450,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_Q</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_q_av.png" position="1450,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32768</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_q_on.png" position="1450,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">16,16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_r_un.png" position="1475,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_R</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_r_av.png" position="1475,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">65536</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_r_on.png" position="1475,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">17,17</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_s_un.png" position="1500,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_S</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_s_av.png" position="1500,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">131072</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_s_on.png" position="1500,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">18,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_t_un.png" position="1525,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_T</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_t_av.png" position="1525,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">262144</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_t_on.png" position="1525,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">19,19</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_u_un.png" position="1550,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_U</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_u_av.png" position="1550,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">524288</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_u_on.png" position="1550,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">20,20</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_v_un.png" position="1575,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_V</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_v_av.png" position="1575,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1048576</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_v_on.png" position="1575,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">21,21</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_w_un.png" position="1600,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_W</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_w_av.png" position="1600,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2097152</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_w_on.png" position="1600,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">22,22</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_x_un.png" position="1625,95" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="GlamourTuners">Tuner_X</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_x_av.png" position="1625,95" size="25,25" zPosition="2" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4194304</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_x_on.png" position="1625,95" size="25,25" zPosition="3" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">23,23</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
   <!-- Lower Icons Infobar & Resolution -->
   <screen name="IconsInfobar" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="1150,947" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
-    <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rec_on.png" position="1150,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="1170,947" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
+    <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rec_on.png" position="1170,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="1206,947" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="1206,947" size="60,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="1226,947" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="1226,947" size="60,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="GlamourBase">IsStreaming</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hd_off.png" position="1325,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" position="1325,947" size="50,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hd_on.png" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hd_off.png" position="1345,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="1345,947" size="50,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hd_on.png" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">900,1930</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_4k_off.png" position="1272,947" size="48,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_4k_on.png" position="1272,947" size="48,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_4k_off.png" position="1292,947" size="48,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_4k_on.png" position="1292,947" size="48,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">2800,4400</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="912,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" position="912,947" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1080,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" position="1080,947" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="1380,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_on.png" position="1380,947" size="84,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="1400,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_on.png" position="1400,947" size="84,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_off.png" position="1467,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_on.png" position="1467,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_off.png" position="1487,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_multiaudio_on.png" position="1487,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">AudioTracksAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_wide_off.png" position="1520,947" size="54,30" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_wide_on.png" position="1520,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_wide_off.png" position="1540,947" size="54,30" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_wide_on.png" position="1540,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="1580,947" size="80,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" position="1580,947" size="80,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="1600,947" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="1600,947" size="60,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1605,68 +1685,86 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- codec info -->
-    <ePixmap pixmap="GlamourAuraFHD/icons/codecs/codec_off.png" position="820,947" size="84,30" zPosition="4" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/hevc.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/codecs/codec_off.png" position="988,947" size="84,30" zPosition="4" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/hevc.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasHEVC</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avc.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avc.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasAVC</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg2.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg2.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasMPEG2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vc1.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vc1.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasVC1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h.263.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h.263.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasH263</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp8.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp8.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasVP8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp9.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp9.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasVP9</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp6.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp6.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasVP6</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/divx.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/divx.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasDIVX</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/xvid.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/xvid.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasXVID</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/spark.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/spark.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasSPARK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg1.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg1.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasMPEG1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg4vc.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg4vc.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasMPEG4VC</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avs.png" position="820,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avs.png" position="988,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasAVS</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <!-- color curve -->
+    <ePixmap pixmap="GlamourAuraFHD/icons/curve/curve_off.png" position="920,947" size="60,30" zPosition="4" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr.png" position="920,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr10.png" position="920,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/sdr.png" position="920,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsSDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hlg.png" position="920,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHLG</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <!-- Resolution info -->
-    <widget source="session.CurrentService" render="Label" position="525,942" size="150,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="635,942" size="140,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">VideoSize</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="680,942" size="135,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="780,942" size="135,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">Fps</convert>
     </widget>
   </screen>
@@ -1747,10 +1845,10 @@
   </screen>
   <!-- Weather Infobar -->
   <screen name="WeatherInfobar" flags="wfNoBorder">
-    <widget source="global.CurrentTime" render="Label" position="1005,942" zPosition="1" size="100,40" font="Numbers; 36" halign="center" text="+100 F" transparent="1" foregroundColor="cyan" noWrap="1" backgroundColor="black" valign="top">
+    <widget source="global.CurrentTime" render="Label" position="480,942" zPosition="1" size="100,40" font="Numbers; 36" halign="center" text="+100 F" transparent="1" foregroundColor="cyan" noWrap="1" backgroundColor="black" valign="top">
       <convert type="GlamMSNWeather">Temp</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/small" position="1105,942" size="40,40" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="GlamPiconUni" path="GlamourAuraFHD/WeatherIcons/small/" position="580,942" size="40,40" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamMSNWeather">Picon</convert>
     </widget>
   </screen>
@@ -1770,8 +1868,8 @@
       <convert type="GlamourExtra">CPULoad</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/infobar/cpuinfo.png" position="45,560" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="90,565" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU Info" halign="left" noWrap="1">
-      <convert type="GlamourExtra">CPU:$0 C1:$1 C2:$2</convert>
+    <widget source="session.CurrentService" render="Label" position="90,565" size="330,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU Info" halign="left" noWrap="1">
+      <convert type="GlamourExtra">CPU:$0 ($1$2$3 $4)</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/infobar/cpuspeed.png" position="45,600" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="90,605" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU speed" halign="left" noWrap="1">
@@ -1958,39 +2056,48 @@
       <convert type="GlamourAccess">ExsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/agt_emm.png" position="1410,995" size="50,25" zPosition="4" alphatest="blend" transparent="1">
-      <convert type="GlamourAccess">AgtCaS</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/caids/ru_no.png" position="1410,995" size="50,25" zPosition="3" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/ru_emm.png" position="1410,995" size="50,25" zPosition="4" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">RusCaS</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cc_emm.png" position="1410,995" size="50,25" zPosition="4" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/ru_ecm.png" position="1410,995" size="50,25" zPosition="5" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">RusEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cgd_emm.png" position="1462,995" size="50,25" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">CgdCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/agt_emm.png" position="1462,995" size="50,25" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">AgtCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cc_emm.png" position="1462,995" size="50,25" zPosition="4" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">CodiCaS</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/emu.png" position="1465,995" size="65,25" zPosition="8" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/emu.png" position="1515,995" size="65,25" zPosition="8" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">Emu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/crd.png" position="1465,995" size="65,25" zPosition="4" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/crd.png" position="1515,995" size="65,25" zPosition="4" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">Crd</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/net.png" position="1465,995" size="65,25" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/net.png" position="1515,995" size="65,25" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">Net</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cache.png" position="1465,995" size="65,25" zPosition="6" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cache.png" position="1515,995" size="65,25" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">Cache</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/fta.png" position="1465,995" size="65,25" zPosition="2" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/fta.png" position="1515,995" size="65,25" zPosition="2" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">Fta</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="CiModuleControl" allVisible="1" position="1550,990" size="250,35" transparent="1" font="RegularB;27" backgroundColor="sky" foregroundColor="amarillo" zPosition="5" />
+    <widget source="session.CurrentService" render="CiModuleControl" allVisible="1" position="1595,990" size="250,35" transparent="1" font="RegularB; 27" backgroundColor="sky" foregroundColor="amarillo" zPosition="5" />
   </screen>
   <!--  Ecm info -->
   <screen name="ECMInfo" flags="wfNoBorder">
@@ -2043,24 +2150,24 @@
     <widget source="session.CurrentService" render="Label" position="930,870" size="180,50" font="Numbers; 45" halign="center" valign="bottom" backgroundColor="background20" transparent="1" foregroundColor="sky" noWrap="1" zPosition="9">
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamRoll" position="285,960" size="1590,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
+    <widget source="session.CurrentService" render="GlamRoll" position="295,960" size="1580,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
       <convert type="GlamourBase">StreamUrl</convert>
     </widget>
   </screen>
   <!-- 10.5 MOVIE AND SERVICE INFOS -->
   <screen name="MovieServiceInfos" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="950,1016" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
-    <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rec_on.png" position="950,1016" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="880,1016" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
+    <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_rec_on.png" position="880,1016" size="50,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_4k_off.png" position="1080,1015" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_4k_on.png" position="1080,1015" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_4k_off.png" position="1010,1015" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_4k_on.png" position="1010,1015" size="50,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">2800,4400</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hd_off.png" position="1140,1015" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" position="1140,1015" size="50,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hd_on.png" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hd_off.png" position="1070,1015" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="1070,1015" size="50,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hd_on.png" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">900,2100</convert>
       <convert type="ConditionalShowHide" />
@@ -2089,8 +2196,8 @@
       <convert type="ServiceInfo">SubtitlesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="1010,1015" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="1010,1015" size="60,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="940,1015" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="940,1015" size="60,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -2100,6 +2207,7 @@
     <widget source="session.CurrentService" render="Label" position="625,1005" size="240,45" backgroundColor="grey2" foregroundColor="amarillo" transparent="1" zPosition="13" font="Numbers; 36" halign="left" valign="center" noWrap="1">
       <convert type="GlamourBase">Fps</convert>
     </widget>
+    <!-- codec info -->
     <ePixmap pixmap="GlamourAuraFHD/icons/codecs/codec_off.png" position="1297,1015" size="84,30" zPosition="4" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/hevc.png" position="1297,1015" size="84,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">HasHEVC</convert>
@@ -2157,52 +2265,71 @@
       <convert type="GlamourBase">HasAVS</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/resolution/arrow_off.png" position="1200,1015" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/isprogressive.png" position="1258,1015" size="27,30" zPosition="6" alphatest="blend" transparent="1">
+    <!-- color curve -->
+    <ePixmap pixmap="GlamourAuraFHD/icons/curve/curve_off.png" position="1225,1015" size="60,30" zPosition="4" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr10.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/sdr.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsSDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hlg.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHLG</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- resolution icons -->
+    <ePixmap pixmap="GlamourAuraFHD/icons/resolution/arrow_off.png" position="1130,1015" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/isprogressive.png" position="1188,1015" size="27,30" zPosition="6" alphatest="blend" transparent="1">
       <convert type="GlamourBase">IsProgressive</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/isinterlaced.png" position="1259,1015" size="27,30" zPosition="7" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/isinterlaced.png" position="1189,1015" size="27,30" zPosition="7" alphatest="blend" transparent="1">
       <convert type="GlamourBase">IsInterlaced</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is1080.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is1080.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is1080</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is720.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is720.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is720</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is1440.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is1440.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is1440</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is2160.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is2160.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is2160</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is576.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is576.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is576</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is480.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is480.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is480</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is360.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is360.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is360</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is288.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is288.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is288</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is240.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is240.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is240</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is144.png" position="1200,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/resolution/is144.png" position="1130,1015" size="84,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="GlamourBase">Is144</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -2256,7 +2383,7 @@
     <panel name="TunerInfobar" />
     <panel name="TunersInfo" />
     <!-- Service info and icons -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_blueglass.png" position="400,942" zPosition="-3" size="1520,40" alphatest="on" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_blueglass.png" position="350,942" zPosition="-3" size="1570,40" alphatest="on" transparent="1" />
     <panel name="IconsInfobar" />
     <!-- MIDDLE INFOBAR MAIN INFO -->
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_chname.png" position="350,708" zPosition="-1" size="1570,130" alphatest="on" transparent="1" />
@@ -2267,7 +2394,7 @@
       <convert type="ServiceName">Provider</convert>
     </widget>
     <!-- Crypt Info -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_crypt.png" position="0,990" zPosition="-1" size="1700,35" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_crypt.png" position="0,990" zPosition="-1" size="1800,35" alphatest="blend" transparent="1" />
     <panel name="CryptInfo" />
     <panel name="CamName" />
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_ecminfo.png" position="150,1030" zPosition="-2" size="1770,35" alphatest="on" transparent="1" />
@@ -2289,7 +2416,7 @@
     <panel name="TunerInfobar" />
     <panel name="TunersInfo" />
     <!-- Service info and icons -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_blueglass.png" position="400,942" zPosition="-3" size="1520,40" alphatest="off" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_blueglass.png" position="350,942" zPosition="-3" size="1570,40" alphatest="off" transparent="1" />
     <panel name="IconsInfobar" />
     <!-- MIDDLE INFOBAR MAIN INFO -->
     <panel name="MainInfobar" />
@@ -2304,7 +2431,7 @@
     <!-- Memory Info -->
     <panel name="MemoryInfobar" />
     <!-- Crypt Info -->
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_crypt.png" position="0,990" zPosition="-1" size="1700,35" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_crypt.png" position="0,990" zPosition="-1" size="1800,35" alphatest="blend" transparent="1" />
     <panel name="CryptInfo" />
     <panel name="CamName" />
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_ecminfo.png" position="150,1030" zPosition="-2" size="1770,35" alphatest="on" transparent="1" />
@@ -2488,7 +2615,7 @@
     <ePixmap pixmap="GlamourAuraFHD/icons/sound/volume.png" position="15,425" size="90,90" backgroundColor="background20" alphatest="blend" zPosition="1" transparent="1" />
     <eLabel position="60,75" size="4,340" backgroundColor="grey2" foregroundColor="grey2" zPosition="4" />
     <widget name="Volume" pixmap="GlamourAuraFHD/pointers/volumepointer_blue.png" orientation="orBottomToTop" position="59,75" size="6,340" zPosition="19" transparent="1" alphatest="blend" />
-    <widget render="GlamVolumeText" source="global.CurrentTime" font="Numbers; 60" position="1,0" size="120,65" backgroundColor="background20" halign="center" valign="center" foregroundColor="white" zPosition="20" transparent="1" />
+    <widget name="VolumeText" font="Numbers; 60" position="1,0" size="120,65" backgroundColor="background20" halign="center" valign="center" foregroundColor="white" zPosition="20" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="0,0" size="120,270" transparent="1" alphatest="blend" zPosition="-7" />
   </screen>
   <!-- 02. Mute -->
@@ -2496,16 +2623,16 @@
     <ePixmap position="15,0" zPosition="8" size="90,90" pixmap="GlamourAuraFHD/icons/sound/mute.png" alphatest="on" transparent="1" />
   </screen>
   <!-- 03. Unhandled Key -->
-  <screen name="UnhandledKey" position="75,155" size="115,115" backgroundcolor="background20" title="UnhandledKey" zPosition="15" flags="wfNoBorder">
+  <screen name="UnhandledKey" position="75,155" size="115,115" backgroundColor="background20" title="UnhandledKey" zPosition="15" flags="wfNoBorder">
     <widget alphatest="blend" name="UnhandledKeyPixmap" pixmap="GlamourAuraFHD/icons/unhandled_key.png" transparent="1" position="0,0" size="115,115" zPosition="6" />
   </screen>
   <!-- 04. Dish -->
   <screen name="Dish" position="1350,150" size="340,220" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
     <widget name="Dishpixmap" pixmap="GlamourAuraFHD/icons/dishflash.png" position="0,0" size="160,160" alphatest="blend" transparent="1" zPosition="1" />
     <widget name="turnTime" position="160,70" size="150,35" zPosition="2" font="RegularB; 27" halign="center" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="transparent" />
-    <eLabel name="From" position="160,105" size="80,35" zPosition="2" font="Regular; 26" halign="left" transparent="1" text="From :" foregroundColor="white" backgroundColor="transparent" noWrap="1" />
+    <widget name="From" position="160,105" size="80,35" zPosition="2" font="Regular; 26" halign="left" transparent="1" foregroundColor="white" backgroundColor="transparent" noWrap="1" />
     <widget name="posFrom" position="240,105" size="90,35" zPosition="3" font="Regular; 26" halign="left" transparent="1" foregroundColor="white" backgroundColor="transparent" noWrap="1" />
-    <eLabel name="Goto" position="160,140" size="80,35" zPosition="2" font="Regular; 26" halign="left" transparent="1" text="Goto :" foregroundColor="white" backgroundColor="transparent" noWrap="1" />
+    <widget name="Goto" position="160,140" size="80,35" zPosition="2" font="Regular; 26" halign="left" transparent="1" foregroundColor="white" backgroundColor="transparent" noWrap="1" />
     <widget name="posGoto" position="240,140" size="90,35" zPosition="3" font="Regular; 26" halign="left" transparent="1" foregroundColor="white" backgroundColor="transparent" noWrap="1" />
     <widget name="tunerName" position="160,0" size="170,35" zPosition="2" font="RegularB; 30" halign="center" foregroundColor="sky" backgroundColor="transparent" transparent="1" noWrap="1" />
     <widget name="turnSpeed" position="160,35" size="150,35" zPosition="4" font="Regular; 27" halign="center" foregroundColor="white" backgroundColor="transparent" transparent="1" noWrap="1" />
@@ -2640,16 +2767,16 @@
     <panel name="ClockLabel1" />
     <panel name="Title1" flags="wfNoBorder" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/service_info.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="infolist" position="540,60" size="1050,650" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionblue1050.png" zPosition="5" />
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="540,720" size="80,30" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="540,720" size="80,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend">
+    <widget name="infolist" position="530,50" size="1050,765" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/auraselectionblue1050.png" zPosition="5" />
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="540,815" size="60,30" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="540,815" size="60,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" backgroundColor="background20" foregroundColor="cyan2" render="GlamRoll" font="RegularB;30" position="640,720" size="935,45" halign="left" valign="top" transparent="1" zPosition="9">
+    <widget source="session.CurrentService" backgroundColor="background20" foregroundColor="cyan2" render="Label" font="RegularB;30" position="620,815" size="1255,45" halign="left" valign="top" transparent="1" zPosition="9">
       <convert type="ServiceInfo">HasHBBTV</convert>
     </widget>
-    <widget backgroundColor="background20" foregroundColor="sky" source="session.CurrentService" render="Label" font="Regular; 30" position="540,770" size="1335,175" halign="left" valign="top" transparent="1" zPosition="8">
+    <widget backgroundColor="background20" foregroundColor="sky" source="session.CurrentService" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" font="Regular; 30" position="540,860" size="1335,100" halign="left" valign="top" transparent="1" zPosition="8">
       <convert type="GlamourAccess">CaidInfo</convert>
     </widget>
     <panel name="FullKeysV1" />
@@ -2753,21 +2880,39 @@
     <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,225" size="715,525" font="RegularB; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRoll" position="50,755" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
-      <convert type="GlamNextEvents">Event1,noDuration</convert>
+    <!-- NEXT EVENTS -->
+    <widget source="ServiceEvent" render="Label" position="50,755" size="80,40" halign="left" valign="top" foregroundColor="amarillo" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
+      <convert type="GlamNextEvents">Event1,beginTime</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRoll" position="50,795" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="2">
-      <convert type="GlamNextEvents">Event2,noDuration</convert>
+    <widget source="ServiceEvent" render="Label" position="50,795" size="80,40" halign="left" valign="top" foregroundColor="amarillo" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="2">
+      <convert type="GlamNextEvents">Event2,beginTime</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRoll" position="50,835" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="3">
-      <convert type="GlamNextEvents">Event3,noDuration</convert>
+    <widget source="ServiceEvent" render="Label" position="50,835" size="80,40" halign="left" valign="top" foregroundColor="amarillo" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="3">
+      <convert type="GlamNextEvents">Event3,beginTime</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRoll" position="50,875" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
-      <convert type="GlamNextEvents">Event4,noDuration</convert>
+    <widget source="ServiceEvent" render="Label" position="50,875" size="80,40" halign="left" valign="top" foregroundColor="amarillo" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
+      <convert type="GlamNextEvents">Event4,beginTime</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRoll" position="50,915" size="715,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
-      <convert type="GlamNextEvents">Event5,noDuration</convert>
+    <ePixmap pixmap="GlamourAuraFHD/skin_default/icons/epgclock_primetime.png" position="40,915" size="40,40" zPosition="6" alphatest="on" transparent="1" />
+    <widget source="ServiceEvent" render="Label" position="85,915" size="80,40" halign="left" valign="top" foregroundColor="amarillo" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
+      <convert type="GlamNextEvents">PrimeTime,beginTime</convert>
     </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="130,755" size="640,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
+      <convert type="GlamNextEvents">Event1,titleWithDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="130,795" size="640,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="2">
+      <convert type="GlamNextEvents">Event2,titleWithDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="130,835" size="640,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="3">
+      <convert type="GlamNextEvents">Event3,titleWithDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="130,875" size="640,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
+      <convert type="GlamNextEvents">Event4,titleWithDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="GlamRoll" position="165,915" size="600,40" halign="left" valign="top" foregroundColor="green" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
+      <convert type="GlamNextEvents">PrimeTime,titleWithDuration</convert>
+    </widget>
+    <!-- CHANNEL INFOS -->
     <widget position="50,960" size="720,35" source="ServiceEvent" render="GlamTP" font="RegularB; 26" halign="left" valign="center" noWrap="1" backgroundColor="grey2" zPosition="3" transparent="1" foregroundColor="black" />
     <widget position="50,1000" size="720,35" source="ServiceEvent" render="GlamPids" font="Numbers; 31" halign="left" valign="center" noWrap="1" backgroundColor="darkgrey" zPosition="3" transparent="1" foregroundColor="amarillo" />
     <panel name="FullKeysCC" />
@@ -2821,8 +2966,8 @@
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="475,833" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" position="475,833" size="84,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="485,833" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="485,833" size="60,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -3406,7 +3551,7 @@
     <ePixmap position="135,315" size="400,400" pixmap="GlamourAuraFHD/icons/tv.png" alphatest="on" transparent="1" zPosition="5" />
     <widget source="Title" render="Label" position="655,40" size="990,95" font="Regular; 34" backgroundColor="background20" transparent="1" halign="left" valign="top" zPosition="4" foregroundColor="cyan1" />
     <widget name="list" position="655,135" size="1200,800" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/epgselmultiblue.png" itemHeight="50" zPosition="3" />
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <screen name="SlimChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ChannelSelection" />
@@ -3486,11 +3631,14 @@
     <widget name="datetime" position="125,585" size="405,60" font="RegularB; 36" halign="center" backgroundColor="cyan2" transparent="1" zPosition="4" />
     <widget name="duration" position="125,685" size="405,60" font="RegularB; 36" halign="center" backgroundColor="cyan2" transparent="1" zPosition="5" />
     <widget name="epg_description" position="665,160" size="1210,780" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="2" />
-    <widget source="session.Event_Now" render="Label" position="40,400" size="600,90" transparent="1" zPosition="8" foregroundColor="cyan1" font="Regular; 28" halign="center" backgroundColor="background20" valign="center">
+    <widget source="session.Event_Now" render="Label" position="40,390" size="600,90" transparent="1" zPosition="8" foregroundColor="lightciel" font="Regular; 28" halign="center" backgroundColor="background20" valign="center">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="40,490" size="600,70" transparent="1" zPosition="8" foregroundColor="cyan" font="Regular; 28" halign="center" backgroundColor="background20" valign="center">
+    <widget source="session.Event_Now" render="Label" position="40,480" size="600,40" transparent="1" zPosition="8" foregroundColor="cyan1" font="Regular; 28" halign="center" backgroundColor="background20" valign="center" noWrap="1">
       <convert type="EventName">Rating</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="40,520" size="600,40" transparent="1" zPosition="8" foregroundColor="amarillo" font="RegularB; 28" halign="center" valign="center" backgroundColor="background20" noWrap="1">
+      <convert type="EventName">SmallRating</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="37,890" size="600,105" transparent="1" zPosition="8" foregroundColor="black" font="RegularB; 30" halign="center" valign="center" backgroundColor="grey2">
       <convert type="EventName">NameNext</convert>
@@ -3506,44 +3654,44 @@
       <convert type="ValueRange">720,1988</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="165,850" size="84,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_on.png" position="165,850" size="84,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="170,850" size="84,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_on.png" position="170,850" size="84,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_4k_off.png" position="105,850" size="52,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_4k_on.png" position="105,850" size="52,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_4k_off.png" position="110,850" size="52,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_4k_on.png" position="110,850" size="52,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">2800,4400</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_wide_off.png" position="260,850" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_wide_on.png" position="260,850" size="54,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_wide_off.png" position="265,850" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_wide_on.png" position="265,850" size="54,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="320,850" size="84,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" position="320,850" size="84,30" zPosition="4" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="330,850" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="330,850" size="60,30" zPosition="4" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_txt_off.png" position="410,850" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_txt_on.png" position="410,850" size="54,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_txt_off.png" position="400,850" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_txt_on.png" position="400,850" size="54,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_off.png" position="470,850" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_on.png" position="470,850" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_off.png" position="460,850" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_on.png" position="460,850" size="50,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="EventName">Pdc</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_off.png" position="595,850" size="33,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_on.png" position="595,850" size="33,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_off.png" position="585,850" size="33,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_on.png" position="585,850" size="33,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="530,850" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="530,850" size="60,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="520,850" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="520,850" size="60,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="GlamourBase">IsStreaming</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -3557,7 +3705,7 @@
     <widget source="ServiceEvent" render="Picon" position="125,90" size="400,240" transparent="1" alphatest="blend" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <!-- 07. EventView Context -->
   <screen name="EventViewContextMenu" position="center,center" size="1920,1080" title="Channellist menu" flags="wfNoBorder" backgroundColor="transparent">
@@ -3608,33 +3756,33 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="1370,855" size="84,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" position="1370,855" size="84,30" zPosition="4" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_off.png" position="1370,855" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="1370,855" size="60,30" zPosition="4" pixmap="GlamourAuraFHD/icons/infobar/ico_hbbtv_on.png" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_txt_off.png" position="1460,855" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_txt_on.png" position="1460,855" size="54,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_txt_off.png" position="1440,855" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_txt_on.png" position="1440,856" size="54,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_sub_off.png" position="1520,855" size="50,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_sub_on.png" position="1520,855" size="50,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_sub_off.png" position="1500,855" size="50,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_sub_on.png" position="1500,855" size="50,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_off.png" position="1700,855" size="33,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_on.png" position="1700,855" size="33,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_off.png" position="1680,855" size="33,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_crypt_on.png" position="1680,855" size="33,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_off.png" position="1645,855" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_on.png" position="1645,855" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_off.png" position="1625,855" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_pdc_on.png" position="1625,855" size="50,30" zPosition="2" alphatest="blend" transparent="1">
       <convert type="EventName">Pdc</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="1580,855" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="1580,855" size="60,30" zPosition="4" alphatest="blend" transparent="1">
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_stream_off.png" position="1560,855" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/ico_stream_on.png" position="1560,855" size="60,30" zPosition="4" alphatest="blend" transparent="1">
       <convert type="GlamourBase">IsStreaming</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -3775,7 +3923,7 @@ if not self["videofps"].text:
     </widget>
     <widget name="list" position="615,140" size="1290,800" itemHeight="50" font="Regular;28" setEventItemFont="Regular;28" setEventTimeFont="Regular;24" setColWidths="120,200" setColGap="20" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/epgselblue.png" zPosition="4" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="1550,45" size="90,45" alphatest="blend" transparent="1" zPosition="5" />
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <!-- 02. Multi EPG selection -->
   <screen name="EPGSelectionMulti" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -3797,7 +3945,7 @@ if not self["videofps"].text:
     <widget name="more_text" position="1150,140" size="220,60" zPosition="6" text="MORE" font="Caps; 30" halign="center" backgroundColor="background20" foregroundColor="amarillo" transparent="1" noWrap="1" valign="center" />
     <widget name="date" position="1380,145" size="480,60" font="Regular; 28" valign="center" halign="right" transparent="1" noWrap="1" backgroundColor="background20" zPosition="5" foregroundColor="yellow" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="1550,45" size="90,45" alphatest="blend" transparent="1" zPosition="5" />
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <!-- 03. Graphical Multi EPG -->
   <screen name="GraphMultiEPG" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
@@ -3827,7 +3975,7 @@ if not self["videofps"].text:
     <widget name="list" position="650,205" size="1220,720" itemHeight="60" ServiceFont="Regular;30" recIconSize="45" piconWidth="320" ServiceBackgroundColor="background20" ServiceBackgroundColorSelected="rssviewtop" ServiceBorderColor="grey" ServiceBorderWidth="1" ServiceNameForegroundColor="white" ServiceForegroundColorSelected="amarillo" EntryFont="Regular;30" EntryBackgroundColor="transpdark" EntryBackgroundColorNow="clearpurple" EntryBackgroundColorNowSelected="clearorange" EntryBackgroundColorSelected="clearcyan" EntryBorderColor="grey" EntryForegroundColor="white" EntryForegroundColorNow="white" EntryForegroundColorSelected="amarillo" foreColorSelectedRec="transpRed" EventBorderWidth="1" scrollbarMode="showOnDemand" transparent="1" zPosition="8" />
     <widget name="timeline_now" position="665,205" zPosition="9" size="22,720" pixmap="GlamourAuraFHD/menu/timeline-now.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="1550,45" size="90,45" alphatest="blend" transparent="1" zPosition="5" />
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <!-- 04. Graphical MultiEPG List -->
   <screen name="GraphMultiEPGList" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
@@ -3842,7 +3990,7 @@ if not self["videofps"].text:
     <ePixmap position="240,960" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_info_big.png" transparent="1" alphatest="blend" />
     <ePixmap position="365,960" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_menu_big.png" transparent="1" alphatest="blend" />
     <ePixmap position="495,960" size="90,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_ok_big.png" transparent="1" alphatest="blend" />
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <!-- 05. Graphical Multi Epg Setup -->
   <screen name="GraphMultiEpgSetup" position="center,center" size="1920,1080" title="Electronic Program Guide Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -3887,7 +4035,7 @@ if not self["videofps"].text:
     <ePixmap position="240,960" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_info_big.png" transparent="1" alphatest="blend" />
     <ePixmap position="365,960" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_menu_big.png" transparent="1" alphatest="blend" />
     <ePixmap position="495,960" size="90,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_ok_big.png" transparent="1" alphatest="blend" />
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <!-- 07. Graphical EPG PIG -->
   <screen name="GraphicalEPGPIG" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
@@ -3930,7 +4078,7 @@ if not self["videofps"].text:
     <ePixmap position="365,960" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_menu_big.png" transparent="1" alphatest="blend" />
     <ePixmap position="495,960" size="90,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_ok_big.png" transparent="1" alphatest="blend" />
     <widget source="session.VideoPicture" render="Pig" position="1145,545" size="720,405" backgroundColor="transparent" zPosition="21" />
-    <panel name="FullKeys3" />
+    <panel name="FullKeys2" />
   </screen>
   <!-- 08. Movie EPG -->
   <screen name="MovieEpgSetup" position="0,0" size="1920,1080" title="MovieEpg Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -4013,7 +4161,7 @@ if not self["videofps"].text:
     <widget name="textbook" position="1150,75" size="705,55" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="4" foregroundColor="sky" halign="center" />
     <widget name="booklist" font="Regular;32" position="1150,200" size="705,650" itemHeight="50" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/boxselectionblue.png" alphatest="blend" transparent="1" zPosition="5" />
     <ePixmap position="420,885" size="120,60" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_menu_big.png" transparent="1" alphatest="blend" />
-    <panel name="FullKeys2" />
+    <panel name="FullKeys1" />
   </screen>
   <!-- 05. MessageBox -->
   <screen name="MessageBox" position="0,0" size="1920,1080" zPosition="1" title="Message" backgroundColor="transparent" flags="wfNoBorder">
@@ -4182,7 +4330,7 @@ if not self["videofps"].text:
     <!-- Keys -->
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_info_medium.png" position="665,905" size="90,45" alphatest="blend" zPosition="4" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="765,905" size="90,45" alphatest="blend" zPosition="4" transparent="1" />
-    <panel name="FullKeys3" flags="wfNoBorder" />
+    <panel name="FullKeys2" flags="wfNoBorder" />
   </screen>
   <!-- 06. Movie Tag Editor -->
   <screen name="MovieTagEditor" position="0,0" size="1920,1080" title="edit tags..." flags="wfNoBorder" backgroundColor="transparent">
@@ -4241,7 +4389,7 @@ if not self["videofps"].text:
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="1540,40" size="90,45" alphatest="blend" zPosition="4" transparent="1" />
-    <panel name="FullKeys3" flags="wfNoBorder" />
+    <panel name="FullKeys2" flags="wfNoBorder" />
   </screen>
   <!-- ### TUNER MENUS -->
   <!-- 01. Nim selection -->
@@ -4307,7 +4455,7 @@ if not self["videofps"].text:
     <eLabel text="FEC:" position="1335,705" size="225,50" font="Regular; 32" backgroundColor="background20" transparent="1" zPosition="3" />
     <widget name="fec_value" position="1585,705" size="225,50" font="Regular; 32" backgroundColor="background20" transparent="1" zPosition="4" />
     <widget name="status_bar" position="540,765" size="645,50" font="RegularB; 32" foregroundColor="yellow" halign="center" zPosition="7" transparent="1" backgroundColor="background20" />
-    <panel name="FullKeys2" />
+    <panel name="FullKeys1" />
   </screen>
   <!-- 05. Satfinder -->
   <screen name="Satfinder" position="0,0" size="1920,1080" title="Satfinder" flags="wfNoBorder" backgroundColor="transparent">
@@ -4474,7 +4622,7 @@ if not self["videofps"].text:
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/satellite.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="list" font="Regular; 30" position="540,90" size="1320,650" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/scanselectionblue.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <widget source="hint" render="Label" position="540,750" size="1305,100" font="Regular; 30" foregroundColor="sky" halign="left" backgroundColor="background20" valign="top" transparent="1" zPosition="5" />
-    <panel name="FullKeys2" />
+    <panel name="FullKeys1" />
   </screen>
   <!-- 14. CableScan  -->
   <screen name="CableScanScreen" position="0,0" size="1920,1080" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
