@@ -896,7 +896,7 @@
   <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom.png" position="0,520" zPosition="-11" size="90,75" alphatest="off" transparent="1" />
   <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb810.png" position="155,45" size="810,45" zPosition="-10" alphatest="blend" transparent="1" />
   <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="895,35" size="90,45" alphatest="blend" transparent="1" zPosition="5" />
-  <ePixmap pixmap="GlamourAuraFHD/icons/menuicons/autovolume.png" position="105,105" size="180,180" zPosition="3" alphatest="on" transparent="1" />
+  <ePixmap pixmap="GlamourAuraFHD/icons/autovolume.png" position="105,105" size="180,180" scale="1" zPosition="3" alphatest="on" transparent="1" />
   <widget name="ServiceInfoLabel" position="25,5" size="220,40" font="Regular; 28" backgroundColor="background20" transparent="1" noWrap="1" valign="bottom" zPosition="5" />
   <widget name="ServiceInfo" position="245,5" size="380,40" font="Regular; 28" backgroundColor="background20" foregroundColor="cyan2" transparent="1" noWrap="1" valign="bottom" zPosition="5" />
   <widget name="ChannelImg" pixmaps="GlamourAuraFHD/icons/lock_off.png,GlamourAuraFHD/icons/lock_on.png" position="25,40" size="45,45" transparent="1" alphatest="on" zPosition="4" />
