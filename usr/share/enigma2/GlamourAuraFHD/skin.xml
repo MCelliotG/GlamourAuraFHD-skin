@@ -449,415 +449,415 @@
   </screen>
   <!-- 02-0. Menu General -->
   <screen name="MainMenuTiles" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/cisetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/cisetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">ci_setup</convert>
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/ciassign.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ciassign.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">ci_assign</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- 02-1. MainMenu -->
   <screen name="MainMenuContent" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/epgimport.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgimport.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">epgimporter</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/epgrefresh.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgrefresh.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">start_EPG-refresh</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/shutdown.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/shutdown.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">standby_restart_list</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/setup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/setup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">setup_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/plugin.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/plugin.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">plugin_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/info.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/info.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">info_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/scart.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/scart.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">scart_switch</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/timer.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/timer.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">timer_menu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/timer.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/timer.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">timer_edit</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/media.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/media.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">media_player</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/dvd.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/dvd.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">dvd_player</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/subs.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/subs.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">subtitle_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/filecommander.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/filecommander.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">filecommand</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/multiquick.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/multiquick.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">multi_quick</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/googlemaps.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/googlemaps.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">googlemaps</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/media.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/media.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">dmc_mainmenu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/TSmedia.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/TSmedia.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">TSmedia_mainmenu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/TSpanel.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/TSpanel.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">TSpanel_mainmenu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/panel+.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/panel+.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">panel_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/panel+.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/panel+.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">newmenu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/iptv.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/iptv.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">iptv_main</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/youtube.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/youtube.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">youtube_tv</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- 02-2. MenuInfo -->
   <screen name="MenuInfo" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/service_info.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/service_info.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">service_info_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/about.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/about.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">about_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/rfmod.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/rfmod.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">streaming_clients_info_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/msnweather.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/msnweather.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">Weather_MSN</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- 02-3. MenuSetup -->
   <screen name="MenuSetup" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/dish.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/dish.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">service_searching_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/system.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/system.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">system_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/parental.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/parental.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">parental_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/wizard.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/wizard.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">startwizzard</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/factory.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/factory.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">factory_reset</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/softwaremanager.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/softwaremanager.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">software_manager</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/softupdate.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/softupdate.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">software_update</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/crossepg.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/crossepg.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">crossepg</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/camsetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/camsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/flashimage.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/flashimage.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">flash_image</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/backup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/backup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">autobackup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- 02-4. MenuScan -->
   <screen name="MenuScan" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/tuner.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/tuner.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">tuner_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/default_lists.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/default_lists.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">default_lists</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/auto_scan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/auto_scan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">auto_scan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/manual_scan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/manual_scan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">manual_scan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/fast_scan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/fast_scan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">fastscan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/cable_scan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/cable_scan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">cablescan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/blind_scan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/blind_scan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">blindscan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/satfinder.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/satfinder.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">satfinder</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/signal.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/signal.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">positioner_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/sateqc.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/sateqc.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">satellite_equipment_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/satellite.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/satellite.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">sat_editor</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/buttonsetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/buttonsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">fallbacktuner_settings</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/bouquet.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/bouquet.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">autobouquetsmakermaker</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/satip.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/satip.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">sat_ip_client</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/streamconvert.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/streamconvert.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">streamconvert</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/sundtek.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/sundtek.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">sundtek_control_enter</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/ipbox.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ipbox.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">ipbox_client_Start</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- 02-5. MenuSystem -->
   <screen name="MenuSystem" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/expert.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/expert.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">expert_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/audiovideo.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/audiovideo.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">video_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/customize.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/customize.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">usage_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/ui.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ui.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">user_interface</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/infopanel.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/infopanel.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">gui_settings</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/rfmod.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/rfmod.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">rfmod_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/autovolume.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/autovolume.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">AutomaticVolumeAdjustment</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/vps.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/vps.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">vps</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/display.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/display.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">vfd_ini</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/fan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/fan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">fansetup_config</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/tempfan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/tempfan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">tempfancontrol</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/crashlog.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/crashlog.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">crashlog_config</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/devicemanager.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/devicemanager.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">deviceManager</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/ntp.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ntp.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">system_time_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/iptv.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/iptv.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">iptv_config</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/view.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/view.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">serviceapp_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/swap.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/swap.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">swapfile_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/hddsetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/hddsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">device_manager</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- 02-6. MenuVideo -->
   <screen name="MenuVideo" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/avsetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/avsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">av_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/subsetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/subsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">subtitle_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/autolang.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/autolang.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">autolanguage_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/videoenhancement.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/videoenhancement.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">videoenhancement_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/autores.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/autores.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">autores_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/hdmicec.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/hdmicec.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">hdmi_cec_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/skins.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">skin_selector</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/auto_3d.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/auto_3d.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">auto_3d_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/video_finetune.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/video_finetune.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">video_finetune</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/overscan.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/overscan.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">sd_position_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- 02-7. MenuExpert -->
   <screen name="MenuExpert" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/quickmenu.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/quickmenu.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">accesslevel_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/epgsetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">epg_settings</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/recording.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/recording.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">recording_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/hdd.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/hdd.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">hardisk_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/network.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/network.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">network_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/input_devices.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/input_devices.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">input_device_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/keyboard.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/keyboard.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">keyboard_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/input_devices.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/input_devices.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">input_device_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/recordpaths.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/recordpaths.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">RecordPaths</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/languages.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/languages.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">language_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/timezone.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/timezone.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">timezone_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/hotkey.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/hotkey.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">hotkey_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/led.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/led.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">lcd_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/transcode.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/transcode.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">transcoding_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -933,23 +933,23 @@
   </screen>
   <!-- 02-11. Menu GUI -->
   <screen name="MenuGUI" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/languages.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/languages.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">language_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/timezone.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/timezone.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">timezone_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/epgsetup.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">epg_settings</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/ui.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ui.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">user_interface</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/menuicons/skins.png" position="515,425" size="180,180" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">skin_selector</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1856,26 +1856,30 @@
   </screen>
   <!-- CPU & Temp Infobar -->
   <screen name="CPUTempInfobar" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_cpu.png" position="0,420" zPosition="-6" size="400,240" alphatest="on" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/infobar/cputemp.png" position="45,440" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="90,445" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="Temperature" noWrap="1">
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_cpu.png" position="0,400" zPosition="-6" size="400,290" alphatest="on" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cputemp.png" position="45,420" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,425" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="Temperature" noWrap="1">
       <convert type="GlamourExtra">Temperature</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/infobar/fanspeed.png" position="45,480" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="90,485" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="HDDTemp" noWrap="1">
+    <ePixmap pixmap="GlamourAuraFHD/infobar/fanspeed.png" position="45,460" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,465" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="FanInfo" noWrap="1">
       <convert type="GlamourExtra">FanInfo</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuload.png" position="45,520" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="90,525" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="CPUload" halign="left" noWrap="1">
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuload.png" position="45,500" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,505" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="CPUload" halign="left" noWrap="1">
       <convert type="GlamourExtra">CPULoad</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuinfo.png" position="45,560" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="90,565" size="330,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU Info" halign="left" noWrap="1">
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuinfo.png" position="45,540" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,545" size="330,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU Info" halign="left" noWrap="1">
       <convert type="GlamourExtra">CPU:$0 ($1$2$3 $4)</convert>
     </widget>
-    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuspeed.png" position="45,600" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="90,605" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU speed" halign="left" noWrap="1">
+    <ePixmap pixmap="GlamourAuraFHD/infobar/cpuspeed.png" position="45,580" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,585" size="310,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="CPU speed" halign="left" noWrap="1">
       <convert type="GlamourExtra">CPUSpeed</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/infobar/uptime.png" position="45,620" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="90,625" size="330,35" font="Regular; 26" zPosition="6" backgroundColor="background20" transparent="1" text="Uptime" halign="left" noWrap="1">
+      <convert type="GlamourExtra">Uptime</convert>
     </widget>
   </screen>
   <!-- HDD/USB Infopanel -->
@@ -2099,11 +2103,11 @@
       <convert type="GlamourAccess">Fta</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="CiModuleControl" allVisible="1" position="1595,990" size="250,35" transparent="1" font="RegularB; 27" backgroundColor="sky" foregroundColor="amarillo" zPosition="5" />
+    <widget source="session.CurrentService" render="GlamCI" allVisible="1" position="1595,990" size="250,35" transparent="1" font="RegularB; 27" backgroundColor="sky" foregroundColor="amarillo" zPosition="5" />
   </screen>
   <!--  Ecm info -->
   <screen name="ECMInfo" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=2,startdelay=3000,nowrap,oneshot=1,always=0" position="280,1030" size="1600,35" font="Numbers; 30" halign="left" zPosition="7" backgroundColor="grey" transparent="1" text="Ecm Info" valign="center" noWrap="1" foregroundColor="amarillo">
+    <widget source="session.CurrentService" render="Label" position="280,1030" size="1600,35" font="Numbers; 30" halign="left" zPosition="7" backgroundColor="grey" transparent="1" text="Ecm Info" valign="center" noWrap="1" foregroundColor="amarillo">
       <convert type="GlamourAccess">EcmInfo</convert>
     </widget>
   </screen>
@@ -2530,7 +2534,7 @@
   <screen name="menu_harddisk" position="0,0" size="1920,1080" title="Standby /restart" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuBackground" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
-    <ePixmap position="150,425" size="180,180" pixmap="GlamourAuraFHD/icons/menuicons/hdd.png" alphatest="on" transparent="1" zPosition="5" />
+    <ePixmap position="150,425" size="180,180" scale="1" pixmap="GlamourAuraFHD/icons/hdd.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
     <panel name="MainMenu1" />
     <panel name="MenuHDD" />
@@ -2540,7 +2544,7 @@
   <screen name="menu_cam" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MenuBackground" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
-    <ePixmap position="125,425" size="180,180" pixmap="GlamourAuraFHD/icons/menuicons/camsetup.png" alphatest="on" transparent="1" zPosition="5" />
+    <ePixmap position="125,425" size="180,180" scale="1" pixmap="GlamourAuraFHD/icons/camsetup.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
     <panel name="MainMenu1" />
     <panel name="MenuCam" />
@@ -2549,18 +2553,18 @@
   <screen name="menu_shutdown" position="0,0" size="1920,1080" title="Standby /restart" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuBackground" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
-    <ePixmap position="150,425" size="180,180" pixmap="GlamourAuraFHD/icons/menuicons/shutdown.png" alphatest="on" transparent="1" zPosition="5" />
+    <ePixmap position="150,425" size="180,180" scale="1" pixmap="GlamourAuraFHD/icons/shutdown.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
     <panel name="MainMenu1" />
     <panel name="MenuShutdown" />
   </screen>
   <!-- 11. Update Plugin Menu -->
   <screen name="UpdatePluginMenu" position="0,0" size="1920,1080" title="Softwaremanager..." backgroundColor="transparent" flags="wfNoBorder">
-  <panel name="MainBackground1" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <widget source="menu" render="Listbox" position="770,45" size="990,640" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuselectionf990.png" alphatest="blend" zPosition="5">
-    <convert type="TemplatedMultiContent">
+    <panel name="MainBackground1" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <widget source="menu" render="Listbox" position="770,45" size="990,640" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuselectionf990.png" alphatest="blend" zPosition="5">
+      <convert type="TemplatedMultiContent">
         {"template": [ 
             MultiContentEntryText(pos = (60, 0), size = (900, 90), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the menu item,
                                         ],
@@ -2568,9 +2572,9 @@
         "itemHeight": 80
         }
       </convert>
-  </widget>
-  <widget source="menu" render="Listbox" position="830,685" size="860,170" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="sky" backgroundColor="background20" transparent="1" zPosition="5">
-    <convert type="TemplatedMultiContent">
+    </widget>
+    <widget source="menu" render="Listbox" position="830,685" size="860,170" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="sky" backgroundColor="background20" transparent="1" zPosition="5">
+      <convert type="TemplatedMultiContent">
         {"template": [
             MultiContentEntryText(pos = (0, 0), size = (850, 145), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 2 is the Description,
           ],
@@ -2578,13 +2582,13 @@
         "itemHeight": 170
         }
       </convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/softwaremanager.png" position="255,315" size="400,400" transparent="1" alphatest="on" zPosition="5" />
-  <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_big.png" position="1570,885" size="120,60" alphatest="blend" transparent="1" zPosition="5" />
-  <ePixmap position="1770,90" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_up2.png" transparent="1" alphatest="on" />
-  <ePixmap position="1770,850" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_down2.png" transparent="1" alphatest="on" />
-  <panel name="RedKey3" />
-</screen>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/softwaremanager.png" position="255,315" size="400,400" transparent="1" alphatest="on" zPosition="5" />
+    <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_big.png" position="1570,885" size="120,60" alphatest="blend" transparent="1" zPosition="5" />
+    <ePixmap position="1770,90" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_up2.png" transparent="1" alphatest="on" />
+    <ePixmap position="1770,850" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_down2.png" transparent="1" alphatest="on" />
+    <panel name="RedKey3" />
+  </screen>
   <!-- 12. Menu Sort -->
   <screen name="MenuSort" position="0,0" size="1920,1080" title="Menu Sort" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ClockLabel1" />
@@ -3819,7 +3823,7 @@
     <eLabel name="menubig" position="0,0" size="1150,500" backgroundColor="background90" foregroundColor="background90" zPosition="-11" />
     <ePixmap pixmap="GlamourAuraFHD/menu/menufaderight2.png" position="1150,0" zPosition="-11" size="75,575" alphatest="off" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom2.png" position="0,500" zPosition="-11" size="1150,75" alphatest="off" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/icons/menuicons/subsetup.png" position="80,50" size="180,180" transparent="1" alphatest="blend" zPosition="5" />
+    <ePixmap pixmap="GlamourAuraFHD/icons/subsetup.png" position="80,50" size="180,180" scale="1" transparent="1" alphatest="blend" zPosition="5" />
     <panel name="ClockLabel2" />
     <widget name="config" font="Regular; 27" position="300,50" size="870,480" scrollbarMode="showOnDemand" itemHeight="40" selectionPixmap="GlamourAuraFHD/selections/auraselectionblue840.png" alphatest="blend" transparent="1" zPosition="3" />
     <widget name="videofps" position="45,320" size="250,150" font="Regular; 26" zPosition="5" transparent="1" foregroundColor="cyan" backgroundColor="background20" halign="center" />
@@ -3987,7 +3991,7 @@ if not self["videofps"].text:
   <screen name="GraphMultiEPGList" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackgroundEPG" />
     <panel name="ClockLabel3" />
-    <ePixmap position="40,420" size="180,180" zPosition="10" pixmap="GlamourAuraFHD/icons/menuicons/epggraphical.png" transparent="1" alphatest="on" />
+    <ePixmap position="40,420" size="180,180" zPosition="10" pixmap="GlamourAuraFHD/icons/epggraphical.png" scale="1" transparent="1" alphatest="on" />
     <widget source="Title" render="Label" position="240,45" size="1420,90" font="Regular; 34" backgroundColor="background20" halign="left" transparent="1" foregroundColor="cyan1" zPosition="3" />
     <widget name="timeline_text" position="239,133" size="1620,55" selectionDisabled="1" backgroundColor="background20" transparent="1" zPosition="8" font="Regular; 30" itemHeight="50" />
     <eLabel position="240,195" size="1620,3" backgroundColor="cyan1" zPosition="8" />
@@ -4010,7 +4014,7 @@ if not self["videofps"].text:
   <screen name="GraphicalEPG" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackgroundEPG" />
     <panel name="ClockLabel3" />
-    <ePixmap position="40,420" size="180,180" zPosition="10" pixmap="GlamourAuraFHD/icons/menuicons/epggraphical.png" transparent="1" alphatest="on" />
+    <ePixmap position="40,420" size="180,180" zPosition="10" pixmap="GlamourAuraFHD/icons/epggraphical.png" scale="1" transparent="1" alphatest="on" />
     <widget source="Title" render="Label" position="240,45" size="1420,90" font="RegularB; 34" backgroundColor="background20" halign="left" transparent="1" foregroundColor="cyan1" zPosition="3" />
     <widget source="Event" render="Label" position="240,870" size="1630,50" font="Regular; 33" backgroundColor="background20" transparent="1" foregroundColor="sky" zPosition="5">
       <convert type="EventName">Name</convert>
@@ -4047,7 +4051,7 @@ if not self["videofps"].text:
   <screen name="GraphicalEPGPIG" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackgroundEPG" />
     <panel name="ClockLabel3" />
-    <ePixmap position="40,420" size="180,180" zPosition="10" pixmap="GlamourAuraFHD/icons/menuicons/epgmulti.png" transparent="1" alphatest="on" />
+    <ePixmap position="40,420" size="180,180" zPosition="10" pixmap="GlamourAuraFHD/icons/epgmulti.png" scale="1" transparent="1" alphatest="on" />
     <widget source="Title" render="Label" position="240,45" size="1420,90" font="RegularB; 34" backgroundColor="background20" halign="left" transparent="1" foregroundColor="cyan1" zPosition="3" />
     <widget source="Event" render="Label" position="240,545" size="900,40" font="Caps; 28" backgroundColor="background20" transparent="1" foregroundColor="sky" zPosition="5" halign="center">
       <convert type="EventName">Name</convert>
