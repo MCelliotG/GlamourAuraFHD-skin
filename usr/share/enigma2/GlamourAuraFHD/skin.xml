@@ -957,7 +957,7 @@
   <!-- 03. Clock Labels -->
   <screen name="ClockLabel1" flags="wfNoBorder">
     <eLabel name="clockin" position="0,45" size="50,105" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
-    <ePixmap pixmap="GlamourAuraFHD/menu/clock_back.png" position="50,0" zPosition="1" size="225,195" alphatest="on" transparent="0" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/clock_back.png" position="50,0" zPosition="1" size="225,195" alphatest="on" />
     <ePixmap pixmap="GlamourAuraFHD/menu/clockglowtl.png" position="0,45" zPosition="-8" size="50,105" alphatest="blend" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/timesep.png" position="155,40" zPosition="6" size="6,120" alphatest="blend" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="60,35" size="90,80" font="Numbers; 75" halign="left" transparent="1" valign="center" backgroundColor="deepgrey" foregroundColor="white" zPosition="6" noWrap="1">
@@ -977,7 +977,7 @@
     </widget>
   </screen>
   <screen name="ClockLabel2" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/menu/clock_back.png" position="1655,0" zPosition="1" size="225,195" alphatest="off" transparent="0" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/clock_back.png" position="1655,0" zPosition="1" size="225,195" alphatest="off" />
     <ePixmap pixmap="GlamourAuraFHD/menu/clockglowtl.png" position="1880,55" zPosition="-8" size="40,85" alphatest="blend" transparent="1" />
     <eLabel name="clockin" position="1880,55" size="40,85" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
     <ePixmap pixmap="GlamourAuraFHD/menu/timesep.png" position="1765,35" zPosition="6" size="6,120" alphatest="blend" transparent="1" />
@@ -1863,7 +1863,7 @@
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/infobar/fanspeed.png" position="45,460" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="90,465" size="310,35" font="Regular; 25" zPosition="6" backgroundColor="background20" transparent="1" text="FanInfo" noWrap="1" foregroundColor="white">
-      <convert type="GlamourExtra">FanInfo</convert>
+      <convert type="GlamourExtra">FanInfo,Short</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/infobar/cpuload.png" position="45,500" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="90,505" size="310,35" font="Regular; 25" zPosition="6" backgroundColor="background20" transparent="1" foregroundColor="white" text="CPUload" halign="left" noWrap="1">
@@ -2128,7 +2128,7 @@
   <!-- 10.1 BACKGROUND -->
   <screen name="MovieBG" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_movie.png" position="0,870" zPosition="-2" size="1920,210" alphatest="off" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_moviename.png" position="0,690" zPosition="-2" size="1920,180" alphatest="on" transparent="0" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_moviename.png" position="0,690" zPosition="-2" size="1920,180" alphatest="on" />
   </screen>
   <!-- 10.2 NAME1 -->
   <screen name="MovieN1" flags="wfNoBorder">
@@ -2471,7 +2471,7 @@
     <panel name="MainMenuTiles" />
   </screen>
   <!-- 01. Main Menu -->
-  <screen name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
+  <screen name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuBackground" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/menu.png" alphatest="on" transparent="1" zPosition="5" />
@@ -2750,7 +2750,7 @@
   </screen>
   <!-- 02. Videomode -->
   <screen name="VideoMode" position="0,200" zPosition="14" size="720,55" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_timeshift.png" position="0,0" zPosition="-2" size="720,55" alphatest="off" transparent="0" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_timeshift.png" position="0,0" zPosition="-2" size="720,55" alphatest="off" />
     <widget name="videomode" position="50,3" size="650,50" font="Regular; 34" halign="center" backgroundColor="background20" transparent="1" zPosition="6" noWrap="1" />
   </screen>
   <!-- 03. Buffer Indicator -->
@@ -2760,7 +2760,7 @@
     <widget name="status" position="45,0" size="650,55" font="Regular; 34" halign="center" backgroundColor="background20" transparent="1" zPosition="6" noWrap="1" foregroundColor="lightciel" valign="bottom" />
   </screen>
   <!-- 04. PVR State -->
-  <screen name="PVRState" position="135,890" size="150,150" backgroundColor="background20" flags="wfNoBorder" transparent="0" zPosition="15" alphatest="blend">
+  <screen name="PVRState" position="135,890" size="150,150" backgroundColor="background20" flags="wfNoBorder" zPosition="15" alphatest="blend">
     <ePixmap pixmap="GlamourAuraFHD/infobar/pvrbackground.png" position="0,0" size="150, 150" alphatest="on" zPosition="16" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/infobar/playcircle.png" position="0,0" size="150, 150" alphatest="blend" zPosition="18" transparent="1" />
     <widget name="state" position="0,0" size="150,150" transparent="1" font="RegularB; 38" valign="center" halign="center" backgroundColor="cyan1" foregroundColor="amarillo" zPosition="17" />
@@ -3822,7 +3822,7 @@
     <panel name="Title1" />
   </screen>
   <!-- 11. Subtitle Quickmenu -->
-  <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,575" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+  <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,575" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="0,0" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
     <eLabel name="menubig" position="0,0" size="1150,500" backgroundColor="background90" foregroundColor="background90" zPosition="-11" />
     <ePixmap pixmap="GlamourAuraFHD/menu/menufaderight2.png" position="1150,0" zPosition="-11" size="75,575" alphatest="off" transparent="1" />
@@ -4274,7 +4274,7 @@ if not self["videofps"].text:
     <ePixmap pixmap="GlamourAuraFHD/menu/menufadetop.png" position="700,90" zPosition="-11" size="1220,75" alphatest="off" transparent="1" name="mediaback" />
     <eLabel name="mediaback" position="700,165" size="1220,105" zPosition="-11" backgroundColor="background20" foregroundColor="background20" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="0,555" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_chname.png" position="125,425" zPosition="-2" size="1570,130" alphatest="on" transparent="0" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_chname.png" position="125,425" zPosition="-2" size="1570,130" alphatest="on" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <widget name="coverArt" position="300,60" size="400,400" pixmap="GlamourAuraFHD/icons/media.png" transparent="1" alphatest="on" zPosition="4" />
@@ -5538,7 +5538,7 @@ if not self["videofps"].text:
     <widget name="text" position="810,60" size="1050,830" font="RegularB; 33" backgroundColor="background20" zPosition="4" foregroundColor="sky" halign="center" transparent="1" valign="center" />
   </screen>
   <!-- 03. Swap Manager -->
-  <screen name="SwapManager" position="0, 0" flags="wfNoBorders" title="Swap File Manager" transparent="0" backgroundColor="transparent" size="1920, 1080">
+  <screen name="SwapManager" position="0, 0" flags="wfNoBorders" title="Swap File Manager" backgroundColor="transparent" size="1920, 1080">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
