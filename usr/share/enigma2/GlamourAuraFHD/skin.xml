@@ -5,8 +5,7 @@
   <!-- This skin is not guaranteed to work in older E2 receivers with slower CPUs. Use at your own risk. -->
   <!-- This skin is FREE software. You can use it for free on your E2 receivers running OpenPLI 6.2 and newer and other recent PLI-based images. -->
   <!-- You are NOT allowed to modify the first line of the skin and its graphics. -->
-  <!-- The skin is OPEN source. The ipk is distributed with closed converters/renderers but all SOURCE code is available on Github. -->
-  <!-- The source code of this skin is available at https://github.com/MCelliotG/GlamourAuraFHD-skin/ -->
+  <!-- The skin is OPEN source. The source code of this skin is available at https://github.com/MCelliotG/GlamourAuraFHD-skin/ -->
   <!-- This skin has original graphics made by MCelliot_g. You are allowed to modify the code for personal use as long as you keep this License for the skin. -->
   <!-- You are NOT allowed to redistribute the skin with any modifications without the author's permission. -->
   <!-- The converters and renderers used in the skin can be modified and redistributed as noted. -->
@@ -4530,7 +4529,7 @@ if not self["videofps"].text:
     <panel name="Title1" />
     <ePixmap position="75,315" size="400,400" pixmap="GlamourAuraFHD/icons/manual_scan.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="config" font="Regular; 30" position="540,60" size="1320,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/scanselectionblue.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
-    <widget name="introduction" position="540,815" size="1320,50" font="Regular; 33" halign="center" backgroundColor="background20" transparent="1" zPosition="4" foregroundColor="sky" />
+    <widget name="introduction" position="540,810" size="1320,50" font="Regular; 33" halign="center" backgroundColor="background20" transparent="1" zPosition="4" foregroundColor="sky" />
     <panel name="FullKeys1" />
   </screen>
   <!-- 08. Scan simple -->
