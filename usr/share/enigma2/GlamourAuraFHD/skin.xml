@@ -3926,10 +3926,10 @@ if not self["videofps"].text:
     <panel name="MainBackgroundClock" />
     <ePixmap pixmap="GlamourAuraFHD/menu/eventview.png" position="0,60" size="645,960" zPosition="-11" alphatest="on" transparent="1" />
     <widget source="Title" render="Label" position="645,75" size="1005,60" font="RegularB; 40" backgroundColor="background20" halign="center" transparent="1" foregroundColor="sky" zPosition="3" />
-    <widget source="Event" render="Label" position="50,150" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
+    <widget source="Event" render="Label" position="50,100" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,210" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="615,140" size="1290,800" itemHeight="50" font="Regular;28" setEventItemFont="Regular;28" setEventTimeFont="Regular;24" setColWidths="120,200" setColGap="20" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/epgselblue.png" zPosition="4" />
@@ -3940,10 +3940,10 @@ if not self["videofps"].text:
   <screen name="EPGSelectionMulti" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackgroundClock" />
     <ePixmap pixmap="GlamourAuraFHD/menu/eventview.png" position="0,60" size="645,960" zPosition="-11" alphatest="on" transparent="1" />
-    <widget source="Event" render="Label" position="60,150" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
+    <widget source="Event" render="Label" position="60,100" size="565,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,260" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,220" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="665,220" size="1200,700" itemHeight="50" font="Regular;30" setEventItemFont="Regular; 28" setEventTimeFont="Regular;24" setColWidths="350,180" setColGap="15" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/updateselectionfhd.png" alphatest="blend" transparent="1" zPosition="5" />
@@ -3963,24 +3963,24 @@ if not self["videofps"].text:
     <panel name="MainBackgroundClock" />
     <ePixmap pixmap="GlamourAuraFHD/menu/eventview.png" position="0,60" size="645,960" zPosition="-11" alphatest="on" transparent="1" />
     <widget source="Title" render="Label" position="650,45" size="890,90" font="Regular; 32" backgroundColor="background20" halign="left" transparent="1" foregroundColor="cyan1" zPosition="3" />
-    <widget source="Event" render="Label" position="61,111" size="570,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
+    <widget source="Event" render="Label" position="60,100" size="570,100" font="Caps; 36" backgroundColor="transWhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="62,265" size="570,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="62,250" size="570,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="60,215" size="85,45" font="Numbers; 36" halign="left" backgroundColor="sky" transparent="1" zPosition="7">
+    <widget source="Event" render="Label" position="60,205" size="85,45" font="Numbers; 36" halign="left" backgroundColor="sky" transparent="1" zPosition="7">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M </convert>
     </widget>
-    <widget source="Event" render="Label" position="545,215" size="85,45" font="Numbers; 36" backgroundColor="background20" transparent="1" zPosition="7" halign="right">
+    <widget source="Event" render="Label" position="545,205" size="85,45" font="Numbers; 36" backgroundColor="background20" transparent="1" zPosition="7" halign="right">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Progress" position="150,232" size="390,7" borderWidth="0" backgroundColor="white" transparent="1" zPosition="7">
+    <widget source="Event" render="Progress" position="150,222" size="390,7" borderWidth="0" backgroundColor="white" transparent="1" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel position="150,235" size="390,2" backgroundColor="grey" zPosition="6" />
+    <eLabel position="150,225" size="390,2" backgroundColor="grey" zPosition="6" />
     <widget name="timeline_text" position="650,135" size="1220,55" selectionDisabled="1" backgroundColor="background20" transparent="1" zPosition="8" font="Regular; 30" itemHeight="50" />
     <eLabel position="650,195" size="1220,3" backgroundColor="cyan1" zPosition="8" />
     <widget name="list" position="650,205" size="1220,720" itemHeight="60" ServiceFont="Regular;30" recIconSize="45" piconWidth="320" ServiceBackgroundColor="background20" ServiceBackgroundColorSelected="rssviewtop" ServiceBorderColor="grey" ServiceBorderWidth="1" ServiceNameForegroundColor="white" ServiceForegroundColorSelected="amarillo" EntryFont="Regular;30" EntryBackgroundColor="transpdark" EntryBackgroundColorNow="clearpurple" EntryBackgroundColorNowSelected="clearorange" EntryBackgroundColorSelected="clearcyan" EntryBorderColor="grey" EntryForegroundColor="white" EntryForegroundColorNow="white" EntryForegroundColorSelected="amarillo" foreColorSelectedRec="transpRed" EventBorderWidth="1" scrollbarMode="showOnDemand" transparent="1" zPosition="8" />
