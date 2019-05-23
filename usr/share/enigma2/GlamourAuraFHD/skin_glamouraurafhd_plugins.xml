@@ -1886,4 +1886,39 @@
   <eLabel text="MOVE" position="1580,55" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
   <eLabel text="COPY" position="1580,245" size="305,85" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
 </screen>
+
+    <!-- Mis Pls Lcn Scan -->
+  <screen name="MisPlsLcnScan" position="0,0" size="1920,1080" title="MisPlsLcnScan" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel name="back" position="240,930" size="1680,60" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom.png" position="240,990" zPosition="-11" size="1680,75" alphatest="off" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtr.png" position="1720,929" size="200,150" zPosition="-10" alphatest="blend" transparent="1" scale="1" />
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_chname.png" position="280,850" zPosition="-2" size="1570,80" alphatest="on" />
+    <panel name="ClockLabel1" />
+    <ePixmap position="50,885" size="180,180" pixmap="GlamourAuraFHD/icons/manual_scan.png" alphatest="on" scale="1" transparent="1" zPosition="5" />
+    <widget name="background" position="0,0" size="0,0" zPosition="-1" />
+    <widget name="action" position="260,930" size="1170,45" font="RegularB; 35" backgroundColor="background20" transparent="1" zPosition="5" halign="center" foregroundColor="sky" valign="center" />
+    <widget name="status" position="260,975" size="1170,45" font="Regular; 32" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="center" foregroundColor="amarillo" />
+    <widget name="progress" position="260,1020" size="1170,25" pixmap="GlamourAuraFHD/pointers/slider_blue.png" alphatest="blend" transparent="1" zPosition="7" />
+    <widget source="Frontend" conditional="Frontend" render="Pixmap" position="1440,935" size="45,45" pixmap="GlamourAuraFHD/icons/lock_on.png" alphatest="blend" transparent="1" zPosition="4">
+    <convert type="FrontendInfo">LOCK</convert>
+    <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="Frontend" conditional="Frontend" render="Pixmap" position="1440,935" size="45,45" pixmap="GlamourAuraFHD/icons/lock_off.png" alphatest="blend" transparent="1" zPosition="3">
+    <convert type="FrontendInfo">LOCK</convert>
+    <convert type="ConditionalShowHide">Invert</convert>
+    </widget>
+    <widget source="Frontend" conditional="Frontend" render="Label" position="1490,935" size="130,45" font="Numbers; 42" halign="center" backgroundColor="background20" zPosition="6" transparent="1" foregroundColor="cyan1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <eLabel text="/" position="1615,935" size="25,45" font="Numbers; 42" backgroundColor="background20" foregroundColor="white" zPosition="6" transparent="1" />
+    <widget source="Frontend" conditional="Frontend" render="Label" position="1635,935" size="130,45" font="Numbers; 42" halign="center" backgroundColor="background20" zPosition="6" transparent="1" foregroundColor="cyan">
+      <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <widget source="progress_text" render="Label" position="1435,980" size="180,45" font="Numbers; 38" halign="right" backgroundColor="background20" zPosition="6" transparent="1" foregroundColor="amarillo">
+      <convert type="ProgressToText">InText</convert>
+    </widget>
+    <widget source="progress_text" render="Label" position="1640,980" size="125,45" font="Numbers; 38" halign="center" backgroundColor="background20" zPosition="6" transparent="1" foregroundColor="amarillo">
+      <convert type="ProgressToText">InPercent</convert>
+    </widget>
+  </screen>
 </skin>

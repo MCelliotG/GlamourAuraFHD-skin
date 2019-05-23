@@ -510,10 +510,6 @@
       <convert type="MenuEntryCompare">filecommand</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/multiquick.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">multi_quick</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/googlemaps.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">googlemaps</convert>
       <convert type="ConditionalShowHide" />
@@ -665,6 +661,10 @@
     </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/bouquet.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">autobouquetsmakermaker</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/multiquick.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">MisPlsLcnScanScreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/satip.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
