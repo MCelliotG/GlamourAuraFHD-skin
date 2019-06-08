@@ -1838,30 +1838,30 @@
     </widget>
   </screen>
   <screen name="BitrateViewerExtra" zPosition="22" backgroundColor="transparent" position="200,40" size="273,100" flags="wfNoBorder">
- <!-- Compact Info -->
-  <ePixmap pixmap="GlamourAuraFHD/infobar/bitrate_back.png" position="0,0" zPosition="2" size="273,100" alphatest="on" transparent="1" />
-  <widget render="Label" source="video_caption" font="Regular; 26" position="0,10" size="100,35" transparent="1" zPosition="5" foregroundColor="black" backgroundColor="grey" halign="center" noWrap="1" valign="center" />
-  <widget render="Label" source="audio_caption" font="Regular; 26" position="0,60" size="100,35" transparent="1" zPosition="5" foregroundColor="white" backgroundColor="black" halign="center" noWrap="1" valign="center" />
-  <widget render="Label" source="video" font="Regular; 26" position="100,10" size="170,35" zPosition="6" backgroundColor="grey" transparent="1" foregroundColor="black" noWrap="1" valign="center" />
-  <widget render="Label" source="audio" font="Regular; 26" position="100,60" size="170,35" zPosition="6" backgroundColor="black" transparent="1" foregroundColor="white" noWrap="1" valign="center" />
- <!-- Full Info -->
-  <widget source="vcur" render="Label" text="V:" position="5,0" size="45,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="center" />
-  <widget name="vcur" position="50,0" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
-  <widget source="vavg" render="Label" text="avg" position="125,0" size="45,30" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
-  <widget name="vavg" position="170,0" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
-  <widget source="vmin" render="Label" text="min" position="5,25" size="45,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
-  <widget name="vmin" position="50,25" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" noWrap="1" />
-  <widget source="vmax" render="Label" text="max" position="125,25" size="45,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
-  <widget name="vmax" position="170,25" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
-  <widget source="acur" render="Label" text="A:" position="5,50" size="45,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="center" />
-  <widget name="acur" position="50,50" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
-  <widget source="aavg" render="Label" text="avg" position="125,50" size="45,30" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
-  <widget name="aavg" position="170,50" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
-  <widget source="amin" render="Label" text="min" position="5,75" size="45,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
-  <widget name="amin" position="50,75" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
-  <widget source="amax" render="Label" text="max" position="125,75" size="45,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
-  <widget name="amax" position="170,75" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
-</screen>
+    <!-- Compact Info -->
+    <ePixmap pixmap="GlamourAuraFHD/infobar/bitrate_back.png" position="0,0" zPosition="2" size="273,100" alphatest="on" transparent="1" />
+    <widget render="Label" source="video_caption" font="Regular; 26" position="0,10" size="100,35" transparent="1" zPosition="5" foregroundColor="black" backgroundColor="grey" halign="center" noWrap="1" valign="center" />
+    <widget render="Label" source="audio_caption" font="Regular; 26" position="0,60" size="100,35" transparent="1" zPosition="5" foregroundColor="white" backgroundColor="black" halign="center" noWrap="1" valign="center" />
+    <widget render="Label" source="video" font="Regular; 26" position="100,10" size="170,35" zPosition="6" backgroundColor="grey" transparent="1" foregroundColor="black" noWrap="1" valign="center" />
+    <widget render="Label" source="audio" font="Regular; 26" position="100,60" size="170,35" zPosition="6" backgroundColor="black" transparent="1" foregroundColor="white" noWrap="1" valign="center" />
+    <!-- Full Info -->
+    <widget source="vcur" render="Label" text="V:" position="5,0" size="45,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="center" />
+    <widget name="vcur" position="50,0" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
+    <widget source="vavg" render="Label" text="avg" position="125,0" size="45,30" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
+    <widget name="vavg" position="170,0" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
+    <widget source="vmin" render="Label" text="min" position="5,25" size="45,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
+    <widget name="vmin" position="50,25" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" noWrap="1" />
+    <widget source="vmax" render="Label" text="max" position="125,25" size="45,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
+    <widget name="vmax" position="170,25" size="85,25" font="Regular;24" zPosition="8" foregroundColor="black" backgroundColor="grey" transparent="1" valign="center" halign="left" />
+    <widget source="acur" render="Label" text="A:" position="5,50" size="45,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="center" />
+    <widget name="acur" position="50,50" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
+    <widget source="aavg" render="Label" text="avg" position="125,50" size="45,30" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
+    <widget name="aavg" position="170,50" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
+    <widget source="amin" render="Label" text="min" position="5,75" size="45,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
+    <widget name="amin" position="50,75" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
+    <widget source="amax" render="Label" text="max" position="125,75" size="45,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
+    <widget name="amax" position="170,75" size="85,25" font="Regular;24" zPosition="8" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" halign="left" />
+  </screen>
   <!-- Weather Infobar -->
   <screen name="WeatherInfobar" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="480,942" zPosition="1" size="100,40" font="Numbers; 36" halign="center" text="+100 F" transparent="1" foregroundColor="cyan" noWrap="1" backgroundColor="black" valign="top">
@@ -2888,7 +2888,7 @@
     <widget name="list" position="785,135" size="1095,850" itemHeight="50" scrollbarMode="showOnDemand" colorServiceDescription="sky" colorServiceDescriptionSelected="lightciel" colorEventProgressbarBorder="white" colorEventProgressbar="sky" colorEventProgressbarBorderSelected="lightciel" colorEventProgressbarSelected="sky" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="50" serviceNumberFont="Numbers;31" serviceNameFont="RegularB;36" serviceInfoFont="RegularL;33" progressBarWidth="75" progressbarHeight="18" progressPercentWidth="75" itemsDistances="15" fieldMargins="20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/channelselectionblue.png" alphatest="blend" zPosition="3" />
     <ePixmap pixmap="GlamourAuraFHD/menu/chanselaura.png" position="0,0" size="780,1080" zPosition="-11" alphatest="on" transparent="1" />
     <widget source="ServiceEvent" render="Picon" position="40,35" size="220,132" transparent="1" alphatest="blend" zPosition="4">
-      <convert type="GlamRefString">ServicelistRef</convert>
+      <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="265,15" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
       <convert type="ServiceName">Name</convert>
@@ -3057,7 +3057,7 @@
     <eLabel position="1681,790" size="2,75" halign="center" font="Regular; 25" backgroundColor="blue" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="blue" />
     <eLabel position="1682,790" size="1,75" halign="center" font="Regular; 25" backgroundColor="cyan" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="cyan" />
     <widget source="ServiceEvent" render="Picon" position="45,790" zPosition="4" size="330,198" transparent="1" alphatest="blend">
-      <convert type="GlamRefString">ServicelistRef</convert>
+      <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/tuner_a_un.png" position="1685,790" size="25,25" zPosition="1" alphatest="blend">
       <convert type="GlamourTuners">Tuner_A</convert>
