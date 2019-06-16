@@ -1914,6 +1914,7 @@
     <widget source="Frontend" conditional="Frontend" render="Label" position="1635,935" size="130,45" font="Numbers; 42" halign="center" backgroundColor="background20" zPosition="6" transparent="1" foregroundColor="cyan">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
+    <widget name="tuner_text" position="1765,935" size="50,45" font="Numbers; 42" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="center" foregroundColor="cyan2" />
     <widget source="progress_text" render="Label" position="1435,980" size="180,45" font="Numbers; 38" halign="right" backgroundColor="background20" zPosition="6" transparent="1" foregroundColor="amarillo">
       <convert type="ProgressToText">InText</convert>
     </widget>

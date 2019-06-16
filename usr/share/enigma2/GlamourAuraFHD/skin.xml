@@ -3889,12 +3889,6 @@ if not self["videofps"].text:
     <widget name="config" font="Regular; 30" position="540,90" size="1320,150" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/auraselectionbluefhd.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <widget name="info" position="540,245" size="1300,600" font="Regular; 30" transparent="1" foregroundColor="cyan1" backgroundColor="background20" halign="left" zPosition="5" />
     <panel name="FullKeys1" />
-    <!--ePixmap pixmap="GlamourAuraFHD/buttons/aura_red.png" position="1575,600" size="225,75" alphatest="blend" zPosition="4" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/buttons/aura_green.png" position="1575,720" size="225,75" alphatest="blend" transparent="1" zPosition="4" />
-  <ePixmap pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1575,840" size="225,75" alphatest="blend" transparent="1" zPosition="4" />
-  <widget source="key_red" render="Label" position="1560,615" size="255,60" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1" />
-  <widget source="key_green" render="Label" position="1560,735" size="255,60" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1" />
-  <widget source="key_blue" render="Label" position="1560,855" size="255,60" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1" /-->
   </screen>
   <!-- 04. Recording Paths -->
   <screen name="RecordPathsSettings" position="0,0" size="1920,1080" title="Recording paths..." flags="wfNoBorder" backgroundColor="transparent">
