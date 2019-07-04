@@ -2653,14 +2653,14 @@
     <panel name="MenuGUI" />
   </screen>
   <!-- 14. Menu EPG -->
-  <screen name="menu_epg" position="0,0" size="1920,1080" title="Standby /restart" backgroundColor="transparent" flags="wfNoBorder">
-    <panel name="MenuBackground" flags="wfNoBorder" />
-    <panel name="ClockLabel1" />
-    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/epgenhanced.png" alphatest="on" transparent="1" zPosition="5" />
-    <panel name="Title1" />
-    <panel name="MainMenu1" />
-    <panel name="MenuEPG" />
-  </screen>
+  <screen name="menu_epg" position="0,0" size="1920,1080" title="EPG" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="MenuBackground" flags="wfNoBorder" />
+  <panel name="ClockLabel1" />
+  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/epgenhanced.png" alphatest="on" transparent="1" zPosition="5" />
+  <panel name="Title1" />
+  <panel name="MainMenu1" />
+  <panel name="MenuEPG" />
+</screen>
   <!-- ###OVERLAY MENUS -->
   <!-- 01. Volume -->
   <screen name="Volume" position="75,155" size="120,525" backgroundColor="background20" flags="wfNoBorder" zPosition="10">
