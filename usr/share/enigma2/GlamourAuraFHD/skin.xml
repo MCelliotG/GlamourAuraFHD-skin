@@ -1653,7 +1653,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1080,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" position="1080,947" render="GlamAudioIcon" size="84,30" alphatest="blend" path="GlamourAuraFHD/icons/audio" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" position="1080,947" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="1400,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
@@ -2211,7 +2211,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1395,1015" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="GlamAudioIcon" position="1395,1015" size="84,30" alphatest="blend" path="GlamourAuraFHD/icons/audio" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" render="GlamAudioIcon" position="1395,1015" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_dolby_off.png" position="1490,1015" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
@@ -2402,7 +2402,7 @@
     <widget source="Service" render="Label" position="50,80" size="580,90" zPosition="9" foregroundColor="black" font="RegularB; 36" halign="center" transparent="1" backgroundColor="grey2" valign="center">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="session.CurrentService" position="1060,910" render="GlamAudioIcon" size="84,30" alphatest="blend" path="GlamourAuraFHD/icons/audio" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" position="1060,910" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
   </screen>
@@ -2654,13 +2654,13 @@
   </screen>
   <!-- 14. Menu EPG -->
   <screen name="menu_epg" position="0,0" size="1920,1080" title="EPG" backgroundColor="transparent" flags="wfNoBorder">
-  <panel name="MenuBackground" flags="wfNoBorder" />
-  <panel name="ClockLabel1" />
-  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/epgenhanced.png" alphatest="on" transparent="1" zPosition="5" />
-  <panel name="Title1" />
-  <panel name="MainMenu1" />
-  <panel name="MenuEPG" />
-</screen>
+    <panel name="MenuBackground" flags="wfNoBorder" />
+    <panel name="ClockLabel1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/epgenhanced.png" alphatest="on" transparent="1" zPosition="5" />
+    <panel name="Title1" />
+    <panel name="MainMenu1" />
+    <panel name="MenuEPG" />
+  </screen>
   <!-- ###OVERLAY MENUS -->
   <!-- 01. Volume -->
   <screen name="Volume" position="75,155" size="120,525" backgroundColor="background20" flags="wfNoBorder" zPosition="10">
@@ -3029,7 +3029,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="380,833" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" position="380,833" render="GlamAudioIcon" size="84,30" alphatest="blend" path="GlamourAuraFHD/icons/audio" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" position="380,833" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_rec_off.png" position="565,795" zPosition="1" size="49,30" alphatest="blend" transparent="1" />
@@ -3800,7 +3800,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1120,855" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" position="1120,855" render="GlamAudioIcon" size="84,30" alphatest="blend" path="GlamourAuraFHD/icons/audio" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" position="1120,855" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/icons/infobar/ico_wide_off.png" position="1310,855" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
@@ -4321,7 +4321,7 @@ if not self["videofps"].text:
     <widget source="session.CurrentService" render="Label" position="1600,270" size="180,45" zPosition="2" font="Numbers; 40" halign="right" backgroundColor="background20" noWrap="1" transparent="1" foregroundColor="cyan1">
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" position="1220,275" render="GlamAudioIcon" size="84,30" alphatest="blend" path="GlamourAuraFHD/icons/audio" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" position="1220,275" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
     <widget source="session.CurrentService" render="GlamRoll" position="705,315" size="1150,32" backgroundColor="background20" transparent="1" zPosition="12" font="Regular; 24" halign="left" valign="center" noWrap="1">
@@ -4427,7 +4427,7 @@ if not self["videofps"].text:
     <widget source="Service" render="Label" position="50,80" size="580,90" zPosition="9" foregroundColor="black" font="Caps; 36" halign="center" transparent="1" backgroundColor="grey2" valign="center">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="session.CurrentService" position="1540,90" render="GlamAudioIcon" size="84,30" alphatest="blend" path="GlamourAuraFHD/icons/audio" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" position="1540,90" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
       <convert type="GlamourAudioInfo">AudioIcon</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/buttons/key_menu_medium.png" position="1540,40" size="90,45" alphatest="blend" zPosition="4" transparent="1" />
