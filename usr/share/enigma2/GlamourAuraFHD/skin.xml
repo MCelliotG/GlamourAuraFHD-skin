@@ -600,6 +600,10 @@
       <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgenhanced.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">epg_menu</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/flashimage.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">flash_image</convert>
       <convert type="ConditionalShowHide" />
@@ -888,8 +892,8 @@
     </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/cisetup.png" position="355,315" size="400,400" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">ci_setup</convert>
+      <convert type="ConditionalShowHide" />
     </widget>
-    <convert type="ConditionalShowHide" />
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ciassign.png" position="355,315" size="400,400" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">ci_assign</convert>
       <convert type="ConditionalShowHide" />
@@ -950,6 +954,13 @@
     </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">skin_selector</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <!-- 02-12. Menu EPG -->
+  <screen name="MenuEPG" flags="wfNoBorder">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgsettings.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">epg_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
@@ -2633,13 +2644,22 @@
     <panel name="FullKeysV2" />
   </screen>
   <!-- 13. Menu GUI -->
-  <screen name="menu_gui" position="0,0" size="1920,1080" title="Standby /restart" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="menu_gui" position="0,0" size="1920,1080" title="Menu GUI" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuBackground" flags="wfNoBorder" />
     <panel name="ClockLabel1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/infopanel.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
     <panel name="MainMenu1" />
     <panel name="MenuGUI" />
+  </screen>
+  <!-- 14. Menu EPG -->
+  <screen name="menu_epg" position="0,0" size="1920,1080" title="EPG" backgroundColor="transparent" flags="wfNoBorder">
+    <panel name="MenuBackground" flags="wfNoBorder" />
+    <panel name="ClockLabel1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/epgenhanced.png" alphatest="on" transparent="1" zPosition="5" />
+    <panel name="Title1" />
+    <panel name="MainMenu1" />
+    <panel name="MenuEPG" />
   </screen>
   <!-- ###OVERLAY MENUS -->
   <!-- 01. Volume -->
