@@ -448,7 +448,7 @@ class GlamourBase(Poll, Converter, object):
 		elif (orbe >= 62.9) and (orbe <= 63.2):
 			sat = "ComsatBW-1"
 		elif (orbe >= 61.7) and (orbe <= 62.3):
-			sat = "Intelsat 902"
+			sat = "Intelsat 39"
 		elif (orbe >= 60.8) and (orbe <= 61.2):
 			sat = "ABS 4"
 		elif (orbe >= 60.3) and (orbe <= 60.4):
