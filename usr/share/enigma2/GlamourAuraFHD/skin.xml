@@ -124,6 +124,7 @@
     <parameter name="ChoicelistDash" value="0,0,940,50" />
     <parameter name="ChoicelistName" value="60,0,940,50" />
     <parameter name="ChoicelistIcon" value="5,2,50,50" />
+    <parameter name="ChoicelistNameSingle" value="5,0,1000,50"/>
     <parameter name="ChoicelistFontSize" value="30" />
     <parameter name="SelectionListDescr" value="70,2,1000,50" />
     <parameter name="SelectionListLock" value="10,0,50,50" />
