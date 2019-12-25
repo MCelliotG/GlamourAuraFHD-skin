@@ -173,7 +173,7 @@
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/videoenhancement.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="config" font="Regular; 30" position="540,60" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="5" />
+    <widget name="config" font="Regular; 30" position="540,60" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="cyan1" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="5" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="540,760" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb810.png" position="1020,825" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
     <widget source="introduction" render="Label" position="540,760" size="1305,120" font="Regular; 29" halign="left" valign="center" transparent="1" foregroundColor="sky" zPosition="4" backgroundColor="background20" />
