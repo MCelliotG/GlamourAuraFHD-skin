@@ -7,7 +7,7 @@ This skin is not guaranteed to work in older E2 receivers with slower CPUs. Use 
 
 This skin is FREE software. You can use it for free on your E2 receivers running OpenPLI 4.0+ and newer and other recent PLI-based images.
 
-The skin is OPEN source. The ipk is distributed with closed converters and renderers but all SOURCE code is available on Github.
+The skin is OPEN source. All SOURCE code is available on Github.
 
 The source code of this skin is available at https://github.com/MCelliotG/GlamourAuraFHD-skin/
 
