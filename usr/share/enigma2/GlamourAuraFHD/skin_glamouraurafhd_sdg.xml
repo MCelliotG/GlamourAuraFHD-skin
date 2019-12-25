@@ -405,4 +405,16 @@
     <eLabel text="Ok" position="870,830" size="305,85" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1" />
   </screen>
 
+    <!-- Greek Net Radio --> 
+  <screen name="GreekNetRadio" position="0,0" size="1920,1080" title="SDG Radio" flags="wfNoBorder" backgroundColor="transparent">
+   <panel name="MainBackground2" />
+   <panel name="ClockLabel1" />
+   <panel name="Title1" />
+   <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/radio.png" alphatest="on" transparent="1" zPosition="5" />
+   <widget name="menu" font="Regular; 32" position="540,90" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="cyan1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" zPosition="5" />
+  <panel name="FullKeys1" />
+ </screen>
+ <screen name="GreekNetRadioCategory" position="0,0" size="1920,1080" title="SDG Radio" flags="wfNoBorder" backgroundColor="transparent">
+   <panel name="GreekNetRadio" />
+ </screen>
 </skin>
