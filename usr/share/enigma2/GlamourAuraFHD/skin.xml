@@ -1636,163 +1636,163 @@
   </screen>
   <!-- Lower Icons Infobar & Resolution -->
   <screen name="IconsInfobar" flags="wfNoBorder">
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/rec_off.png" position="1198,947" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
-  <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/rec_on.png" position="1198,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/stream_off.png" position="1253,947" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/stream_on.png" position="1253,947" size="60,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">IsStreaming</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/uhd_off.png" position="1318,947" size="76,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/uhd_on.png" position="1318,947" size="76,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">VideoWidth</convert>
-    <convert type="ValueRange">2800,4400</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" position="1345,947" size="50,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/hd_on.png" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">VideoWidth</convert>
-    <convert type="ValueRange">900,1930</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1110,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" position="1110,947" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
-    <convert type="GlamourAudioInfo">AudioIcon</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/dolby_off.png" position="1400,947" size="36,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/dolby_on.png" position="1400,947" size="36,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsMultichannel</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/multiaudio_off.png" position="1437,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/multiaudio_on.png" position="1437,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">AudioTracksAvailable</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/wide_off.png" position="1490,947" size="54,30" zPosition="1" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/wide_on.png" position="1490,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/hbbtv_off.png" position="1550,947" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" position="1550,947" size="60,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/hbbtv_on.png" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">HasHBBTV</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/txt_off.png" position="1615,947" size="54,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/txt_on.png" position="1615,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">HasTelext</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/sub_off.png" position="1728,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/sub_on.png" position="1728,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">SubtitlesAvailable</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/pdc_off.png" position="1675,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/pdc_on.png" position="1675,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="EventName">Pdc</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/subsrv_off.png" position="1782,947" size="54,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/subsrv_on.png" position="1782,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">SubservicesAvailable</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/crypt_off.png" position="1842,947" size="36,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/crypt_on.png" position="1842,947" size="36,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsCrypted</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/fta.png" position="440,949" size="65,25" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Fta</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- codec info -->
-  <ePixmap pixmap="GlamourAuraFHD/icons/codecs/codec_off.png" position="1020,947" size="84,30" zPosition="4" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/hevc.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasHEVC</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avc.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasAVC</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg2.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasMPEG2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vc1.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasVC1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h.263.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasH263</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp8.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasVP8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp9.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasVP9</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp6.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasVP6</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/divx.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasDIVX</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/xvid.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasXVID</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/spark.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasSPARK</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg1.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasMPEG1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg4vc.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasMPEG4VC</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avs.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">HasAVS</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- color curve -->
-  <ePixmap pixmap="GlamourAuraFHD/icons/curve/curve_off.png" position="952,947" size="60,30" zPosition="4" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">IsHDR</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr10.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">IsHDR10</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/sdr.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">IsSDR</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hlg.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">IsHLG</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- Resolution info -->
-  <widget source="session.CurrentService" render="Label" position="665,942" size="140,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
-    <convert type="GlamourBase">VideoSize</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="810,942" size="135,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
-    <convert type="GlamourBase">Fps</convert>
-  </widget>
-</screen>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/rec_off.png" position="1198,947" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
+    <widget source="session.RecordState" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/rec_on.png" position="1198,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/stream_off.png" position="1253,947" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/stream_on.png" position="1253,947" size="60,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsStreaming</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/uhd_off.png" position="1318,947" size="76,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/uhd_on.png" position="1318,947" size="76,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">2800,4400</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="1345,947" size="50,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/hd_on.png" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">900,1930</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1110,947" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" position="1110,947" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
+      <convert type="GlamourAudioInfo">AudioIcon</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/dolby_off.png" position="1400,947" size="36,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/dolby_on.png" position="1400,947" size="36,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/multiaudio_off.png" position="1437,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/multiaudio_on.png" position="1437,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">AudioTracksAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/wide_off.png" position="1490,947" size="54,30" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/wide_on.png" position="1490,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/hbbtv_off.png" position="1550,947" size="60,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="1550,947" size="60,30" zPosition="2" pixmap="GlamourAuraFHD/icons/infobar/hbbtv_on.png" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/txt_off.png" position="1615,947" size="54,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/txt_on.png" position="1615,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/sub_off.png" position="1728,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/sub_on.png" position="1728,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">SubtitlesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/pdc_off.png" position="1675,947" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/pdc_on.png" position="1675,947" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="EventName">Pdc</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/subsrv_off.png" position="1782,947" size="54,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/subsrv_on.png" position="1782,947" size="54,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/crypt_off.png" position="1842,947" size="36,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/crypt_on.png" position="1842,947" size="36,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/fta.png" position="440,949" size="65,25" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="GlamourAccess">Fta</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- codec info -->
+    <ePixmap pixmap="GlamourAuraFHD/icons/codecs/codec_off.png" position="1020,947" size="84,30" zPosition="4" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/hevc.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasHEVC</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avc.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasAVC</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg2.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasMPEG2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vc1.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasVC1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/h.263.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasH263</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp8.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasVP8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp9.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasVP9</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/vp6.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasVP6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/divx.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasDIVX</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/xvid.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasXVID</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/spark.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasSPARK</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg1.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasMPEG1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/mpeg4vc.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasMPEG4VC</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/codecs/avs.png" position="1020,947" size="84,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">HasAVS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- color curve -->
+    <ePixmap pixmap="GlamourAuraFHD/icons/curve/curve_off.png" position="952,947" size="60,30" zPosition="4" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr10.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/sdr.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsSDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hlg.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsHLG</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Resolution info -->
+    <widget source="session.CurrentService" render="Label" position="665,942" size="140,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
+      <convert type="GlamourBase">VideoSize</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="810,942" size="135,40" backgroundColor="background20" foregroundColor="white" transparent="1" zPosition="13" font="Numbers; 33" halign="center" valign="center" noWrap="1">
+      <convert type="GlamourBase">Fps</convert>
+    </widget>
+  </screen>
   <!-- Provider name and Reference -->
   <screen name="P+RInfobar" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_provider2IB.png" position="425,130" zPosition="-12" size="1240,50" alphatest="on" transparent="1" />
@@ -2131,7 +2131,6 @@
   </screen>
   <!--  Source info -->
   <screen name="SourceInfo" flags="wfNoBorder">
-<<<<<<< HEAD
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/emu.png" position="1515,995" size="65,25" zPosition="8" alphatest="blend" transparent="1">
       <convert type="GlamourAccess">Emu</convert>
       <convert type="ConditionalShowHide" />
@@ -2150,26 +2149,6 @@
     </widget>
     <widget source="session.CurrentService" render="GlamCI" allVisible="1" position="1595,990" size="250,35" transparent="1" font="RegularB; 27" backgroundColor="sky" foregroundColor="amarillo" zPosition="5" />
   </screen>
-=======
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/emu.png" position="1515,995" size="65,25" zPosition="8" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Emu</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/crd.png" position="1515,995" size="65,25" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Crd</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/net.png" position="1515,995" size="65,25" zPosition="5" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Net</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/caids/cache.png" position="1515,995" size="65,25" zPosition="6" alphatest="blend" transparent="1">
-    <convert type="GlamourAccess">Cache</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="GlamCI" allVisible="1" position="1595,990" size="250,35" transparent="1" font="RegularB; 27" backgroundColor="sky" foregroundColor="amarillo" zPosition="5" />
-</screen>
->>>>>>> e283d717bf55932def054f405f917a635f611300
   <!--  Ecm info -->
   <screen name="ECMInfo" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="10,1030" size="1900,35" font="Numbers; 31" halign="center" zPosition="7" backgroundColor="grey" transparent="1" text="Ecm Info" valign="center" noWrap="1" foregroundColor="amarillo">
