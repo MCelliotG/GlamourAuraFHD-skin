@@ -1,5 +1,9 @@
 #!/bin/sh
 rm -rf /usr/share/enigma2/GlamourAuraFHD
+if [ ! -f /usr/share/enigma2/GlamourAuraBerry/skin.xml ] || [ ! -f /usr/share/enigma2/GlamourAuraLime/skin.xml ] || [ ! -f /usr/share/enigma2/GlamourAuraMango/skin.xml ] || [ ! -f /usr/share/enigma2/GlamourAuraRose/skin.xml ]; then
+rm -rf /usr/lib/enigma2/python/Components/Converter/Glam*
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Glam*
+fi
 rm -rf /usr/lib/enigma2/python/Components/Converter/Glam*
 rm -rf /usr/lib/enigma2/python/Components/Renderer/Glam*
 echo "                                                                     "

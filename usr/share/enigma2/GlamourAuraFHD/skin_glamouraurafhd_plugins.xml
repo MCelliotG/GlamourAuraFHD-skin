@@ -163,7 +163,7 @@
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="75,605" size="400,400" pixmap="GlamourAuraFHD/icons/videoenhancement.png" alphatest="blend" transparent="1" zPosition="5" />
-    <widget name="config" font="Regular; 30" position="540,670" size="1305,150" itemHeight="50" scrollbarMode="showOnDemand" foregroundColorSelected="lightciel" backgroundColorSelected="background20" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="5" />
+    <widget name="config" font="Regular; 30" position="540,670" size="1305,150" itemHeight="50" scrollbarMode="showOnDemand" foregroundColorSelected="cyan1" backgroundColorSelected="background20" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="5" />
     <widget source="introduction" render="Label" position="1180,835" size="670,50" font="Regular; 33" halign="center" valign="top" transparent="1" foregroundColor="sky" zPosition="4" backgroundColor="background20" />
     <panel name="FullKeys1" />
   </screen>
@@ -173,7 +173,7 @@
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/videoenhancement.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="config" font="Regular; 30" position="540,60" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" foregroundColorSelected="lightciel" backgroundColorSelected="background20" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="5" />
+    <widget name="config" font="Regular; 30" position="540,60" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" foregroundColorSelected="cyan1" backgroundColorSelected="background20" backgroundColor="background20" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="5" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="540,760" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb810.png" position="1020,825" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
     <widget source="introduction" render="Label" position="540,760" size="1305,120" font="Regular; 29" halign="left" valign="center" transparent="1" foregroundColor="sky" zPosition="4" backgroundColor="background20" />
@@ -1577,7 +1577,7 @@
   </screen>
 
     <!-- Video Clipping --> 
-  <screen name="VideoClippingCoordinates" position="0,0" size="1920,1080" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="VideoClippingCoordinates" position="0,0" size="1920,1080" title="Video Clipping Coordinates" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel name="videoclippingbackground" position="770,400" size="1150,330" backgroundColor="background90" foregroundColor="background90" zPosition="-11" />
     <ePixmap pixmap="GlamourAuraFHD/menu/menufadebottom2.png" position="770,730" zPosition="-11" size="1150,75" alphatest="off" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtr.png" position="1620,400" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
