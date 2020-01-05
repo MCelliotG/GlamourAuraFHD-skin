@@ -1,11 +1,12 @@
 #!/bin/sh
 rm -rf /usr/share/enigma2/GlamourAuraFHD
-if [ ! -f /usr/share/enigma2/GlamourAuraBerry/skin.xml ] || [ ! -f /usr/share/enigma2/GlamourAuraLime/skin.xml ] || [ ! -f /usr/share/enigma2/GlamourAuraMango/skin.xml ] || [ ! -f /usr/share/enigma2/GlamourAuraRose/skin.xml ]; then
+if [ -f /usr/share/enigma2/GlamourAuraMango/skin.xml ] || [ -f /usr/share/enigma2/GlamourAuraLime/skin.xml ] || [ -f /usr/share/enigma2/GlamourAuraRose/skin.xml ] || [ -f /usr/share/enigma2/GlamourAuraBerry/skin.xml ] 
+then
+echo "Glamour Aura converters and renderers are used by another Glamour skin(s), not removing"
+else
 rm -rf /usr/lib/enigma2/python/Components/Converter/Glam*
 rm -rf /usr/lib/enigma2/python/Components/Renderer/Glam*
 fi
-rm -rf /usr/lib/enigma2/python/Components/Converter/Glam*
-rm -rf /usr/lib/enigma2/python/Components/Renderer/Glam*
 echo "                                                                     "
 echo "Glamour Aura FHD skin was successfully removed from your receiver    "
 echo "                                                                     "
