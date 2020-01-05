@@ -3,9 +3,10 @@ Version: G.08
 Section: skins
 Priority: optional
 Architecture: all
-License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
-OE: OpenPLI and OpenPLI based
-Maintainer: MCelliotG 
+Maintainer: MCelliotG
 Description: Glamour Aura FHD skin for new generation STBs with OpenPLI based images
+Replaces: enigma2-plugin-skins-glamourauraberry, enigma2-plugin-skins-glamourauralime, enigma2-plugin-skins-glamourauramango, enigma2-plugin-skins-glamouraurarose
 Source: https://github.com/MCelliotG/GlamourAuraFHD-skin
 Homepage: https://github.com/MCelliotG/GlamourAuraFHD-skin
+OE: OpenPLI & openPLI based
+License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007

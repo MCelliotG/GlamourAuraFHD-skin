@@ -3,28 +3,28 @@ echo "                                   *******                                
 echo "                         ******               *****                         "
 echo "                    ****                            ****                    "
 echo "                 ***                                     ***                "
-echo "               **  GLAMOUR AURA FHD SKIN FOR OPENPLI IMAGES  **             "
+echo "               **     GLAMOUR AURA FHD SKIN FOR OPENPLI     **              "
 echo "                            a skin by MCelliotG                             "
 echo "                                                                            "
 echo "                                                                            "
 echo "                         ***** DISCLAIMER ****                              "
-echo "Glamour Aura FHD skin requires a minimal dual core CPU @ 751 Mhz.           "
+echo "Glamour Aura FHD skin requires a minimal dual core CPU @ 751Mhz.            "
 echo "Glamour Aura FHD is NOT guaranteed to work on slower or older receivers.    "
 echo "                                                                            "
 echo "                                                                            "
 echo "                                                                            "
 echo "                                                                            "
-echo "Checking if a previous version of Glamour Aura FHD skin is installed        "
+echo "Checking if a previous version of Glamour Aura FHD skin is installed"
 if [ -f /usr/share/enigma2/GlamourAuraFHD/skin.xml ]; then
     cp -R /usr/share/enigma2/GlamourAuraFHD/ /tmp
     rm -rf /usr/share/enigma2/GlamourAuraFHD
     rm -rf /usr/lib/enigma2/python/Components/Converter/Glam*
     rm -rf /usr/lib/enigma2/python/Components/Renderer/Glam*
-    echo "                                                   "
-    echo "Previous GlamourAuraFHD skin installation          "
-    echo "    was found and removed successfully!            "
-    echo "                                                   "
+    echo "                                               "
+    echo "Previous GlamourAuraFHD skin installation      "
+    echo "    was found and removed successfully!        "
+    echo "                                               "
 fi
-echo "                                                           "
-echo "Glamour Aura FHD skin is now being installed...            "
-echo "                                                           "
+echo "                                                     "
+echo "Glamour Aura FHD skin is now being installed...      "
+echo "                                                     "
