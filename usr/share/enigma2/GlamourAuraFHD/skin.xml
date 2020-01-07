@@ -20,7 +20,7 @@
   <include filename="/usr/share/enigma2/GlamourAuraFHD/skin_glamouraurafhd_sdg.xml" />
   <colors>
     <color name="amarillo" value="#00ffffc6" />
-    <color name="amaryllis" value="#00bb2570" />
+    <color name="amaryllis" value="#00e1107c" />
     <color name="background" value="#30000000" />
     <color name="background10" value="#10000000" />
     <color name="background20" value="#20000000" />
@@ -421,21 +421,21 @@
   </screen>
   <!-- 02. Menu Labels -->
   <screen name="MainMenu1" flags="wfNoBorder">
-    <widget source="menu" render="Listbox" position="770,60" size="990,880" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself990.png" alphatest="blend" zPosition="5">
-      <convert type="TemplatedMultiContent">
+  <widget source="menu" render="Listbox" position="770,60" size="990,880" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself990.png" alphatest="blend" zPosition="5">
+  <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (60, 0), size = (900, 90), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ],
         "fonts": [gFont("Regular", 45)],
         "itemHeight": 80
         }
       </convert>
-    </widget>
-    <ePixmap position="1770,90" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_up2.png" transparent="1" alphatest="on" />
-    <ePixmap position="1770,850" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_down2.png" transparent="1" alphatest="on" />
-    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1455,25" size="300,30" zPosition="6" font="Regular; 25" halign="left" backgroundColor="background20" transparent="1" valign="center" />
-    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/blue.png" position="1405,25" size="50,30" alphatest="blend" zPosition="5" transparent="1">
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </screen>
+</widget>
+  <ePixmap position="1770,90" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_up2.png" transparent="1" alphatest="on" />
+  <ePixmap position="1770,850" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_down2.png" transparent="1" alphatest="on" />
+  <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1455,25" size="300,30" zPosition="6" font="Regular; 25" halign="left" backgroundColor="background20" transparent="1" valign="center" />
+  <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/blue.png" position="1405,25" size="50,30" alphatest="blend" zPosition="5" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
   <screen name="MenuCL" flags="wfNoBorder">
     <widget source="cutlist" render="Listbox" position="1190,195" size="645,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/cutsel.png" alphatest="blend" transparent="1" zPosition="13">
       <convert type="TemplatedMultiContent">
@@ -1248,19 +1248,19 @@
       <convert type="ServiceName">Reference</convert>
     </widget>
     <!-- Current and next event -->
-    <widget source="session.Event_Now" render="Label" position="360,835" size="105,50" font="Regular; 40" halign="center" transparent="1" backgroundColor="background20" foregroundColor="white" zPosition="11" noWrap="1" valign="center">
+    <widget source="session.Event_Now" render="Label" position="360,835" size="105,50" font="Regular; 38" halign="center" transparent="1" backgroundColor="background20" foregroundColor="white" zPosition="11" noWrap="1" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="465,835" size="15,50" font="Regular; 40" halign="center" backgroundColor="background20" foregroundColor="white" transparent="1" noWrap="1" zPosition="11" valign="center" />
-    <widget source="session.Event_Now" render="Label" position="480,835" size="105,50" font="Regular; 40" halign="center" transparent="1" backgroundColor="background20" foregroundColor="white" noWrap="1" zPosition="11" valign="center">
+    <eLabel text="-" position="465,835" size="15,50" font="Regular; 38" halign="center" backgroundColor="background20" foregroundColor="white" transparent="1" noWrap="1" zPosition="11" valign="center" />
+    <widget source="session.Event_Now" render="Label" position="480,835" size="105,50" font="Regular; 38" halign="center" transparent="1" backgroundColor="background20" foregroundColor="white" noWrap="1" zPosition="11" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="GlamRoll" position="595,835" size="840,50" font="Regular; 40" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" valign="center" noWrap="1" zPosition="11">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="1450,835" size="180,50" font="Regular; 33" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" noWrap="1" zPosition="6" valign="center">
+    <widget source="session.Event_Now" render="GlamRoll" position="595,835" size="840,50" font="Regular; 38" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" valign="top" noWrap="1" zPosition="11">
+  <convert type="EventName">Name</convert>
+</widget>
+    <widget source="session.Event_Now" render="Label" position="1450,835" size="180,50" font="Regular; 33" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" noWrap="1" zPosition="6" valign="top">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -1268,19 +1268,19 @@
     <widget source="session.Event_Now" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_infobar.png" alphatest="blend" position="360,887" size="1270,7" zPosition="7" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.Event_Next" render="GlamRoll" position="595,895" size="840,40" font="Regular; 32" halign="left" transparent="1" foregroundColor="black" backgroundColor="grey2" valign="center" noWrap="1" zPosition="11">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="360,895" size="105,40" font="Regular; 32" halign="center" transparent="1" backgroundColor="grey" foregroundColor="background20" zPosition="11" noWrap="1" valign="center">
+    <widget source="session.Event_Next" render="GlamRoll" position="595,895" size="840,40" font="Regular; 30" halign="left" transparent="1" foregroundColor="black" backgroundColor="grey2" valign="top" noWrap="1" zPosition="11">
+  <convert type="EventName">Name</convert>
+</widget>
+    <widget source="session.Event_Next" render="Label" position="360,895" size="105,40" font="Regular; 30" halign="center" transparent="1" backgroundColor="grey" foregroundColor="background20" zPosition="11" noWrap="1" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="465,895" size="15,40" font="Regular; 32" halign="center" backgroundColor="grey" foregroundColor="background20" transparent="1" noWrap="1" zPosition="11" />
-    <widget source="session.Event_Next" render="Label" position="480,894" size="105,40" font="Regular; 32" halign="center" transparent="1" backgroundColor="grey" foregroundColor="background20" noWrap="1" zPosition="11" valign="center">
+    <eLabel text="-" position="465,895" size="15,40" font="Regular; 30" halign="center" backgroundColor="grey" foregroundColor="background20" transparent="1" noWrap="1" zPosition="11" valign="top" />
+    <widget source="session.Event_Next" render="Label" position="480,894" size="105,40" font="Regular; 30" halign="center" transparent="1" backgroundColor="grey" foregroundColor="background20" noWrap="1" zPosition="11" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1450,895" size="180,40" font="Regular; 32" halign="left" foregroundColor="amarillo" backgroundColor="darkgrey" transparent="1" noWrap="1" zPosition="11" valign="top">
+    <widget source="session.Event_Next" render="Label" position="1450,895" size="180,40" font="Regular; 30" halign="left" foregroundColor="amarillo" backgroundColor="darkgrey" transparent="1" noWrap="1" zPosition="11" valign="top">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
@@ -1824,22 +1824,22 @@
   <screen name="EventInfobar" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_extdescnow.png" position="400,300" zPosition="-2" size="1520,230" alphatest="on" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_extdescnext.png" position="400,530" zPosition="-2" size="1520,230" alphatest="on" transparent="1" />
-    <widget source="session.Event_Now" render="Label" position="425,295" size="720,30" transparent="1" zPosition="8" foregroundColor="white" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="bottom">
+    <widget source="session.Event_Now" render="Label" position="425,305" size="720,30" transparent="1" zPosition="8" foregroundColor="white" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="bottom">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="425,745" size="720,30" transparent="1" zPosition="8" foregroundColor="amarillo" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="top">
+    <widget source="session.Event_Now" render="Label" position="425,735" size="720,30" transparent="1" zPosition="8" foregroundColor="amarillo" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="top">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="session.Event_Now" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="425,325" size="720,420" font="Regular; 28" transparent="0" valign="top" zPosition="4" backgroundColor="background40">
+    <widget source="session.Event_Now" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="425,335" size="720,400" font="Regular; 28" transparent="0" valign="top" zPosition="4" backgroundColor="background40">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1155,295" size="720,30" transparent="1" zPosition="8" foregroundColor="white" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="bottom">
+    <widget source="session.Event_Next" render="Label" position="1155,305" size="720,30" transparent="1" zPosition="8" foregroundColor="white" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="bottom">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1155,745" size="720,30" transparent="1" zPosition="8" foregroundColor="amarillo" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="top">
+    <widget source="session.Event_Next" render="Label" position="1155,735" size="720,30" transparent="1" zPosition="8" foregroundColor="amarillo" font="RegularB; 24" halign="center" backgroundColor="transpwhite" valign="top">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="session.Event_Next" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=6000,wrap,oneshot=1,always=0" position="1155,325" size="720,420" font="Regular; 28" foregroundColor="black" backgroundColor="transwhite" transparent="0" valign="top" zPosition="4">
+    <widget source="session.Event_Next" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=6000,wrap,oneshot=1,always=0" position="1155,335" size="720,400" font="Regular; 28" foregroundColor="black" backgroundColor="transwhite" transparent="0" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -2974,9 +2974,9 @@
     <widget source="ServiceEvent" render="Label" position="265,15" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,170" size="715,50" font="RegularB; 34" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
-      <convert type="EventName">Name</convert>
-    </widget>
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,170" size="720,50" font="RegularB; 32" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
+  <convert type="EventName">Name</convert>
+</widget>
     <widget source="ServiceEvent" render="Label" position="265,115" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
@@ -2990,7 +2990,7 @@
     <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="370,137" size="295,8" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,230" size="715,520" font="RegularB; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,235" size="720,500" font="RegularB; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- NEXT EVENTS -->
@@ -3022,7 +3022,7 @@
     <widget source="ServiceEvent" render="GlamRoll" position="130,875" size="640,40" halign="left" valign="top" foregroundColor="sky" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="4">
       <convert type="GlamNextEvents">Event4,titleWithDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRoll" position="165,915" size="600,40" halign="left" valign="top" foregroundColor="green" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
+    <widget source="ServiceEvent" render="GlamRoll" position="165,915" size="605,40" halign="left" valign="top" foregroundColor="green" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="5">
       <convert type="GlamNextEvents">PrimeTime,titleWithDuration</convert>
     </widget>
     <!-- CHANNEL INFOS -->
@@ -3830,70 +3830,70 @@
   </screen>
   <!-- 08. Bouquet Selection -->
   <screen name="BouquetSelector" position="0,0" size="1920,1080" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground3" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <widget name="menu" font="Regular; 30" position="810,90" size="1050,700" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel1050.png" alphatest="blend" zPosition="3" />
-  <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/bouquet.png" alphatest="on" transparent="1" zPosition="5" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="810,790" size="810,45" zPosition="-3" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb500.png" position="1360,905" size="500,45" zPosition="-3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="810,790" size="1050,60" font="RegularB; 36" valign="center" noWrap="1" backgroundColor="background20" transparent="1" zPosition="9" halign="center" foregroundColor="sky">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="810,890" size="1050,60" font="RegularB; 28" transparent="1" zPosition="5" foregroundColor="cyan" backgroundColor="background20" halign="center" valign="center" text="PidHexInfo">
-    <convert type="GlamourBase">PidHexInfo</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/dolby_off.png" position="1215,855" size="84,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/dolby_on.png" position="1215,855" size="84,30" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsMultichannel</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/uhd_off.png" position="1035,855" size="76,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/uhd_on.png" position="1035,855" size="76,30" zPosition="4" alphatest="blend" transparent="1">
-  <convert type="ServiceInfo">VideoWidth</convert>
-  <convert type="ValueRange">2800,4400</convert>
-  <convert type="ConditionalShowHide" />
-</widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1120,855" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" position="1120,855" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
-    <convert type="GlamourAudioInfo">AudioIcon</convert>
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/wide_off.png" position="1310,855" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/wide_on.png" position="1310,855" size="54,30" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/hbbtv_off.png" position="1370,855" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" position="1370,855" size="60,30" zPosition="4" pixmap="GlamourAuraFHD/icons/infobar/hbbtv_on.png" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">HasHBBTV</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/txt_off.png" position="1440,855" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/txt_on.png" position="1440,856" size="54,30" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">HasTelext</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/sub_off.png" position="1500,855" size="50,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/sub_on.png" position="1500,855" size="50,30" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">SubservicesAvailable</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/crypt_off.png" position="1680,855" size="33,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/crypt_on.png" position="1680,855" size="33,30" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="ServiceInfo">IsCrypted</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/pdc_off.png" position="1625,855" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
-  <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/pdc_on.png" position="1625,855" size="50,30" zPosition="2" alphatest="blend" transparent="1">
-    <convert type="EventName">Pdc</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap pixmap="GlamourAuraFHD/icons/infobar/stream_off.png" position="1560,855" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/stream_on.png" position="1560,855" size="60,30" zPosition="4" alphatest="blend" transparent="1">
-    <convert type="GlamourBase">IsStreaming</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-</screen>
+    <panel name="MainBackground3" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <widget name="menu" font="Regular; 30" position="810,90" size="1050,700" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel1050.png" alphatest="blend" zPosition="3" />
+    <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/bouquet.png" alphatest="on" transparent="1" zPosition="5" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="810,790" size="810,45" zPosition="-3" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb500.png" position="1360,905" size="500,45" zPosition="-3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="810,790" size="1050,60" font="RegularB; 36" valign="center" noWrap="1" backgroundColor="background20" transparent="1" zPosition="9" halign="center" foregroundColor="sky">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="810,890" size="1050,60" font="RegularB; 28" transparent="1" zPosition="5" foregroundColor="cyan" backgroundColor="background20" halign="center" valign="center" text="PidHexInfo">
+      <convert type="GlamourBase">PidHexInfo</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/dolby_off.png" position="1215,855" size="84,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/dolby_on.png" position="1215,855" size="84,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/uhd_off.png" position="1035,855" size="76,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/uhd_on.png" position="1035,855" size="76,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">2800,4400</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/audio/audio_off.png" position="1120,855" size="84,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" position="1120,855" render="GlamAudioIcon" size="84,30" alphatest="blend" path="icons/audio" zPosition="4" transparent="1">
+      <convert type="GlamourAudioInfo">AudioIcon</convert>
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/wide_off.png" position="1310,855" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/wide_on.png" position="1310,855" size="54,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/hbbtv_off.png" position="1370,855" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" position="1370,855" size="60,30" zPosition="4" pixmap="GlamourAuraFHD/icons/infobar/hbbtv_on.png" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/txt_off.png" position="1440,855" size="54,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/txt_on.png" position="1440,856" size="54,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/sub_off.png" position="1500,855" size="50,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/sub_on.png" position="1500,855" size="50,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/crypt_off.png" position="1680,855" size="33,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/crypt_on.png" position="1680,855" size="33,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/pdc_off.png" position="1625,855" size="50,30" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.Event_Now" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/pdc_on.png" position="1625,855" size="50,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="EventName">Pdc</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="GlamourAuraFHD/icons/infobar/stream_off.png" position="1560,855" size="60,30" zPosition="3" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/infobar/stream_on.png" position="1560,855" size="60,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="GlamourBase">IsStreaming</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
   <!-- 09. Channel Context Menu -->
   <screen name="ChannelContextMenu" position="center,center" size="1920,1080" title="Channellist menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground3" />
@@ -4015,7 +4015,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="50,80" size="565,120" font="Caps; 36" backgroundColor="transwhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,210" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,200" size="565,760" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="615,140" size="1290,800" itemHeight="50" font="Regular;28" setEventItemFont="Regular;28" setEventTimeFont="Regular;24" setColWidths="120,200" setColGap="20" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/epgsel.png" zPosition="4" />
@@ -4029,7 +4029,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="60,80" size="565,120" font="Caps; 36" backgroundColor="transwhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,210" size="565,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,210" size="565,760" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="665,220" size="1200,700" itemHeight="50" font="Regular;30" setEventItemFont="Regular; 28" setEventTimeFont="Regular;24" setColWidths="350,180" setColGap="15" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/updatesel.png" alphatest="blend" transparent="1" zPosition="5" />
@@ -4052,7 +4052,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="60,80" size="570,120" font="Caps; 36" backgroundColor="transwhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="62,250" size="570,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="62,250" size="570,730" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="60,205" size="85,45" font="Numbers; 36" halign="left" backgroundColor="sky" transparent="1" zPosition="7">
