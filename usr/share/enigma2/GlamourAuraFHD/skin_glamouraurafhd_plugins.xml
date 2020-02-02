@@ -730,7 +730,7 @@
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/blind_scan.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="text" position="540,50" size="1305,50" font="RegularB; 30" halign="left" valign="center" backgroundColor="background20" transparent="1" zPosition="10" foregroundColor="lightciel" />
     <widget name="progress" position="540,100" size="1305,50" font="RegularB; 32" halign="left" valign="center" backgroundColor="background20" transparent="1" zPosition="10" foregroundColor="sky" />
-    <eLabel position="540,150" size="1305,3" backgroundColor="lime" zPosition="12" foregroundColor="lime2" />
+    <eLabel position="540,150" size="1305,3" backgroundColor="cyan" zPosition="12" foregroundColor="lime2" />
     <widget source="list" render="Listbox" position="540,155" size="900,700" backgroundColor="background20" foregroundColor="white" selectionPixmap="GlamourAuraFHD/selections/contextsel.png" alphatest="blend" zPosition="13" scrollbarMode="showAlways" transparent="1">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (5, 2), size = (890, 50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ],
