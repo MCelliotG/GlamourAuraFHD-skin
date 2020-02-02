@@ -421,21 +421,21 @@
   </screen>
   <!-- 02. Menu Labels -->
   <screen name="MainMenu1" flags="wfNoBorder">
-  <widget source="menu" render="Listbox" position="770,60" size="990,880" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself990.png" alphatest="blend" zPosition="5">
-  <convert type="TemplatedMultiContent">
+    <widget source="menu" render="Listbox" position="770,60" size="990,880" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself990.png" alphatest="blend" zPosition="5">
+      <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (60, 0), size = (900, 90), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ],
         "fonts": [gFont("Regular", 45)],
         "itemHeight": 80
         }
       </convert>
-</widget>
-  <ePixmap position="1770,90" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_up2.png" transparent="1" alphatest="on" />
-  <ePixmap position="1770,850" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_down2.png" transparent="1" alphatest="on" />
-  <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1455,25" size="300,30" zPosition="6" font="Regular; 25" halign="left" backgroundColor="background20" transparent="1" valign="center" />
-  <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/blue.png" position="1405,25" size="50,30" alphatest="blend" zPosition="5" transparent="1">
-    <convert type="ConditionalShowHide" />
-  </widget>
-</screen>
+    </widget>
+    <ePixmap position="1770,90" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_up2.png" transparent="1" alphatest="on" />
+    <ePixmap position="1770,850" size="54,54" zPosition="10" pixmap="GlamourAuraFHD/buttons/key_down2.png" transparent="1" alphatest="on" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1455,25" size="300,30" zPosition="6" font="Regular; 25" halign="left" backgroundColor="background20" transparent="1" valign="center" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="GlamourAuraFHD/buttons/blue.png" position="1405,25" size="50,30" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
   <screen name="MenuCL" flags="wfNoBorder">
     <widget source="cutlist" render="Listbox" position="1190,195" size="645,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/cutsel.png" alphatest="blend" transparent="1" zPosition="13">
       <convert type="TemplatedMultiContent">
@@ -958,27 +958,31 @@
   </screen>
   <!-- 02-11. Menu GUI -->
   <screen name="MenuGUI" flags="wfNoBorder">
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/languages.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">language_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/timezone.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">timezone_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">epg_settings</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ui.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">user_interface</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">skin_selector</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </screen>
+  <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/languages.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <convert type="MenuEntryCompare">language_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/timezone.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <convert type="MenuEntryCompare">timezone_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgsetup.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <convert type="MenuEntryCompare">epg_settings</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/ui.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <convert type="MenuEntryCompare">user_interface</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <convert type="MenuEntryCompare">primary_skin_selector</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/lcdskin.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <convert type="MenuEntryCompare">display_skin_selector</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
   <!-- 02-12. Menu EPG -->
   <screen name="MenuEPG" flags="wfNoBorder">
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/epgsettings.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
@@ -1258,8 +1262,8 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <widget source="session.Event_Now" render="GlamRoll" position="595,835" size="840,50" font="Regular; 38" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" valign="top" noWrap="1" zPosition="11">
-  <convert type="EventName">Name</convert>
-</widget>
+      <convert type="EventName">Name</convert>
+    </widget>
     <widget source="session.Event_Now" render="Label" position="1450,835" size="180,50" font="Regular; 33" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" noWrap="1" zPosition="6" valign="top">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
@@ -1269,8 +1273,8 @@
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Next" render="GlamRoll" position="595,895" size="840,40" font="Regular; 30" halign="left" transparent="1" foregroundColor="black" backgroundColor="grey2" valign="top" noWrap="1" zPosition="11">
-  <convert type="EventName">Name</convert>
-</widget>
+      <convert type="EventName">Name</convert>
+    </widget>
     <widget source="session.Event_Next" render="Label" position="360,895" size="105,40" font="Regular; 30" halign="center" transparent="1" backgroundColor="grey" foregroundColor="background20" zPosition="11" noWrap="1" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -1813,10 +1817,10 @@
   <!-- Provider name and Reference -->
   <screen name="P+RInfobar" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_provider2IB.png" position="425,130" zPosition="-12" size="1240,50" alphatest="on" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1045,140" size="600,35" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
+    <widget source="session.CurrentService" render="Label" position="1045,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
       <convert type="ServiceName">Provider</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamRoll" position="440,140" size="600,35" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center">
+    <widget source="session.CurrentService" render="GlamRoll" position="440,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center">
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
@@ -1863,7 +1867,7 @@
   <screen name="PIDSInfobar" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_pidinfo.png" position="885,195" zPosition="-12" size="1035,52" alphatest="on" transparent="1" />
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt500.png" position="1140,195" size="500,45" zPosition="-10" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="905,205" size="950,35" font="Regular; 26" transparent="1" zPosition="5" foregroundColor="white" backgroundColor="background20" halign="right" valign="center" noWrap="1" text="PidInfo">
+    <widget source="session.CurrentService" render="Label" position="905,195" size="950,50" font="Regular; 26" transparent="1" zPosition="5" foregroundColor="white" backgroundColor="background20" halign="right" valign="center" noWrap="1" text="PidInfo">
       <convert type="GlamourBase">PidInfo</convert>
     </widget>
   </screen>
@@ -2462,7 +2466,7 @@
     <panel name="MainInfobar" />
     <!-- Provider -->
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_provider.png" position="980,130" zPosition="-2" size="675,50" alphatest="on" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1045,140" size="600,35" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
+    <widget source="session.CurrentService" render="Label" position="1045,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/infobar/halo_bottom.png" position="0,975" zPosition="-12" size="1920,88" alphatest="off" transparent="1" />
@@ -2974,9 +2978,9 @@
     <widget source="ServiceEvent" render="Label" position="265,15" size="510,100" font="RegularB; 34" backgroundColor="sky" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,170" size="720,50" font="RegularB; 32" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
-  <convert type="EventName">Name</convert>
-</widget>
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,165" size="720,50" font="RegularB; 32" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
+      <convert type="EventName">Name</convert>
+    </widget>
     <widget source="ServiceEvent" render="Label" position="265,115" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
@@ -3903,16 +3907,28 @@
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/tv.png" alphatest="on" transparent="1" zPosition="5" />
   </screen>
   <!-- 10. Skin Selector -->
-  <screen name="SkinSelector" position="0,0" size="1920,1080" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent" alphatest="on">
-    <panel name="MenuBackground" flags="wfNoBorder" />
-    <panel name="ClockLabel1" />
-    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/skins.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="Preview" position="460,360" size="320,320" transparent="1" alphatest="on" zPosition="5" />
-    <widget name="SkinList" font="Regular; 30" position="810,80" size="930,650" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColor="white" itemHeight="50" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/listsel930.png" alphatest="blend" zPosition="6" />
-    <widget source="introduction" render="Label" position="810,730" size="930,80" font="Regular; 33" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="cyan1" />
-    <panel name="RedKey3" />
-    <panel name="Title1" />
-  </screen>
+  <screen name="SkinSelector" position="0,0" size="1920,1080" title="GUI Skin" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="MainBackground2" />
+  <panel name="ClockLabel1" />
+  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/skins.png" alphatest="on" transparent="1" zPosition="5" />
+  <widget source="skins" render="Listbox" position="940,75" size="905,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/audiosel2.png" alphatest="blend" zPosition="4">
+     <convert type="TemplatedMultiContent">
+     {
+     "template": [
+                 MultiContentEntryText(pos = (5,0), size = (590,60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+                 MultiContentEntryText(pos = (600,0), size = (300,60), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2), # description
+                  ],
+                  "fonts": [ gFont("RegularB", 36), gFont("Regular", 30) ],
+                  "itemHeight": 60
+      }
+     </convert>
+   </widget>
+
+  <widget name="preview" position="535,275" size="400,400" transparent="1" alphatest="on" zPosition="5" />
+  <widget source="description" render="Label" position="540,805" size="1305,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="cyan1" />
+  <panel name="FullKeys1" />
+  <panel name="Title1" />
+</screen>
   <!-- 11. Subtitle Quickmenu -->
   <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,575" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="0,0" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
@@ -5769,38 +5785,38 @@ if not self["videofps"].text:
     <panel name="FullKeys1" />
   </screen>
   <screen name="JobView" position="0,0" size="1920,1080" title="Job View" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="MainBackground2" />
-    <panel name="ClockLabel1" />
-    <panel name="Title1" />
-    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/powertimer.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget source="job_name" render="Label" position="540,150" size="1305,170" font="RegularB; 38" halign="center" valign="center" backgroundColor="background20" foregroundColor="cyan" transparent="1" zPosition="3" />
-    <widget source="job_task" render="Label" position="540,320" size="1305,100" font="Regular; 36" backgroundColor="background20" foregroundColor="amarillo" transparent="1" zPosition="5" />
-    <ePixmap pixmap="GlamourAuraFHD/pointers/scanpointer_back.png" position="540,425" size="1155,30" transparent="1" alphatest="blend" zPosition="4" />
-    <widget source="job_progress" render="Progress" position="540,427" size="1155,25" pixmap="GlamourAuraFHD/pointers/slider_main.png" alphatest="blend" transparent="1" zPosition="7" />
-    <widget source="job_progress" render="Label" position="540,465" size="1155,50" font="Regular; 40" backgroundColor="cyan" zPosition="7" valign="center" halign="center" transparent="1" foregroundColor="cyan1">
-      <convert type="ProgressToText" />
-    </widget>
-    <widget source="job_status" render="Label" position="540,520" size="1305,80" font="Regular; 36" backgroundColor="background20" foregroundColor="orange" transparent="1" zPosition="5" />
-    <widget name="config" position="540,600" size="1305,250" font="Regular; 32" backgroundColor="background20" foregroundColor="white" itemHeight="50" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="13" scrollbarMode="showOnDemand" transparent="1" />
-    <widget source="cancelable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="595,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="finished" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="backgroundable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1540,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="cancelable" render="FixedLabel" text="Cancel" position="555,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="finished" render="FixedLabel" text="OK" position="870,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="1500,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </screen>
+  <panel name="MainBackground2" />
+  <panel name="ClockLabel1" />
+  <panel name="Title1" />
+  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/powertimer.png" alphatest="on" transparent="1" zPosition="5" />
+  <widget source="job_name" render="Label" position="540,150" size="1305,170" font="RegularB; 38" halign="center" valign="center" backgroundColor="background20" foregroundColor="cyan" transparent="1" zPosition="3" />
+  <widget source="job_task" render="Label" position="540,320" size="1305,100" font="Regular; 36" backgroundColor="background20" foregroundColor="amarillo" transparent="1" zPosition="5" />
+  <ePixmap pixmap="GlamourAuraFHD/pointers/scanpointer_back.png" position="540,425" size="1155,30" transparent="1" alphatest="blend" zPosition="4" />
+  <widget source="job_progress" render="Progress" position="540,427" size="1155,25" pixmap="GlamourAuraFHD/pointers/slider_main.png" alphatest="blend" transparent="1" zPosition="7" />
+  <widget source="job_progress" render="Label" position="540,465" size="1155,50" font="Regular; 40" backgroundColor="cyan" zPosition="7" valign="center" halign="center" transparent="1" foregroundColor="cyan1">
+    <convert type="ProgressToText" />
+  </widget>
+  <widget source="job_status" render="Label" position="540,520" size="1305,80" font="Regular; 36" backgroundColor="background20" foregroundColor="orange" transparent="1" zPosition="5" />
+  <widget name="config" position="540,600" size="1305,250" font="Regular; 32" backgroundColor="background20" foregroundColor="white" itemHeight="50" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" zPosition="13" scrollbarMode="showOnDemand" transparent="1" />
+  <widget source="cancelable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_red.png" position="595,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="finished" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="backgroundable" render="Pixmap" pixmap="GlamourAuraFHD/buttons/aura_blue.png" position="1540,870" size="225,75" alphatest="blend" transparent="1" zPosition="4">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="cancelable" render="FixedLabel" text="Cancel" position="555,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="finished" render="FixedLabel" text="OK" position="870,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="1500,850" size="305,95" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
   <!-- ### START WIZARDS -->
   <!-- 01. Default Sat List -->
   <screen name="DefaultSatLists" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
