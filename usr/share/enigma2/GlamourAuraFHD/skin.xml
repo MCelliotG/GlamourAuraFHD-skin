@@ -982,6 +982,10 @@
     <convert type="MenuEntryCompare">display_skin_selector</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+  <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <convert type="MenuEntryCompare">skin_selector</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
 </screen>
   <!-- 02-12. Menu EPG -->
   <screen name="MenuEPG" flags="wfNoBorder">
@@ -3923,11 +3927,14 @@
       }
      </convert>
    </widget>
-
   <widget name="preview" position="535,275" size="400,400" transparent="1" alphatest="on" zPosition="5" />
   <widget source="description" render="Label" position="540,805" size="1305,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="cyan1" />
   <panel name="FullKeys1" />
   <panel name="Title1" />
+  <!-- Old widgets -->
+  <widget name="Preview" position="535,275" size="400,400" transparent="1" alphatest="on" scale="1" zPosition="5" />
+  <widget source="introduction" render="Label" position="540,805" size="1305,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="cyan1" />
+  <widget name="SkinList" font="RegularB; 32" position="940,75" size="905,700" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="5" />
 </screen>
   <!-- 11. Subtitle Quickmenu -->
   <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,575" flags="wfNoBorder" backgroundColor="transparent">
