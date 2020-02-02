@@ -4,5 +4,5 @@ if [ -f /tmp/GlamourAuraFHD/skin.xml ]; then
   mv /tmp/GlamourAuraFHD /usr/share/enigma2/
 fi
 echo "                                                                                "
-echo "Glamour Aura FHD skin for OpenATV is now successfully installed in your receiver"
+echo "Glamour Aura FHD skin for OpenPLI is now successfully installed in your receiver"
 echo "                             Enjoy!!!                                           "

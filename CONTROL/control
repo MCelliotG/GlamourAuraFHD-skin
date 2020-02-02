@@ -1,11 +1,10 @@
 Package: enigma2-plugin-skins-glamouraurafhd
-Version: G.08
+Version: G.09
 Section: skins
 Priority: optional
 Architecture: all
 Maintainer: MCelliotG
 Description: Glamour Aura FHD skin for new generation STBs with OpenPLI based images
-Replaces: enigma2-plugin-skins-glamourauraberry, enigma2-plugin-skins-glamourauralime, enigma2-plugin-skins-glamourauramango, enigma2-plugin-skins-glamouraurarose
 Source: https://github.com/MCelliotG/GlamourAuraFHD-skin
 Homepage: https://github.com/MCelliotG/GlamourAuraFHD-skin
 OE: OpenPLI & openPLI based
