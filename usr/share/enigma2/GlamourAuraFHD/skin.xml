@@ -33,6 +33,8 @@
     <color name="blue" value="#000064c7" />
     <color name="cabbage" value="#0070ad11" />
     <color name="clearcyan" value="#300090e6" />
+    <color name="clearlawn" value="#300cac5c" />
+    <color name="clearlime" value="#3018ce18" />
     <color name="clearorange" value="#30f47d19" />
     <color name="clearpurple" value="#306c0aab" />
     <color name="clearrose" value="#30ce0020" />
@@ -3935,9 +3937,9 @@
     <panel name="RGKeys1" />
     <panel name="Title1" />
     <!-- Old widgets -->
-    <!--widget name="Preview" position="460,355" size="320,320" transparent="1" alphatest="on" zPosition="5" />
+    <widget name="Preview" position="460,355" size="320,320" transparent="1" alphatest="on" zPosition="5" />
     <widget source="introduction" render="Label" position="805,805" size="905,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="cyan1" />
-    <widget name="SkinList" font="RegularB; 32" position="805,75" size="900,700" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/contextsel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="5" /-->
+    <widget name="SkinList" font="RegularB; 32" position="805,75" size="900,700" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/contextsel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="5" />
   </screen>
   <screen name="SkinSelectorSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
   <!-- 11. Subtitle Quickmenu -->
