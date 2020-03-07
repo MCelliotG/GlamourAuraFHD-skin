@@ -1302,26 +1302,26 @@
   <screen name="TunerInfobar" flags="wfNoBorder">
     <!-- Frequency, Orbital & Streamtypes -->
     <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_tuner.png" position="395,40" zPosition="-12" size="1260,85" alphatest="off" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="410,50" size="870,35" backgroundColor="background20" transparent="1" zPosition="12" font="Regular;26" halign="center" valign="center" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="410,47" size="870,35" backgroundColor="background20" transparent="1" zPosition="12" font="Regular;26" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">FreqInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="410,85" size="870,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 26" halign="center" valign="center" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="410,82" size="870,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 26" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">Orbital</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb540.png" position="1100,95" size="540,30" zPosition="-10" alphatest="blend" transparent="1" />
     <eLabel position="1280,57" size="2,65" halign="center" font="Regular; 25" backgroundColor="blue" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="blue" />
     <eLabel position="1445,42" size="1,65" halign="center" font="Regular; 25" backgroundColor="cyan" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="cyan" />
     <!-- Signal info -->
-    <eLabel text="SNR:" position="1285,42" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1340,42" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan1" zPosition="3" noWrap="1" valign="center">
+    <eLabel text="SNR:" position="1285,40" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1340,40" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan1" zPosition="3" noWrap="1" valign="center">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <eLabel text="AGC:" position="1285,69" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1340,69" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan" valign="center" zPosition="3" noWrap="1">
+    <eLabel text="AGC:" position="1285,67" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1340,67" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan" valign="center" zPosition="3" noWrap="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel text="BER:" position="1285,95" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1340,95" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan" valign="center" zPosition="3" noWrap="1">
+    <eLabel text="BER:" position="1285,93" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1340,93" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="cyan" valign="center" zPosition="3" noWrap="1">
       <convert type="FrontendInfo">BER</convert>
     </widget>
   </screen>
@@ -2796,21 +2796,21 @@
   </screen>
   <!-- 08. Numerical Input -->
   <screen name="NumericalTextInputHelpDialog" position="540,760" size="1305,90" backgroundColor="background20" flags="wfNoBorder" zPosition="12">
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="30,0" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb810.png" position="470,45" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
-  <widget name="key1" position="50,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key2" position="280,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key3" position="510,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key4" position="740,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key5" position="970,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key6" position="50,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key7" position="280,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key8" position="510,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key9" position="740,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key0" position="970,45" size="285,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="help1" position="0,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="sky" />
-  <widget name="help2" position="1255,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="sky" />
-</screen>
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowt810.png" position="30,0" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraFHD/menu/accentglowb810.png" position="470,45" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+    <widget name="key1" position="50,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key2" position="280,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key3" position="510,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key4" position="740,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key5" position="970,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key6" position="50,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key7" position="280,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key8" position="510,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key9" position="740,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key0" position="970,45" size="285,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="help1" position="0,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="sky" />
+    <widget name="help2" position="1255,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="sky" />
+  </screen>
   <!-- 09. Subtitles -->
   <screen name="Subtitles" position="0,0" size="1920,1080" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground1" />
@@ -3941,7 +3941,7 @@
     <widget source="introduction" render="Label" position="805,805" size="905,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="cyan1" />
     <widget name="SkinList" font="RegularB; 32" position="805,75" size="900,700" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/contextsel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="5" />
   </screen>
-  <screen name="SkinSelectorSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+  <screen name="SkinSelectorSummary" flags="wfNoBorder" position="0,0" size="0,0" />
   <!-- 11. Subtitle Quickmenu -->
   <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,575" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="GlamourAuraFHD/menu/accentglowtl.png" position="0,0" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
@@ -5185,10 +5185,10 @@ if not self["videofps"].text:
   </screen>
   <!-- 06. Packet Manager -->
   <screen name="PacketManager" position="0,0" size="1920,1080" title="PacketManager" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground2" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
     <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel1305.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [
@@ -5202,8 +5202,8 @@ if not self["videofps"].text:
         }
       </convert>
     </widget>
-  <panel name="FullKeys1" />
-</screen>
+    <panel name="FullKeys1" />
+  </screen>
   <!-- 07. Plugin Details -->
   <screen name="PluginDetails" position="0,0" size="1920,1080" title="Plugin details" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
@@ -5219,12 +5219,12 @@ if not self["videofps"].text:
   </screen>
   <!-- 08. Plugin Manager -->
   <screen name="PluginManager" position="0,0" size="1920,1080" title="Plugin manager" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground2" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-  <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel1305.png" alphatest="blend" zPosition="5">
-    <convert type="TemplatedMultiContent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel1305.png" alphatest="blend" zPosition="5">
+      <convert type="TemplatedMultiContent">
       {"templates":
         {"default": (90,[
             MultiContentEntryPixmapAlphaBlend(pos = (30, 9), size = (72, 72), png = 5), # index 5 is the status pixmap
@@ -5240,18 +5240,18 @@ if not self["videofps"].text:
         "itemHeight": 90
       }
       </convert>
-  </widget>
-  <widget source="status" render="Label" position="540,810" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="sky" backgroundColor="background20" />
-  <panel name="FullKeys1" />
-</screen>
+    </widget>
+    <widget source="status" render="Label" position="540,810" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="sky" backgroundColor="background20" />
+    <panel name="FullKeys1" />
+  </screen>
   <!-- 09. Plugin Manager Info -->
   <screen name="PluginManagerInfo" position="0,0" size="1920,1080" title="Plugin manager activity" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground2" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-  <widget source="list" render="Listbox" position="540,80" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/updatesel.png" alphatest="blend" zPosition="5">
-  <convert type="TemplatedMultiContent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget source="list" render="Listbox" position="540,80" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraFHD/selections/updatesel.png" alphatest="blend" zPosition="5">
+      <convert type="TemplatedMultiContent">
         {"template": [
             MultiContentEntryPixmapAlphaBlend(pos = (10, 4), size = (72, 72), flags = BT_SCALE, png = 2), # index 2 is the status pixmap
             MultiContentEntryText(pos = (90, 0), size = (1200, 45), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0x90e6, color_sel=0xdeff), # index 0 is the name
@@ -5261,14 +5261,14 @@ if not self["videofps"].text:
         "itemHeight": 80
         }
       </convert>
-  </widget>
-  <widget source="status" render="Label" position="540,800" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="sky" backgroundColor="background20" />
-  <panel name="FullKeys1" />
- </screen>
+    </widget>
+    <widget source="status" render="Label" position="540,800" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="sky" backgroundColor="background20" />
+    <panel name="FullKeys1" />
+  </screen>
   <!-- 10. Plugin Manager Help -->
   <screen name="PluginManagerHelp" position="0,0" size="1920,1080" title="Plugin manager help" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="PluginManagerInfo" />
-</screen>
+    <panel name="PluginManagerInfo" />
+  </screen>
   <!-- 11. Restore Menu Image -->
   <screen name="RestoreMenuImage" position="0,0" size="1920,1080" title="Restore Backups" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
