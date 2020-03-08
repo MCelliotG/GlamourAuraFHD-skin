@@ -3003,7 +3003,7 @@
     <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraFHD/pointers/pointer_white.png" alphatest="blend" position="370,137" size="295,8" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,235" size="720,500" font="RegularB; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,225" size="720,525" font="RegularB; 29" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- NEXT EVENTS -->
@@ -5172,8 +5172,8 @@ if not self["videofps"].text:
     <widget name="config" font="Regular; 30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
-  <!-- 05. IPKG -->
-  <screen name="Ipkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 05. OPKG -->
+  <screen name="Opkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
@@ -5183,8 +5183,8 @@ if not self["videofps"].text:
     <widget name="status" position="600,495" size="1170,150" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="top" />
     <widget name="slider" position="600,665" size="1170,25" pixmap="GlamourAuraFHD/pointers/slider_main.png" alphatest="blend" transparent="1" zPosition="7" />
   </screen>
-  <screen name="Opkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="Ipkg" />
+  <screen name="Ipkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="Opkg" />
   </screen>
   <!-- 06. Packet Manager -->
   <screen name="PacketManager" position="0,0" size="1920,1080" title="PacketManager" flags="wfNoBorder" backgroundColor="transparent">
@@ -5281,8 +5281,8 @@ if not self["videofps"].text:
     <widget name="filelist" font="Regular; 30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
-  <!-- 12. IPKG Installer  -->
-  <screen name="IpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 12. OPKG Installer  -->
+  <screen name="OpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
@@ -5290,17 +5290,20 @@ if not self["videofps"].text:
     <widget name="list" font="Regular; 30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
-  <screen name="OpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="IpkgInstaller" />
+  <screen name="IpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="OpkgInstaller" />
   </screen>
-  <!-- 13. IPKG Menu  -->
-  <screen name="IPKGMenu" position="0,0" size="1920,1080" title="Select IPKG source....." flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 13. OPKG Menu  -->
+  <screen name="OPKGMenu" position="0,0" size="1920,1080" title="Select OPKG source....." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/softupdate.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="filelist" font="Regular; 30" position="540,70" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
+  </screen>
+  <screen name="IPKGMenu" position="0,0" size="1920,1080" title="Select IPKG source....." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="OPKGMenu" />
   </screen>
   <!-- 14. Restore Menu  -->
   <screen name="RestoreMenu" position="0,0" size="1920,1080" title="Restore Backups" flags="wfNoBorder" backgroundColor="transparent">
@@ -5362,14 +5365,17 @@ if not self["videofps"].text:
     </widget>
     <panel name="FullKeys1" />
   </screen>
-  <!-- 19. IPKG Source  -->
-  <screen name="IPKGSource" position="0,0" size="1920,1080" title="IPKG source" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 19. OPKG Source  -->
+  <screen name="OPKGSource" position="0,0" size="1920,1080" title="OPKG source" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/softupdate.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="text" position="530,480" size="1305,120" zPosition="3" font="Regular; 36" foregroundColor="white" backgroundColor="background20" transparent="1" valign="center" halign="left" />
     <panel name="FullKeys1" />
+  </screen>
+  <screen name="IPKGSource" position="0,0" size="1920,1080" title="IPKG source" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="OPKGSource" />
   </screen>
   <!-- 20. Software Manager Setup  -->
   <screen name="SoftwareManagerSetup" position="0,0" size="1920,1080" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">
@@ -5940,16 +5946,16 @@ if not self["videofps"].text:
     <panel name="RemoteWizard" />
     <widget name="portpic" position="740,630" size="192,192" zPosition="18" transparent="1" alphatest="blend" />
   </screen>
-  <!-- 09. Install Ipkg Updater -->
-  <screen name="InstallWizardIpkgUpdater" position="0,0" size="1920,1080" title="Install Ipkg Updater" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 09. Install Opkg Updater -->
+  <screen name="InstallWizardOpkgUpdater" position="0,0" size="1920,1080" title="Install Opkg Updater" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap pixmap="GlamourAuraFHD/icons/plugins.png" position="50,315" size="400,400" transparent="1" alphatest="on" zPosition="5" />
     <widget source="statusbar" render="Label" position="540,275" size="1305,600" font="Regular; 36" backgroundColor="background20" transparent="1" zPosition="7" foregroundColor="sky" valign="center" halign="center" />
   </screen>
-  <screen name="InstallWizardOpkgUpdater" position="0,0" size="1920,1080" title="Install Opkg Updater" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="InstallWizardIpkgUpdater" />
+  <screen name="InstallWizardIpkgUpdater" position="0,0" size="1920,1080" title="Install Ipkg Updater" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="InstallWizardOpkgUpdater" />
   </screen>
   <!-- 10. AutoInstall Wizard -->
   <screen name="AutoInstallWizard" position="0,0" size="1920,1080" title="AutoInstall" flags="wfNoBorder" backgroundColor="transparent">
