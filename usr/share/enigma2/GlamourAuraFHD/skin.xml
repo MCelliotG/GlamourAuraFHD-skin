@@ -5183,6 +5183,9 @@ if not self["videofps"].text:
     <widget name="status" position="600,495" size="1170,150" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="top" />
     <widget name="slider" position="600,665" size="1170,25" pixmap="GlamourAuraFHD/pointers/slider_main.png" alphatest="blend" transparent="1" zPosition="7" />
   </screen>
+  <screen name="Opkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="Ipkg" />
+  </screen>
   <!-- 06. Packet Manager -->
   <screen name="PacketManager" position="0,0" size="1920,1080" title="PacketManager" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
@@ -5944,6 +5947,9 @@ if not self["videofps"].text:
     <panel name="Title1" />
     <ePixmap pixmap="GlamourAuraFHD/icons/plugins.png" position="50,315" size="400,400" transparent="1" alphatest="on" zPosition="5" />
     <widget source="statusbar" render="Label" position="540,275" size="1305,600" font="Regular; 36" backgroundColor="background20" transparent="1" zPosition="7" foregroundColor="sky" valign="center" halign="center" />
+  </screen>
+  <screen name="InstallWizardOpkgUpdater" position="0,0" size="1920,1080" title="Install Opkg Updater" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="InstallWizardIpkgUpdater" />
   </screen>
   <!-- 10. AutoInstall Wizard -->
   <screen name="AutoInstallWizard" position="0,0" size="1920,1080" title="AutoInstall" flags="wfNoBorder" backgroundColor="transparent">
