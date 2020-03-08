@@ -5287,6 +5287,9 @@ if not self["videofps"].text:
     <widget name="list" font="Regular; 30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
+  <screen name="OpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="IpkgInstaller" />
+  </screen>
   <!-- 13. IPKG Menu  -->
   <screen name="IPKGMenu" position="0,0" size="1920,1080" title="Select IPKG source....." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
