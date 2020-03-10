@@ -1,4 +1,4 @@
-<skin>
+R<skin>
   <!-- Glamour Aura FHD by MCelliotG for OpenPLI 6.2/7.0+ based images -->
   <!-- LICENSE: This skin is licensed under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007. -->
   <!-- This skin was created for new generation Enigma2 receivers. MINIMAL requirement is an STB running Enigma2 with a dual CPU @ 751 MHz. -->
@@ -1800,19 +1800,19 @@
     <!-- color curve -->
     <ePixmap pixmap="GlamourAuraFHD/icons/curve/curve_off.png" position="952,947" size="60,30" zPosition="4" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsHDR</convert>
+      <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr10.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsHDR10</convert>
+      <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/sdr.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsSDR</convert>
+      <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hlg.png" position="952,947" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsHLG</convert>
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- Resolution info -->
@@ -2353,19 +2353,19 @@
     <!-- color curve -->
     <ePixmap pixmap="GlamourAuraFHD/icons/curve/curve_off.png" position="1225,1015" size="60,30" zPosition="4" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsHDR</convert>
+      <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hdr10.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsHDR10</convert>
+      <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/sdr.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsSDR</convert>
+      <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="GlamourAuraFHD/icons/curve/hlg.png" position="1225,1015" size="60,30" zPosition="6" alphatest="blend" transparent="1">
-      <convert type="GlamourBase">IsHLG</convert>
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- resolution icons -->
