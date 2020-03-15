@@ -1829,7 +1829,7 @@
     <widget source="session.CurrentService" render="Label" position="1045,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
       <convert type="ServiceName">Provider</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamRoll" position="440,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center">
+    <widget source="session.CurrentService" render="GlamRoll" position="440,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" noWrap="1" >
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
