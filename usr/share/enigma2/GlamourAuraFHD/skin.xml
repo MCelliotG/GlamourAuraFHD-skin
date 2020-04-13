@@ -710,14 +710,6 @@
       <convert type="MenuEntryCompare">ipbox_client_Start</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/nim2.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">signal_finder</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraFHD/icons/sateqc.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
-      <convert type="MenuEntryCompare">diseqc_tester</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
   </screen>
   <!-- 02-5. MenuSystem -->
   <screen name="MenuSystem" flags="wfNoBorder">
@@ -4063,7 +4055,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="50,80" size="565,120" font="Caps; 36" backgroundColor="transwhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,200" size="565,780" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,200" size="565,760" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="615,140" size="1290,800" itemHeight="50" font="Regular;28" setEventItemFont="Regular;28" setEventTimeFont="Regular;24" setColWidths="120,200" setColGap="20" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/epgsel.png" zPosition="4" />
@@ -4077,7 +4069,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="60,80" size="565,120" font="Caps; 36" backgroundColor="transwhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,210" size="565,780" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="60,210" size="565,760" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="665,220" size="1200,700" itemHeight="50" font="Regular;30" setEventItemFont="Regular; 28" setEventTimeFont="Regular;24" setColWidths="350,180" setColGap="15" setTimeWidth="120" setIconDistance="10" setIconShift="0" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="lightciel" selectionPixmap="GlamourAuraFHD/selections/updatesel.png" alphatest="blend" transparent="1" zPosition="5" />
@@ -4100,7 +4092,7 @@ if not self["videofps"].text:
     <widget source="Event" render="Label" position="60,80" size="570,120" font="Caps; 36" backgroundColor="transwhite" transparent="0" halign="center" zPosition="3" foregroundColor="black" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="62,250" size="570,740" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=10,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="62,250" size="570,730" font="Regular; 30" backgroundColor="sky" transparent="1" valign="top" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="60,205" size="85,45" font="Numbers; 36" halign="left" backgroundColor="sky" transparent="1" zPosition="7">
