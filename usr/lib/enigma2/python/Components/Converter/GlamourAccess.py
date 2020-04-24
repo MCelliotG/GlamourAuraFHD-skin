@@ -164,6 +164,8 @@ cainfo = (
 	("4B64", "4B64", "Samsung/TV Key"),
 	("5347", "5347", "GkWare"),
 	("5448", "5448", "Gospell VisionCrypt"),
+	("5501", "5580", "Griffin"),
+	("5581", "55FF", "Bulcrypt"),
 	("5601", "5604", "Verimatrix"),
 	("5605", "5606", "Sichuan"),
 	("5607", "5608", "Viewscenes"),
@@ -386,7 +388,7 @@ class GlamourAccess(Poll, Converter):
 		self.poll_enabled = True
 		if not info:
 			return False
-		caids = self.CaidList().strip(",").split()
+		caids = self.CaidList().strip(", ").split()
 
 		if self.type is self.FTA:
 			if not caids and not ecm_info:
@@ -454,7 +456,7 @@ class GlamourAccess(Poll, Converter):
 				return False
 			if self.type == self.BULCAS:
 				for caid in caids:
-					if caid >= "5501" and caid <= "55FF" or caid == "4AEE" or caid == "4AF8":
+					if caid == "4AEE" or caid == "4AF8" or caid >= "5581" and caid <= "55FF":
 						return True
 				return False
 			if self.type == self.VMXCAS:
@@ -561,7 +563,7 @@ class GlamourAccess(Poll, Converter):
 						return True
 					return False
 				if self.type == self.BULECM:
-					if caid >= "5501" and caid <= "55FF" or caid == "4AEE" or caid == "4AF8":
+					if caid == "4AEE" or caid == "4AF8" or caid >= "5581" and caid <= "55FF":
 						return True
 					return False
 				if self.type == self.VMXECM:
@@ -647,11 +649,11 @@ class GlamourAccess(Poll, Converter):
 				if fileExists(ecmpath):
 					try:
 						caid = "%0.4X" % int(ecm_info.get("caid", ""), 16)
-						return "%s" % caidlist
+						return "%s" % caidname
 					except:
 						return "Unknown CA Info"
 				else:
-					return "Cannot decode"
+					return "CA Info not available"
 
 			if info:
 				caids = list(set(info.getInfoObject(iServiceInformation.sCAIDs)))
@@ -1082,7 +1084,7 @@ class GlamourAccess(Poll, Converter):
 			caidr = ("%0.4X" % int(ecm_info.get("caid", ""), 16))[:4]
 			for ce in cainfo:
 				try:
-					if ce[0] <= caidr <= ce[1]:
+					if ce[0] <= caidr <= ce[1] or caidr.startswith(ce[0]):
 						caidname = ce[2]
 				except:
 					pass
@@ -1127,7 +1129,7 @@ class GlamourAccess(Poll, Converter):
 		caidnames = self.CaidNames()
 		caidlist = ""
 		if caids and caidnames:
-			caidlist = "%s (%s)" %(caids, caidnames)
+			caidlist = "%s (%s)" % (caids, caidnames)
 			if config.osd.language.value == "el_GR":
 				caidlist = "Συστήματα κωδικοποίησης: " + caidlist
 			else:
@@ -1138,6 +1140,7 @@ class GlamourAccess(Poll, Converter):
 				return "Χωρίς κωδικοποίηση ή αναγνωριστικό"
 			else:
 				return "Free to air or no descriptor"
+
 
 	def ecmpath(self):
 		ecmpath = None
