@@ -1,8 +1,7 @@
-﻿<skin>
+<skin>
   <!--  Original Skin: GlamourAuraFHD by MCelliotG  -->
   <!--  SKIN FILE -->
   <!--  GlamourAuraFHD OpenPLI-based Images Screens by MCelliotG -->
-
   <!-- SatDreamGr Panels and Plugins -->
   <screen name="PictureCamera" position="0,0" size="1920,1080" title="Picture Camera" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
@@ -25,11 +24,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [
       MultiContentEntryPixmapAlphaBlend(pos=(30,2), size=(72,72), png=0), # icon 
-        MultiContentEntryText(pos = (115, 0), size = (865, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (115, 0), size = (785, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("Regular", 45)],
                  "itemHeight": 90}
@@ -45,11 +44,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [
       MultiContentEntryPixmapAlphaBlend(pos=(30,2), size=(72,72), png=0), # icon 
-        MultiContentEntryText(pos = (115, 0), size = (865, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (115, 0), size = (785, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("Regular", 45)],
                  "itemHeight": 90}
@@ -65,11 +64,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [
       MultiContentEntryPixmapAlphaBlend(pos=(30,2), size=(72,72), png=0), # icon 
-        MultiContentEntryText(pos = (115, 0), size = (865, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (115, 0), size = (785, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("Regular", 45)],
                  "itemHeight": 90}
@@ -263,11 +262,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [
       MultiContentEntryPixmapAlphaBlend(pos=(30,2), size=(72,72), png=0), # icon 
-        MultiContentEntryText(pos = (115, 0), size = (865, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (115, 0), size = (785, 90), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("Regular", 45)],
                  "itemHeight": 90}
@@ -283,11 +282,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [ 
-        MultiContentEntryText(pos = (40, 0), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
-        MultiContentEntryText(pos = (40, 50), size = (900, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (40, 0), size = (850, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
+        MultiContentEntryText(pos = (40, 50), size = (850, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("RegularB", 34), gFont("Regular", 24)],
                  "itemHeight": 90}
@@ -303,11 +302,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [ 
-        MultiContentEntryText(pos = (40, 0), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
-        MultiContentEntryText(pos = (40, 50), size = (900, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (40, 0), size = (850, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
+        MultiContentEntryText(pos = (40, 50), size = (850, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("RegularB", 32), gFont("Regular", 24)],
                  "itemHeight": 90}
@@ -323,11 +322,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [ 
-        MultiContentEntryText(pos = (40, 0), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
-        MultiContentEntryText(pos = (40, 50), size = (900, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (40, 0), size = (850, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
+        MultiContentEntryText(pos = (40, 50), size = (850, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("RegularB", 32), gFont("Regular", 24)],
                  "itemHeight": 90}
@@ -343,11 +342,11 @@
     <panel name="ClockLabel1" />
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraFHD/icons/panel+.png" alphatest="on" transparent="1" zPosition="5" />
     <panel name="Title1" />
-    <widget source="list" render="Listbox" position="770,90" size="990,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel990.png" alphatest="blend" zPosition="5">
+    <widget source="list" render="Listbox" position="770,90" size="900,810" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/mainmenusel900.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [ 
-        MultiContentEntryText(pos = (40, 0), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
-        MultiContentEntryText(pos = (40, 50), size = (900, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
+        MultiContentEntryText(pos = (40, 0), size = (850, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color=0x90e6, color_sel=0xdeff), # Item
+        MultiContentEntryText(pos = (40, 50), size = (850, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # Item
                      ],
                  "fonts": [gFont("RegularB", 32), gFont("Regular", 24)],
                  "itemHeight": 90}
@@ -404,17 +403,16 @@
     <eLabel text="Exit" position="555,830" size="305,85" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1" />
     <eLabel text="Ok" position="870,830" size="305,85" zPosition="5" font="Regular; 30" halign="center" valign="bottom" backgroundColor="background20" transparent="1" />
   </screen>
-
-    <!-- Greek Net Radio --> 
+  <!-- Greek Net Radio -->
   <screen name="GreekNetRadio" position="0,0" size="1920,1080" title="SDG Radio" flags="wfNoBorder" backgroundColor="transparent">
-   <panel name="MainBackground2" />
-   <panel name="ClockLabel1" />
-   <panel name="Title1" />
-   <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/radio.png" alphatest="on" transparent="1" zPosition="5" />
-   <widget name="menu" font="Regular; 32" position="540,90" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="cyan1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" zPosition="5" />
-  <panel name="FullKeys1" />
- </screen>
- <screen name="GreekNetRadioCategory" position="0,0" size="1920,1080" title="SDG Radio" flags="wfNoBorder" backgroundColor="transparent">
-   <panel name="GreekNetRadio" />
- </screen>
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/radio.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="menu" font="Regular; 32" position="540,90" size="1305,750" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColorSelected="cyan1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" zPosition="5" />
+    <panel name="FullKeys1" />
+  </screen>
+  <screen name="GreekNetRadioCategory" position="0,0" size="1920,1080" title="SDG Radio" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GreekNetRadio" />
+  </screen>
 </skin>

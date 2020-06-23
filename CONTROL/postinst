@@ -3,28 +3,6 @@ if [ -f /tmp/GlamourAuraFHD/skin.xml ]; then
   rm -rf /usr/share/enigma2/GlamourAuraFHD/
   mv /tmp/GlamourAuraFHD /usr/share/enigma2/
 fi
-echo "                                                                     "
-echo "Now, checking if additional Aura Color skins are already installed   " 
-if [ -f /usr/share/enigma2/GlamourAuraBerry/skin.xml ] || [ -f /usr/share/enigma2/GlamourAuraLime/skin.xml ] || [ -f /usr/share/enigma2/GlamourAuraMango/skin.xml ] || [ -f /usr/share/enigma2/GlamourAuraRose/skin.xml ]
-then
-  echo "Glamour Aura Color skins, found, now updating links to main skin..." 
-  echo "                                                                   "
-else
-  echo "Glamour Aura Color skins not found, no file linking necessary      " 
-  echo "                                                                   " 
-fi
-if [ -f /usr/share/enigma2/GlamourAuraBerry/skin.xml ]; then
-  cp -Rs /usr/share/enigma2/GlamourAuraFHD/* /usr/share/enigma2/GlamourAuraBerry 2>/dev/null
-fi
-if [ -f /usr/share/enigma2/GlamourAuraLime/skin.xml ]; then
-  cp -Rs /usr/share/enigma2/GlamourAuraFHD/* /usr/share/enigma2/GlamourAuraLime 2>/dev/null
-fi
-if [ -f /usr/share/enigma2/GlamourAuraMango/skin.xml ]; then
-  cp -Rs /usr/share/enigma2/GlamourAuraFHD/* /usr/share/enigma2/GlamourAuraMango 2>/dev/null
-fi
-if [ -f /usr/share/enigma2/GlamourAuraRose/skin.xml ]; then
-  cp -Rs /usr/share/enigma2/GlamourAuraFHD/* /usr/share/enigma2/GlamourAuraRose 2>/dev/null
-fi
-echo "                                                                    "
-echo "Glamour Aura FHD skin is now successfully installed on your receiver"
-echo "                       Enjoy!!!                                     "
+echo "                                                                        "
+echo "Glamour Aura FHD skin is now successfully installed on your receiver    "
+echo "                       Enjoy!!!                                         "
