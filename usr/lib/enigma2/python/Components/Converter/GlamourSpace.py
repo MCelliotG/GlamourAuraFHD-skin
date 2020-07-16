@@ -5,7 +5,7 @@
 
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Poll import Poll
+from Components.Converter.Poll import Poll
 import os
 from os import popen, statvfs, path
 SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB", "EB"]
