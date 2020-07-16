@@ -1,6 +1,6 @@
 ﻿# coded by shamann
 # modded by Malakudi, added utf8 support
-from Renderer import Renderer
+from Components.Renderer.Renderer import Renderer
 from enigma import eLabel, eTimer
 from Components.VariableText import VariableText
 

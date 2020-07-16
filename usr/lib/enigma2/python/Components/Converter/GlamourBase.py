@@ -5,11 +5,10 @@
 
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Poll import Poll 
+from Components.Converter.Poll import Poll 
 import NavigationInstance
 from ServiceReference import ServiceReference, resolveAlternate 
 from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr, eServiceCenter
-from string import upper 
 from Tools.Transponder import ConvertToHumanReadable
 from Components.config import config
 import os.path

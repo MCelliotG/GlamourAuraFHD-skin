@@ -6,9 +6,8 @@
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Components.Element import cached
-from string import upper
 from Components.config import config, ConfigText, ConfigSubsection
-from Poll import Poll
+from Components.Converter.Poll import Poll
 import os
 from os import path
 info = {}
