@@ -441,9 +441,9 @@
   </screen>
   <!-- 02. Menu Labels -->
   <screen name="MainMenu1" flags="wfNoBorder">
-    <widget source="menu" render="Listbox" position="770,60" size="900,880" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself900.png" alphatest="blend" zPosition="5">
+    <widget source="menu" render="Listbox" position="770,60" size="920,880" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself920.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
-        {"template": [ MultiContentEntryText(pos = (60, 0), size = (830, 80), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ],
+        {"template": [ MultiContentEntryText(pos = (60, 0), size = (850, 80), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ],
         "fonts": [gFont("Regular", 45)],
         "itemHeight": 80
         }
@@ -2675,10 +2675,10 @@
     <panel name="MainBackground1" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
-    <widget source="menu" render="Listbox" position="770,45" size="900,640" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself900.png" alphatest="blend" zPosition="5">
+    <widget source="menu" render="Listbox" position="770,45" size="920,640" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraFHD/selections/menuself920.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [ 
-            MultiContentEntryText(pos = (60, 0), size = (830, 80), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the menu item,
+            MultiContentEntryText(pos = (60, 0), size = (850, 80), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the menu item,
           ],
         "fonts": [gFont("Regular", 45)],
         "itemHeight": 80
