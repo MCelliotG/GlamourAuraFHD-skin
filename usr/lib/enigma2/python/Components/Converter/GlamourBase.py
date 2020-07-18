@@ -5,15 +5,13 @@
 
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Poll import Poll 
+from Components.Converter.Poll import Poll 
 import NavigationInstance
 from ServiceReference import ServiceReference, resolveAlternate 
 from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr, eServiceCenter
-from string import upper 
 from Tools.Transponder import ConvertToHumanReadable
 from Components.config import config
-from Tools.Directories import fileExists
-from os import path
+import os.path
 
 
 def sp(text):
@@ -404,7 +402,7 @@ class GlamourBase(Poll, Converter, object):
 ######### COMMON VARIABLES #################
 	def videowidth(self, info):
 		width = 0
-		if path.exists("/proc/stb/vmpeg/0/xres"):
+		if os.path.exists("/proc/stb/vmpeg/0/xres"):
 			with open("/proc/stb/vmpeg/0/xres", "r") as w:
 				try:
 					width = int(w.read(),16)
@@ -417,7 +415,7 @@ class GlamourBase(Poll, Converter, object):
 
 	def videoheight(self, info):
 		height = 0
-		if path.exists("/proc/stb/vmpeg/0/yres"):
+		if os.path.exists("/proc/stb/vmpeg/0/yres"):
 			with open("/proc/stb/vmpeg/0/yres", "r") as h:
 				try:
 					height = int(h.read(),16)
@@ -430,7 +428,7 @@ class GlamourBase(Poll, Converter, object):
 
 	def proginfo(self, info):
 		progrs = ""
-		if path.exists("/proc/stb/vmpeg/0/progressive"):
+		if os.path.exists("/proc/stb/vmpeg/0/progressive"):
 			with open("/proc/stb/vmpeg/0/progressive", "r") as prog:
 				try:
 					progrs = "p" if int(prog.read(),16) else "i"
@@ -450,7 +448,7 @@ class GlamourBase(Poll, Converter, object):
 
 	def framerate(self, info):
 		fps = 0
-		if path.exists("/proc/stb/vmpeg/0/framerate"):
+		if os.path.exists("/proc/stb/vmpeg/0/framerate"):
 			with open("/proc/stb/vmpeg/0/framerate", "r") as fp:
 				try:
 					fps = int(fp.read())
@@ -655,11 +653,8 @@ class GlamourBase(Poll, Converter, object):
 			onid = ""
 		else:
 			onid = "ONID:" + str(onid).zfill(4)
-		if (vpid >= 0) or (apid >= 0) or (sid >= 0) or (tsid >= 0) or (onid >= 0):
-			pidinfo = sp(vpid) + sp(apid) + sp(sid) + sp(pcrpid) + sp(pmtpid) + sp(tsid) + onid
-			return pidinfo
-		else:
-			return ""
+		pidinfo = sp(vpid) + sp(apid) + sp(sid) + sp(pcrpid) + sp(pmtpid) + sp(tsid) + onid
+		return pidinfo
 
 	def pidhexstring(self, info):
 		vpid = info.getInfo(iServiceInformation.sVideoPID)
@@ -697,11 +692,9 @@ class GlamourBase(Poll, Converter, object):
 			onid = ""
 		else:
 			onid = "ONID:" + str(hex(onid)[2:]).upper().zfill(4)
-		if (vpid >= 0) or (apid >= 0) or (sid >= 0) or (tsid >= 0) or (onid >= 0):
-			pidhexinfo = sp(vpid) + sp(apid) + sp(sid) + sp(pcrpid) + sp(pmtpid) + sp(tsid) + onid
-			return pidhexinfo
-		else:
-			return ""
+		pidhexinfo = sp(vpid) + sp(apid) + sp(sid) + sp(pcrpid) + sp(pmtpid) + sp(tsid) + onid
+		return pidhexinfo
+
 
 	@cached
 	def getText(self):
@@ -792,8 +785,8 @@ class GlamourBase(Poll, Converter, object):
 		if not info:
 			return False
 		else:
-			xresol = self.videowidth(info)
-			yresol = self.videoheight(info)
+			xresol = info.getInfo(iServiceInformation.sVideoWidth)
+			yresol = info.getInfo(iServiceInformation.sVideoHeight)
 			progrs = self.proginfo(info)
 			vcodec = self.videocodec(info)
 			streamurl = self.streamurl()
