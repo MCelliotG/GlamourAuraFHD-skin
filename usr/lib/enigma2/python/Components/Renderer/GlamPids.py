@@ -6,6 +6,7 @@ from Components.Renderer.Renderer import Renderer
 from enigma import eLabel
 from Components.VariableText import VariableText
 from enigma import eServiceCenter, iServiceInformation
+
 class GlamPids(VariableText, Renderer):
 	__module__ = __name__
 
