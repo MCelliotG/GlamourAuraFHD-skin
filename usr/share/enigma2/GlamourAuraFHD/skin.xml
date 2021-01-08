@@ -1172,9 +1172,9 @@
     <widget source="Title" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=5,repeat=2,startdelay=3000,nowrap,oneshot=1,always=0" position="77,947" size="1830,100" font="Regular; 70" foregroundColor="background20" backgroundColor="background20" transparent="1" valign="center" zPosition="4" noWrap="1" />
   </screen>
   <screen name="Title2" flags="wfNoBorder">
-  <ePixmap pixmap="GlamourAuraFHD/menu/title_aura.png" position="0,945" zPosition="3" size="1920,135" alphatest="on" transparent="1" />
-  <widget source="Title" render="Label" position="300,945" size="1540,100" font="Regular; 70" foregroundColor="white" backgroundColor="transparent" transparent="1" valign="center" zPosition="4" noWrap="1" shadowColor="background20" shadowOffset="2,2" />
-</screen>
+    <ePixmap pixmap="GlamourAuraFHD/menu/title_aura.png" position="0,945" zPosition="3" size="1920,135" alphatest="on" transparent="1" />
+    <widget source="Title" render="Label" position="300,945" size="1540,100" font="Regular; 70" foregroundColor="white" backgroundColor="transparent" transparent="1" valign="center" zPosition="4" noWrap="1" shadowColor="background20" shadowOffset="2,2" />
+  </screen>
   <!-- 07. Weather -->
   <screen name="Weather1" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="55,35" zPosition="5" size="335,40" font="RegularB; 30" halign="center" transparent="1" text="Location" foregroundColor="cyan2" noWrap="1" backgroundColor="black">
@@ -5070,7 +5070,7 @@ if not self["videofps"].text:
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/wlan.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget source="list" render="Listbox" position="540,90" size="1305,720" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="GlamourAuraFHD/selections/timersel.png" alphatest="blend" zPosition="4">
+    <widget source="list" render="Listbox" position="540,120" size="1305,720" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="GlamourAuraFHD/selections/timersel.png" alphatest="blend" zPosition="4">
       <convert type="TemplatedMultiContent">
         {"template": [
             MultiContentEntryText(pos = (10, 5), size = (700, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -5084,6 +5084,7 @@ if not self["videofps"].text:
         }
       </convert>
     </widget>
+    <widget source="info" render="Label" position="540,75" zPosition="6" size="1305,45" font="Regular; 32" halign="left" valign="center" backgroundColor="background20" transparent="1" foregroundColor="cyan" />
     <panel name="FullKeys1" />
   </screen>
   <!-- 16. Wlan scanapp -->
