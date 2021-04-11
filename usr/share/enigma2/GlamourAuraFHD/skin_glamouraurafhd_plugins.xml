@@ -1963,4 +1963,186 @@
     <ePixmap position="50,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/piconupdater.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="logWindow" font="Regular; 30" position="540,60" size="1305,900" foregroundColor="white" backgroundColor="clearcyan" itemHeight="50" transparent="0" zPosition="9" />
   </screen>
+  <!-- File Commander -->
+  <screen name="FileCommanderScreen" position="0,0" size="1920,1080" title="File Commander" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/menuhalo.png" position="180,52" size="232,900" transparent="1" alphatest="off" zPosition="-11" />
+    <eLabel name="menubig" position="410,0" size="1420,1005" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/menufaderight.png" position="1830,0" zPosition="-11" size="75,1080" alphatest="off" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/menufadebottom.png" position="412,1005" zPosition="-11" size="1417,75" alphatest="off" transparent="1" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/clockglowtl.png" position="1140,60" size="65,60" alphatest="blend" zPosition="-2" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/clockglowbr.png" position="1780,90" size="65,60" alphatest="blend" zPosition="-2" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/accentglowb540.png" position="1200,120" size="540,30" alphatest="blend" zPosition="-2" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/clockglowtl.png" position="420,60" size="65,60" alphatest="blend" zPosition="-2" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/clockglowbr.png" position="1060,90" size="65,60" alphatest="blend" zPosition="-2" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/menu/accentglowb540.png" position="480,120" size="540,30" alphatest="blend" zPosition="-2" transparent="1" />
+    <ePixmap position="20,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
+    <eLabel position="1130,60" size="2,800" backgroundColor="cyan1" zPosition="12" foregroundColor="cyan1" />
+    <eLabel position="1134,60" size="2,800" backgroundColor="blue" zPosition="12" foregroundColor="blue" />
+    <!-- LEFT LIST -->
+    <widget name="list_left_head1" position="420,60" size="705,45" font="Regular; 28" foregroundColor="cyan1" transparent="1" backgroundColor="background20" valign="center" zPosition="3" />
+    <widget name="list_left_filename" position="420,105" size="705,40" font="Regular;25" noWrap="1" foregroundColor="white" backgroundColor="background20" transparent="1" zPosition="4" />
+    <widget name="list_left_select" position="420,145" size="705,50" font="Regular; 28" transparent="1" foregroundColor="yellow" backgroundColor="background20" halign="left" valign="center" itemHeight="35" zPosition="5" />
+    <widget source="list_left_head2" render="Listbox" position="420,145" size="705,50" foregroundColor="amarillo" backgroundColor="background20" selectionDisabled="1" transparent="1" zPosition="6">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos = (5, 0), size = (150, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is a symbolic mode
+		MultiContentEntryText(pos = (160, 0), size = (100, 60), font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 11), # index 11 is the scaled size
+		MultiContentEntryText(pos = (270, 0), size = (430, 60), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 13), # index 13 is the modification time
+		],
+		"fonts": [gFont("Regular", 28)],
+		"itemHeight": 50,
+		"selectionEnabled": False
+		}
+   </convert>
+    </widget>
+    <widget name="list_left" font="Regular; 30" position="420,195" size="705,600" scrollbarMode="showOnDemand" selectionPixmap="/usr/share/enigma2/GlamourAuraFHD/selections/boxsel.png" alphatest="off" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="7" />
+    <widget name="list_left_free" position="420,800" size="405,40" font="Regular; 28" halign="left" valign="center" foregroundColor="cyan1" backgroundColor="background20" zPosition="8" transparent="1" />
+    <widget name="sort_left" position="825,800" size="300,40" halign="center" font="Regular; 28" foregroundColor="cyan" backgroundColor="background20" zPosition="8" transparent="1" />
+    <!-- RIGHT LIST -->
+    <widget name="list_right_head1" position="1140,60" size="705,45" font="Regular; 28" foregroundColor="cyan1" transparent="1" backgroundColor="background20" valign="center" zPosition="3" />
+    <widget name="list_right_filename" position="1140,105" size="705,40" font="Regular;25" noWrap="1" foregroundColor="white" backgroundColor="background20" transparent="1" zPosition="4" />
+    <widget name="list_right_select" position="1140,145" size="705,50" font="Regular; 28" transparent="1" foregroundColor="yellow" backgroundColor="background20" halign="left" valign="center" itemHeight="35" zPosition="5" />
+    <widget source="list_right_head2" render="Listbox" position="1140,145" size="705,50" foregroundColor="amarillo" backgroundColor="background20" selectionDisabled="1" transparent="1" zPosition="6">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos = (5, 0), size = (150, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is a symbolic mode
+		MultiContentEntryText(pos = (160, 0), size = (100, 60), font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 11), # index 11 is the scaled size
+		MultiContentEntryText(pos = (270, 0), size = (430, 60), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 13), # index 13 is the modification time
+		],
+		"fonts": [gFont("Regular", 28)],
+		"itemHeight": 50,
+		"selectionEnabled": False
+		}
+   </convert>
+    </widget>
+    <widget name="list_right" font="Regular; 30" position="1140,195" size="705,600" scrollbarMode="showOnDemand" selectionPixmap="/usr/share/enigma2/GlamourAuraFHD/selections/boxsel.png" alphatest="off" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="7" />
+    <widget name="list_right_free" position="1140,800" size="405,40" font="Regular; 28" halign="left" valign="center" foregroundColor="cyan1" backgroundColor="background20" zPosition="8" transparent="1" />
+    <widget name="sort_right" position="1545,800" size="300,40" halign="center" font="Regular; 28" foregroundColor="cyan" backgroundColor="background20" zPosition="8" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/buttons/key_info_medium.png" position="420,855" size="90,45" alphatest="blend" zPosition="4" transparent="1" />
+    <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/buttons/key_menu_medium.png" position="445,900" size="90,45" alphatest="blend" zPosition="4" transparent="1" />
+    <panel name="FullKeys1" />
+  </screen>
+  <screen name="FileCommanderContextMenu" position="0,0" size="1920,1080" title="FileCommander Context Menu" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground3" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <widget name="menu" font="Regular; 30" position="810,90" size="1050,850" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" selectionPixmap="/usr/share/enigma2/GlamourAuraFHD/selections/aurasel1050.png" alphatest="off" zPosition="7" />
+    <ePixmap position="255,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
+  </screen>
+  <screen name="FileCommanderScreenFileSelect" position="0,0" size="1920,1080" title="Filebrowser" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="FileCommanderScreen" />
+  </screen>
+  <screen name="FileCommanderFileStatInfo" position="0,0" size="1920,1080" title="File/Directory Status Information" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="filename" position="540,90" size="1305,80" font="RegularB; 32" zPosition="8" transparent="1" foregroundColor="cyan2" backgroundColor="background20" valign="center" />
+    <widget source="list" render="Listbox" position="540,185" size="1305,750" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" zPosition="9">
+      <convert type="TemplatedMultiContent">
+     {"template": [
+      MultiContentEntryText(pos = (5, 0), size = (450, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is a label
+      MultiContentEntryText(pos = (455, 0), size = (845, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the information
+      ],
+      "fonts": [gFont("Regular", 28)],
+      "itemHeight": 50,
+      "selectionEnabled": False
+     }
+    </convert>
+    </widget>
+  </screen>
+  <screen name="vEditor" position="0,0" size="1920,1080" title="File Commander - Addon File-Viewer" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="list_head" position="540,75" size="1305,80" font="RegularB; 32" zPosition="8" transparent="1" foregroundColor="cyan2" backgroundColor="background20" valign="top" />
+    <widget name="filedata" font="Regular; 30" position="540,155" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" selectionPixmap="/usr/share/enigma2/GlamourAuraFHD/selections/aurasel.png" alphatest="off" transparent="1" zPosition="9" />
+    <widget name="InputBoxWide_input" position="0,0" size="1920,0" noWrap="1" font="Regular;28" />
+    <panel name="FullKeys1" />
+  </screen>
+  <screen name="vEditorScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="vEditor" />
+  </screen>
+  <screen name="ArchiverMenuScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="list_left_head" position="540,75" size="1305,80" font="RegularB; 32" zPosition="8" transparent="1" foregroundColor="cyan2" backgroundColor="background20" valign="top" />
+    <widget name="list_left" font="Regular; 30" position="540,155" size="1305,650" itemHeight="50" scrollbarMode="showOnDemand" selectionPixmap="/usr/share/enigma2/GlamourAuraFHD/selections/aurasel.png" alphatest="off" transparent="1" zPosition="9" />
+    <widget name="unpacking" position="540,805" size="1305,50" scrollbarMode="showOnDemand" foregroundColor="amarillo" zPosition="7" transparent="1" font="Regular; 30" backgroundColor="background20" valign="center" halign="left" />
+    <panel name="FullKeys1" />
+  </screen>
+  <screen name="TarMenuScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="ArchiverMenuScreen" />
+  </screen>
+  <screen name="GunzipMenuScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="ArchiverMenuScreen" />
+  </screen>
+  <screen name="RarMenuScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="ArchiverMenuScreen" />
+  </screen>
+  <screen name="UnzipMenuScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="ArchiverMenuScreen" />
+  </screen>
+  <screen name="ipkMenuScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="ArchiverMenuScreen" />
+  </screen>
+  <screen name="ArchiverInfoScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="list_left_head" position="540,75" size="1305,80" font="RegularB; 32" zPosition="8" transparent="1" foregroundColor="cyan2" backgroundColor="background20" valign="top" />
+    <widget name="list_left" font="Regular; 30" position="540,155" size="1305,700" itemHeight="50" scrollbarMode="showOnDemand" selectionPixmap="/usr/share/enigma2/GlamourAuraFHD/selections/aurasel.png" alphatest="off" transparent="1" zPosition="9" />
+    <panel name="FullKeys1" />
+  </screen>
+  <screen name="UnpackInfoScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="ArchiverInfoScreen" />
+  </screen>
+  <screen name="InputBoxWide" position="0,0" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="InputBox" />
+  </screen>
+  <screen name="TaskListScreen" position="0,0" size="1920,1080" title="Task list" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget source="tasklist" render="Listbox" position="540,90" size="1305,700" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" enableWrapAround="1" transparent="1" zPosition="9">
+      <convert type="TemplatedMultiContent">
+        {"template": [
+        MultiContentEntryText(pos=(10,0), size=(580,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1, color=0x90e6, color_sel=0xdeff), # Title
+        MultiContentEntryText(pos=(585,0), size=(320,50), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=2), # State
+        MultiContentEntryProgress(pos=(910,10), size=(180,25), percent=-3, borderWidth=2), # Progress
+        MultiContentEntryText(pos=(1120,0), size=(180,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4) # Percentage
+        ],
+        "fonts": [gFont("RegularB", 32)],
+        "itemHeight": 50}
+      </convert>
+    </widget>
+    <panel name="FullKeys1" />
+  </screen>
+  <!-- Cache Flush -->
+  <screen name="CacheFlushSetupMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraFHD/icons/memory.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget name="config" font="Regular; 30" position="540,60" size="1305,500" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraFHD/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
+    <widget name="min_free_kb" position="540,600" size="1095,120" font="Regular; 28" foregroundColor="cyan" backgroundColor="background20" zPosition="6" valign="top" transparent="1" />
+    <widget name="slide" position="1660,600" size="30,240" zPosition="5" borderWidth="1" foregroundColor="cyan" backgroundColor="background20" orientation="orBottomToTop" borderColor="white" />
+    <widget name="memory" position="540,720" size="1095,120" foregroundColor="cyan1" backgroundColor="background20" zPosition="5" valign="bottom" halign="left" font="Regular; 28" transparent="1" />
+    <panel name="FullKeys1" />
+  </screen>
+  <screen name="CacheFlushInfoScreen" position="0,0" size="1920,1080" flags="wfNoBorder">
+    <panel name="MemoryInfo" />
+  </screen>
+  <screen name="CacheFlushAutoScreen" position="0,200" zPosition="14" title="CacheFlush Status" size="720,55" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap pixmap="GlamourAuraFHD/infobar/infobar_timeshift.png" position="0,0" zPosition="-2" size="720,55" alphatest="off" />
+    <widget source="Title" render="Label" position="50,0" size="300,55" font="RegularB; 34" halign="center" backgroundColor="background20" transparent="1" zPosition="6" noWrap="1" />
+    <widget name="message_label" position="350,0" size="300,55" font="Regular; 32" halign="left" foregroundColor="yellow" backgroundColor="background20" transparent="1" zPosition="6" noWrap="1" />
+  </screen>
 </skin>
