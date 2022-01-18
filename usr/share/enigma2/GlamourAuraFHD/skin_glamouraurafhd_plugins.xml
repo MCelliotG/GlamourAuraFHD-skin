@@ -1930,8 +1930,8 @@
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="/usr/share/enigma2/GlamourAuraFHD/icons/piconupdater.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="txt_title" position="540,75" size="650,50" font="Regular; 35" foregroundColor="amarillo" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" />
-    <widget name="txt_counter" position="825,140" size="90,60" font="Numbers; 60" backgroundColor="clearcyan" transparent="0" halign="center" valign="center" zPosition="8" borderWidth="1" borderColor="white" />
-    <eLabel name="frame_counter" position="825,140" size="0,0" zPosition="7" backgroundColor="background20" />
+    <widget name="txt_count" position="825,140" size="90,60" font="Numbers; 60" backgroundColor="clearcyan" transparent="0" halign="center" valign="center" zPosition="8" borderWidth="1" borderColor="white" />
+    <eLabel name="frame_count" position="825,140" size="0,0" zPosition="7" backgroundColor="background20" />
     <widget name="config" font="Regular; 30" position="1195,75" size="650,850" scrollbarMode="showOnDemand" selectionPixmap="/usr/share/enigma2/GlamourAuraFHD/selections/wlansel.png" alphatest="off" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/buttons/aura_red.png" position="580,870" size="225,75" alphatest="blend" transparent="1" zPosition="3" />
     <ePixmap pixmap="/usr/share/enigma2/GlamourAuraFHD/buttons/aura_green.png" position="910,870" size="225,75" alphatest="blend" transparent="1" zPosition="3" />

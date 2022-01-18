@@ -415,4 +415,15 @@
   <screen name="GreekNetRadioCategory" position="0,0" size="1920,1080" title="SDG Radio" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GreekNetRadio" />
   </screen>
+   <!-- Satfinder Service list -->
+  <screen name="ServicesFound" position="0,0" size="1920,1080" title="Satfinder Service List" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="MainBackgroundSF" />
+  <panel name="ClockLabel3" />
+  <ePixmap pixmap="GlamourAuraFHD/menu/satfinderaura.png" position="0,60" size="585,900" transparent="1" alphatest="off" zPosition="-11" />
+  <panel name="Title1" />
+  <ePixmap position="100,315" size="400,400" pixmap="GlamourAuraFHD/icons/channelselection.png" alphatest="on" transparent="1" zPosition="5" />
+  <widget name="legend" position="600,145" size="1060,150" zPosition="10" font="RegularB; 32" transparent="1" valign="center" halign="left" itemHeight="50" />
+  <widget name="servicesfound" position="600,295" size="1230,650" zPosition="10" font="Regular;32" transparent="1" itemHeight="50" valign="top" halign="left" />
+  <panel name="FullKeysUP" />
+</screen>
 </skin>
