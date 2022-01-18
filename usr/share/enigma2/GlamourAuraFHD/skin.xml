@@ -4657,8 +4657,8 @@ if not self["videofps"].text:
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
-    <widget name="config" font="Regular; 30" position="600,140" size="1260,750" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="GlamourAuraFHD/selections/satfindersel.png" alphatest="blend" zPosition="4" />
-    <widget name="introduction" position="600,900" size="1200,50" font="Regular; 36" halign="center" backgroundColor="background20" transparent="1" noWrap="1" zPosition="5" foregroundColor="sky" />
+    <widget name="config" font="Regular; 30" position="600,140" size="1260,800" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="GlamourAuraFHD/selections/satfindersel.png" alphatest="blend" zPosition="4" />
+    <panel name="RGKeysUP2" />
   </screen>
   <!-- 06. Tuner screen -->
   <screen name="TunerScreen" position="0,0" size="1920,1080" title="Tune" backgroundColor="transparent" flags="wfNoBorder">
